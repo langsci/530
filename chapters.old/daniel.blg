@@ -1,0 +1,18 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'daniel.blg'
+[81] biber:340> INFO - === Tue Jan  6, 2026, 14:58:36
+[96] Biber.pm:420> INFO - Reading 'daniel.bcf'
+[168] Biber.pm:994> INFO - Found 26 citekeys in bib section 0
+[182] Biber.pm:4463> INFO - Processing section 0
+[192] Biber.pm:4654> INFO - Looking for bibtex file '../localbibliography.bib' for section 0
+[214] bibtex.pm:1713> INFO - LaTeX decoding ...
+[848] bibtex.pm:1519> INFO - Found BibTeX data source '../localbibliography.bib'
+[1099] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1100] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1100] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1100] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1127] bbl.pm:676> INFO - Writing 'daniel.bbl' with encoding 'UTF-8'
+[1137] bbl.pm:779> INFO - Output to daniel.bbl
+[1137] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'Creisselsunpublished2' is not an integer - this will probably not sort properly.
+[1137] Biber.pm:131> WARN - legacy year field 'n.d.' in entry 'Creisselsunpublished1' is not an integer - this will probably not sort properly.
+[1137] Biber.pm:133> INFO - WARNINGS: 2

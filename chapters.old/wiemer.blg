@@ -1,0 +1,18 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'wiemer.blg'
+[75] biber:340> INFO - === Tue Mar  3, 2026, 09:26:49
+[90] Biber.pm:420> INFO - Reading 'wiemer.bcf'
+[191] Biber.pm:994> INFO - Found 82 citekeys in bib section 0
+[203] Biber.pm:4463> INFO - Processing section 0
+[212] Biber.pm:4654> INFO - Looking for bibtex file '../localbibliography.bib' for section 0
+[234] bibtex.pm:1713> INFO - LaTeX decoding ...
+[792] bibtex.pm:1519> INFO - Found BibTeX data source '../localbibliography.bib'
+[1484] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1484] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1484] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1484] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1558] bbl.pm:676> INFO - Writing 'wiemer.bbl' with encoding 'UTF-8'
+[1593] bbl.pm:779> INFO - Output to wiemer.bbl
+[1593] Biber.pm:131> WARN - I didn't find a database entry for 'chapters/vuillermet' (section 0)
+[1593] Biber.pm:131> WARN - I didn't find a database entry for 'chapters/introduction' (section 0)
+[1593] Biber.pm:133> INFO - WARNINGS: 2

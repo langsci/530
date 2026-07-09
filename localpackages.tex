@@ -1,0 +1,85 @@
+\usepackage{tabularx,multicol}
+\usepackage{url}
+\urlstyle{same}
+
+\usepackage{langsci-optional}
+\usepackage{langsci-lgr}
+\usepackage{langsci-gb4e}
+
+\babelprovide[import]{hebrew}
+
+\usepackage{paralist} %%may not be needed, currently used in questionnaire
+
+
+%Siena added packages for introduction; not sure they are needed
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+%from Treis:
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,tabsize=2,breaklines=true}
+
+%%from Francez
+% % % \usepackage{cjhebrew}
+%\usepackage{tipa}  Also included by D&A, need to check with LSP whether to change it to language science tipa
+\usepackage{leipzig}
+%%from Dabkowski&AnderBois:
+
+\usepackage[shortlabels]{enumitem} 
+\usepackage{centernot}
+\usepackage{arydshln}
+\usepackage{newunicodechar}
+\usepackage{csquotes}
+%\let\sups\relax \usepackage{tipa} commented out on 7/3/25 Martina
+% \usepackage[all]{nowidow}
+\usepackage{listings} \lstset{basicstyle=\ttfamily}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{xspace}
+%\usepackage{tabularx}
+%\usepackage{multicol}
+\usepackage{supertabular}
+\usepackage{hhline}
+\usepackage{bbding} %this package is for the checkmarks in Table 6 in Browne et al.
+
+%\usepackage{qtree}
+%\usepackage{tree-dvips}
+
+\usepackage{array}
+\usetikzlibrary{calc,tikzmark,matrix}
+\usepgflibrary{shadings}
+\usepackage{pifont}
+%from Fedotov:
+
+\usepackage{langsci-textipa}
+%\usepackage{multirow}
+
+
+%\usepackage{xeCJK}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EXAMPLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% if you want the source line of examples to be in
+% italics, uncomment the following line
+\renewcommand{\exfont}{\itshape}
+% to add additional information to the right of
+% examples, uncomment the following line
+
+%\usepackage{langsci/styles/jambox}
+
+
+%%% FOOTNOTE EXAMPLE NUMBERING
+% \makeatletter
+% \patchcmd{\@footnotetext}{\setcounter{fnx}{0}}{\renewcommand{\thexnumi}{\roman{xnumi}}}{}{}
+% \apptocmd{\@footnotetext}{
+%     \@noftnotetrue
+%     \renewcommand{\thexnumi}{\arabic{xnumi}}%
+% }{}{}
+%
+% \makeatother
+\usepackage[linguistics,edges]{forest}
+\usepackage{hyphenat}
+\usepackage{langsci-branding}

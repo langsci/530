@@ -1,0 +1,1242 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook} 
+%\bibliography{localbibliography}
+
+\author{Maksymilian Dąbkowski\affiliation{University of California, Berkeley} and Scott AnderBois\affiliation{Brown University}}
+
+\title{The apprehensional domain in A'ingae (Cofán)}
+
+\abstract{This paper provides the first detailed description of the apprehensional domain in A'ingae (Cofán, {\textsc{iso} 639-3}: \texttt{con}), with the cross-linguistic category of \emph{apprehension} defined as a mixed modality encoding both undesirability and epistemic possibility. We contribute to the study of apprehensional typology by reporting on a language of a so far unattested profile: one apprehensional morpheme \ai{=sa'ne}{appr} spanning robust precautioning uses (both avertive and `in-case'), negative-verbal complementizer uses, restricted timitive uses, and marginal apprehensive uses. Lastly, we contribute to the study of apprehensional semantics by arguing that the particular functional range of the A'ingae apprehensional clitic \ai{=sa'ne}{appr} is not entirely a question of diachronic development, but rather that much of its polyfunctionality emerges from a single meaning. We propose that the situation denoted by the \ai{=sa'ne}{appr} clause is contained within a possible undesirable situation. If that containment is proper (i.e.\ the situation denoted by the \ai{=sa'ne}{appr} clause is not identical to the negative situation), the `in-case' function obtains. If the containment is improper (i.e.\ the situation denoted by the \ai{=sa'ne}{appr} clause is the undesirable situation), the avertive function obtains.}
+
+%\input{prioritycommands.tex}
+%\input{localpackages.tex}
+%\input{localcommands.tex}
+
+ \IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+   \input{../localpackages}
+   \input{../localcommands} 
+ \togglepaper[23]
+}{}
+
+\begin{document}
+
+% \let\cleardoublepage\clearpage
+% \setcounter{tocdepth}{10}
+% {\def\addcontentsline#1#2#3{}\maketitle}
+% \tableofcontents
+% \newpage
+
+% \tableofcontents
+
+\maketitle
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Introduction}
+\label{sec:introduction}
+
+In this paper, we contribute to the cross-linguistic understanding of the apprehensional domain through a detailed exploration of apprehensional forms in A'ingae (or Cofán, {\textsc{iso} 639-3}: \texttt{con}), an isolate language of Amazonia, spoken by approximately 1,500 speakers in Northeastern Ecuador and Southern Colombia \citep{dabkowski2021ldd}.
+
+While the domain of \textit{apprehension} is characterized by cross-linguistic variability in both form and function, its distinguishing characteristics are high probability combined with undesirability \citep{vuillermet2018a}. Although the category has varied and robust manifestations across languages, it has been largely overlooked by descriptive grammarians, typologists, and formal analysts alike until quite recently
+\citep[for extant descriptions, see][]{lichtenberk1995apprehensional, green1989marrithiyel, francois2003semantique, dobrushina2006grammatical, pakendorf2007possibility, angelo2016beware, vuillermet2018a}.
+
+In line with the nascent understanding of the apprehensional domain emergent from cross-linguistic research \citep{VuillermetM2018questionnaire}, we distinguish four different main uses of apprehensional morphology.
+
+First, the \emph{apprehensive proper}\footnote{Observe the distinction between \textit{apprehensional}, which refers to the domain of functional morphemes encoding fear and related emotions, and \textit{apprehensive (proper)}, which refers to just one among several \textit{apprehensional} functions.} encodes a highly probable undesirable situation and is typically associated with matrix-clausal uses. It is often employed to convey warnings. No English construction directly corresponds to it; it can be best rendered by \emph{beware} (possibly in combination with \emph{lest}), \emph{watch out} (both encoding undesirability), \emph{might} (encoding high likelihood), or negative imperative (encoding a warning).
+
+{Second, the \emph{precautioning} -- prototypically biclausal -- function hypotactically relates an apprehension-causing event to a preemptive event aimed to counteract it. Previous literature has distinguished two subtypes of the precautioning function. Following \citet{lichtenberk1995apprehensional}, we will label them \textit{avertive} and \textit{`in-case'}. The avertive subfunction refers to uses where the preemptive situation is aimed at forestalling the apprehension-causing one, while the `in-case' subfunction applies to uses where the preemptive situation is aimed only at mitigating its negative consequences. In English, the negative purpose constructions \textit{in order not to} or \textit{so as not to} express only the avertive semantics, although the largely archaic \textit{lest} can be used to express both the avertive and `in-case' subfunctions.}
+
+Third, the \emph{timitive} introduces an NP in a manner similar to case or adpositions. The timitive relates a feared entity to the matrix-clausal situation; the latter is presented as having been triggered by the former. These uses are best translated by English constructions involving \textit{for fear of}.
+
+Fourth, apprehensionals in \textit{complementizer} function head the complements of certain negative verbs, most often associated with the emotion of fear. Here again, English translations are not straightforward, as the complementizer of `fear' predicates is most often \textit{that} or null, although \textit{lest} can also be archaically used. 
+
+While some languages have distinct morphological manifestations for various of these different categories, others have morphemes that can be used across several of them. So is the case in A'ingae, whose only apprehensional morpheme \ai{=sa'ne}{appr} is multifunctional. It is used most robustly as a head of subordinate clauses introducing apprehension-causing situations (precautioning function, \ref{prevent}), and to mark complements of certain verbs (complementizer function, \ref{fearcomplementizer}). It also occurs in a somewhat restricted fashion as a timitive (\ref{timitivecasemarker}), and even more marginally as an apprehensive (\ref{marginally apprehensive}). For clarity, constituents headed by \ai{=sa'ne}{appr} and some subordinate clauses in the examples given across the paper will be bracketed. {We will refer to the clauses and NPs headed by \ai{=sa'ne}{appr} as the \textit{arguments} of \sane[.]}
+\begin{exe}
+    \ex \label{prevent} % 17DD40
+    \gll Phuraen kan-ñakha    {\ob}amphi ja=sane.{\cb} \\
+         touch   try-\textsc{iter}  fall go=\textsc{appr}\\
+    \glt `He felt {it} with his hand so as not to fall down.' \\
+    \hfill (\texttt{20170803\_dyandyaccu\_LC}: {\textsc{40}})
+    \ex \label{fearcomplementizer} % 20170731_yaje2_MM 53
+    \gll Tsama ña   {\ob}{dañu=sane=khe{\cb}}         dyuju-je=ya. \\
+         but \textsc{1sg} {be hurt=\textsc{appr=mann.dem}} {be.afraid-\textsc{ipfv=ver}}\\
+    \glt `I was afraid I would get hurt.'
+    \hfill (\texttt{20170731\_yaje2\_MM}: {\textsc{53}})
+    \ex \label{timitivecasemarker} % our elicitations with Hugo
+    \gll Anae'ma=ni=ngi phi {\ob}thesi=sa'ne.{\cb} \\
+         hammock=\textsc{loc=}1 sit jaguar=\textsc{appr}   \\
+    \glt `I'm in a hammock for fear of a jaguar.'
+    \ex  \label{marginally apprehensive} % our elicitations with Hugo
+    \gll {\ob}Tsai-ye=sa'ne.{\cb}   \\
+         bite-\textsc{pass=appr}    \\
+    \glt `You might get bitten.'
+\end{exe}
+
+An immediate question that arises in such cases is that of the relationship between various apprehensional functions. Is it solely diachronic? Does it arise from a uniform semantics which is more general, or from a covert ambiguity or polyfunctionality? Do some functions -- or aspects of their semantics -- pattern together? For example, does the availability of `in-case' uses of one apprehensional morpheme entail anything about its reading in an apprehensive role? {Furthermore, what is the relation of apprehension to other domains, such as purpose constructions (encoded by the infinitive in A'ingae), which also tend to have prospective or irrealis modalities and a variety of formally distinct adjunct and argument uses?}
+
+Beyond providing the first detailed description of the A'ingae \sane[,] we add to the study of the apprehensional domain a language with a previously unreported typological profile: robust precautioning and `fear' complement uses, restricted timitive uses, and marginal apprehensive uses. We argue that the apprehensive uses of \ai{=sa'ne}{appr} are instances of partially conventionalized uses of subordinate clauses. They occupy, therefore, an intermediate stage in the diachronic trajectory of insubordination proposed by \citet{evans2007insubordination}. Lastly, al\-though a proper formal semantic analysis is beyond the scope of this paper, we gesture at common threads across the different functions of \ai{=sa'ne}{appr} to point out how the semantic commonalities underlying all of them are responsible for the range of functions attested.
+
+The road map for the remainder of the paper is as follows: \S\ref{sec:background} briefly presents background on A'ingae and the data used here; 
+\S\ref{sec:precautioningfunction}  examines the precautioning use of \ai{=sa'ne}{appr} as a subordinator;
+\S\ref{sec:complementizerfunction} examines the use of \ai{=sa'ne}{appr} as a complementizer of \emph{dyuju} `be afraid' and other negatively valenced predicates;
+\S\ref{sec:timitivefunction}  examines the timitive use;
+\S\ref{sec:monoclausaluses} examines the apprehensive use;
+\S\ref{sec:conclusions} concludes.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% BACKGROUND %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Background}
+\label{sec:background}
+
+
+A'ingae (or Cofán, {\textsc{iso} 639-3}: \texttt{con}) is an indigenous language spoken by around 1,500 people in the province of Sucumbíos in northeast Ecuador as well as southern Colombia \citep{dabkowski2021ldd}.
+Despite being an isolate, a number of aspects of its grammar, both phonologically and morphosyntactically, point to membership in the Amazonian sprachbund \citep{fischerhengeveld, repetti-ludlow2019aingae,AELSS,sanker-reconstruction}.
+
+Outside of a few brief word lists, the first contributions to the systematic study of A'ingae were made by Marlytte Bub Borman and Roberta Bobbie Borman, missionary linguists first active in the Cofán communities in 1950s. \citet{dictionary} provides the first (and only) substantial dictionary; \citet{borman1990cosmologia} -- a collection of cosmological narratives. Other notable works include a grammatical sketch by \citet{fischerhengeveld}, a traditional story collection \citep{Mitos}, and
+various descriptive and theoretical papers, including, but not limited to, \citet{anderboissilva2018collection, repetti-ludlow2019aingae, pridetomlinlingview, dabkowski2019morphophonology, dabkowski2021ldd, dabkowski2021phonology, dabkowski2023nllt, dabkowski2024llc, sanker-reconstruction,  anderbois2023forms, dabkowski2024jos, anderbois2020salt, anderbois-llc, zheng2023definiteness, morvillo2021inner}.
+
+An orthography for the language was first developed by the Bormans, and recently revised by members of the Cofán communities themselves. The present chapter makes use of the revised orthography. For details, see \citet{fischerhengeveld} and \citet{repetti-ludlow2019aingae}.
+
+While phonological and orthographic details are generally not relevant here, one slight exception is the presence of glottal stops. Glottal stops are frequently contrastive (at least in some positions) and represented by apostrophes orthographically. Nevertheless, they are not transcribed consistently by native speakers. Furthermore, glottal stops influence the position of lexical stress, and lexical stress, conversely, influences the surfacing of glottal stops: in unstressed positions, glottal stops tend to be realized suprasegmentally or not realized at all. This interplay feeds back into the orthography, as apostrophes end up being used to cue lexical stress and, therefore, morphological boundaries \citep{dabkowski2023nllt}. 
+
+Across all of its uses, the apprehensional \ai{=sa'ne}{appr} -- like many other mor\-phemes -- shows variation between variants with the glottal stop: \ai{=sa'ne}{appr}{,} and without it: \ai{=sane}{appr}{.} Since this difference does not appear to be semantically important and the phonetic/phonological reality is somewhat unclear, we retain the forms of previously published works and native speaker transcriptions in naturalistic data. {We transcribe the glottal stops in elicited data.}% One further complication we have noticed is that
+\footnote{{Older sources (\citealt{borman1990cosmologia, borman1990lessons, dictionary}; and collaborators) often show glottal stops in places where modern-day transcribers do not and for which phonetic support is not immediately clear. This is especially true in unstressed positions, and is suggestive of a phonological reduction process. These complexities, however, are not at all unique to \ai{=sa'ne}{appr} and we refer the interested reader to \citet{dabkowski2023nllt} for more detailed discussion and analysis.}}
+
+The preponderance of our data comes from the fieldwork conducted by the authors. The naturalistic interviews and elicitation sessions that form the basis of our analyses come from our work with speakers representing three Ecuadorian communities: Zábalo, Sinango\'e, and Du\-re\-no. If naturalistic, the citation accompanying the example contains the identifier (file name) and line number in the collection deposited as \citet{anderboissilva2018collection} with the Endangered Languages Archive. If elicited, no citation is given. A minority of the data sourced from written texts is cited as such, but updated to the revised orthography.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TYPOLOGY %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Typological profile} \label{sec:typology}
+
+A'ingae is a head-final language, with predominantly SOV basic word order. In matrix clauses, word order is largely free, though with a preference for SOV and subject to a variety of pragmatic demands \citep{fischerhengeveld}. Subordinate clauses are strictly verb-final, a fact which we make use of below (see \S\ref{sec:subordination} for more detail). 
+
+The language's functional morphology is dominated by enclitics, with a lesser role of suffixation. The verbal paradigm is quite complex with many verbal and clausal morphemes typically present, significant ordering restrictions between them, as well as morphophonological interactions with stress and glottalization.
+Verbal morphology is discussed more fully in \S\ref{sec:conjugation}.
+
+The language is consistently dependent marking; verbal dependents are mark\-ed for case with nominative-accusative alignment for core arguments. The four cases most commonly used to introduce verbal arguments include the nominative (unmarked), the dative \emph{=nga} `\textsc{dat}', as well as two accusatives: \ai{=ma}{acc}{,} marking the prototypical affected object, and \ai{=ve}{acc2}{} (nasal allomorph \ai{=me}{acc2}{}), marking the unaffected or absent object.
+
+Case is expressed via clitics. The clitichood of A'ingae case markings is corroborated on prosodic grounds \citep[they stand outside of the phonological noun,][]{dabkowski2019morphophonology} and by their NP-final position, regardless of its internal order \citep{fischerhengeveld}, as seen in (\ref{rande})--(\ref{rande2}).
+\begin{multicols}{2}
+\begin{exe}
+    \ex\label{rande}     \gll Rande tsa'u=ma athe. \\
+         large house=\textsc{acc} see \\
+    \glt `I saw a large house.'
+    \ex\label{rande2}     \gll Tsa'u rande=ma athe. \\
+         house large=\textsc{acc} see \\
+    \glt `I saw a large house.'
+\end{exe}
+\end{multicols}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CONJUGATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Verbal template}
+\label{sec:conjugation}
+
+
+\newcommand{\clr}{\cellcolor{gray!15}}
+
+{A'ingae has several dozen inflectional morphemes that can attach to verbs across a dozen or so slots.}\footnote{All the morphemes discussed in this section have been classified by \citet{fischerhengeveld} as clitics. Since the co-occurrence of these morphemes is arbitrarily restricted \citep{zwicky1983cliticization}, they do not change the syntactic category of their hosts, and some display morphophonological idiosyncrasies \citep{dabkowski2019morphophonology}, many of them should likely be reclassified as inflectional suffixes. Nevertheless, for consistency with previous work, we gloss them with equal signs and refer to them as clitics throughout. For an extensive discussion of A'ingae suffixhood and clitichood and a different glossing convention, see \citet{dabkowski2019morphophonology}.} A fragment of the verbal template is given in \autoref{templatefragment}.\footnote{Only those morphemes are listed which will be relevant to the discussion of the paradigmatic status of the apprehensional clitic \sane[.] Valence, aspect, and associated motion suffixes, which all come before the plural subject \ai{='fa}{pls}{} number clitic, are omitted. So are the second-position clitics (the polar interrogative \ai{=ti}{int}{} clitic, the reportative evidential \ai{=te}{rprt}{} clitic, as well as the person subject clitics), which all come after the information structure clitics.} For the full template and its justification, see \citet{dabkowski2019morphophonology,dabkowski2021phonology,dabkowski2023nllt}.\footnote{{See \citet{fischerhengeveld} for an alternative template.}} The template captures the ordering of inflectional morphemes as well as the co-occurrence restrictions that obtain among them. As such, it is a visual representation of a generative algorithm for A'ingae conjugation. To generate a legal verbal form, go from left to right picking at most one morpheme per column along the way. Do not cross the horizontal lines.
+
+\begin{table}[t]
+
+\begin{tabularx}{\textwidth}{l Q Q Q Q Q Q Q l}
+\lsptoprule
+… &\textsc{num}   &\textsc{mod}   &\textsc{pol}   &\textsc{tax}   &\ch{3}{{info-structure}}   &… \\
+\midrule
+&        &      &       &=\textit{'ya}\newline
+                              \textsc{ver} & &        & \\
+\hhline{~~~~----}
+&        &      &       &=\textit{pa\clr}\newline
+                         \textsc{ss\clr}  &&& \\
+\tablevspace
+&        &=\textit{ya}\newline
+          \textsc{irr}    &=\textit{mbi}\newline
+                    \textsc{neg}      &=\textit{si\clr}\newline
+                                   \textsc{ds\clr}    &=\textit{{'yi}}\newline
+                                                  \textsc{{excl}}&=\textit{'ta\clr}\newline
+                                                            \textsc{new\clr}  &=\textit{'khe}\newline
+                                                                           \textsc{add} &\\
+\tablevspace
+&        &&=\textit{'ma\clr}\newline
+          \textsc{frst\clr}&&& \\
+\hhline{~~~~~~--}
+&        &      &       &=\textit{'ni\clr}\newline
+                         \textsc{loc\clr} &&& \\
+\tablevspace
+&=\textit{'fa}\newline
+  \textsc{pls}&      &       &=\textit{sa'ne\clr}\newline
+                         \textsc{appr\clr}&&=\textit{'ja\clr}\newline
+                                        \textsc{cntr\clr}& \\
+\hhline{~~---}
+&        &      &       &=\textit{ye\clr}\newline
+                         \textsc{inf\clr}  & && \\
+\hhline{~~~~----}
+&        &      &       &=\textit{ja}\newline
+                         \textsc{imp}& &        & \\
+\tablevspace
+&        &      &       &=\textit{kha}\newline
+                         \textsc{imp2} & &        & \\
+\tablevspace
+&        &      &       &=\textit{'se}\newline
+                         \textsc{imp3}& &        & \\
+\tablevspace
+&        &      &       &=\textit{jama}\newline
+                         \textsc{proh}& &        & \\
+\lspbottomrule
+\end{tabularx}
+\caption{Verbal inflectional template, a fragment.}
+\label{templatefragment}
+\end{table}
+
+The number \textsc{num} slot lists the only number clitic, the plural subject \ai{='fa}{pls}. The modality \textsc{mod} slot lists one modal clitic, the irrealis \ai{=ya}{irr}, although other clitics (\eg the imperatives given in the taxis \textsc{tax} slot) also arguably express modal semantics. The polarity \textsc{pol} slot lists one negative indicative \ai{=mbi}{neg}, although negativity can also be expressed in the semantics of the frustrative \ai{='ma}{frst}{} and the prohibitive \ai{=jama}{proh}.
+
+The \textsc{tax} slot lists all the clitics which appear in a clause-final position (except when followed by the information structure clitics or a few clitics not listed in \autoref{templatefragment}), do not co-occur with other \textsc{tax} clitics, and which establish its status as independent or dependent. {Parts of the table which contain subordinating clitics are colored in grey.}
+
+Among subordinating clitics figure the same subject \emph{=pa} `\textsc{ss}', which signals identity between subjects of two clauses, the different subject \emph{=si} `\textsc{ds}', which signals non-identity between subjects of two clauses,\footnote{The same and different subject clitics \emph{=pa} `\textsc{ss}' and \emph{=si} `\textsc{ds}' can be employed in subordinate as well as co-subordinate constructions. The distinction is immaterial for our purposes. For the definition and discussion of A'ingae subordination, see \citet{fischer2007clause}.} the frustrative \emph{='ma} `\textsc{frst}',  which signals a frustration of otherwise anticipated consequences of the encoded clause, the locative \emph{='ni} `\textsc{loc}', the apprehensional \ai{=sa'ne}{appr} (our focus here), as well as the infinitive \ai{=ye}{inf}.
+
+Among matrix clausal clitics figure the three imperatives \ai{=ja}{imp}, \ai{=kha}{imp2}, and \ai{='se}{imp3}, the semantic differences among which are not well understood, the prohibitive \ai{=jama}{proh}, expressing negative commands -- or prohibitions, and the elusive veridical \ai{='ya}{ver}, as epithetized by \citet[35]{fischerhengeveld}, whose semantics is likewise unclear.
+
+{The \textsc{info-structure} slot lists the exclusive focus \ai{='yi}{excl}, new topic \ai{='ta}{new}, contrastive topic \ai{='ja}{cntr}, and additive focus \ai{='khe}{add}{} clitics. One of the uses of topic clitics is to mark conditional antecedents.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SUBORDINATION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{{Subordination}} \label{sec:subordination}
+
+A \textit{subordinate} clause
+forms a part of another clause. The subordinate status of an A'ingae clause can be ascertained via a number of diagnostics. Below, we present three such diagnostics, one of which is semantic, while the other two are syntactic. Although the syntactic diagnostics are proposed in \citet{fischer2011cofan}, apprehensional clauses are not explicitly discussed.
+
+First, a subordinate clause can be identified via scopal means. For example, the negation scoping over the infinitival clause in (\ref{dontwant}) testifies to its subordinate status. A paratactic analysis here would predict a clearly incorrect meaning.\footnote{The hypothetically available adjunct reading (`I don't want it in order to hunt') is impossible or very difficult to get here.} 
+    \ea \label{dontwant} % \src{2019\_sinangoe}
+    \gll In'jan=mbi=gi  {\ob}panza=ye.{\cb}\\
+         want=\textsc{neg=1} hunt=\textsc{inf} \\
+    \glt subordinate analysis: `I don't want to hunt.' \\*
+         paratactic analysis: \#`I don't want to. I'm off to hunt.' 
+    \z
+
+Second, the subordinate status can be corroborated by restrictions on word order. While word order in matrix clauses is quite flexible, subordinate clauses are strictly verb-final \citep{fischerhengeveld, fischer2011cofan}, as in (\ref{posverbfinal}--\ref{negverbnonfinal}).
+\begin{exe}
+    \ex \label{posverbfinal}
+    \gll {\ob}ûnjin tûi='ni={nda{\cb}} avûja=ya. \\
+         rain  splash=\textsc{loc=new} rejoice=\textsc{irr} \\
+    \glt `I will be happy if it rains.'
+    \ex \label{negverbnonfinal}
+    \gll \bad{\ob}Tûi='ni=nda {ûnjin{\cb}} avûja=ya. \\
+         splash=\textsc{loc=new} rain  rejoice=\textsc{irr} \\
+    \glt intended: `I will be happy if it rains.'
+\end{exe}
+
+Third, the subordinate status can be established by a restriction on the occurrence of sentence-level clitics. These include the reportative evidential \ai{=te}{rprt}{} (nasal allomorph: \emph{=nde}) and the polar interrogative \ai{=ti}{int}{} (nasal allomorph: \emph{=ndi}), as well as the optional first person \ai{=ngi}{1}{,} second person \ai{=ki}{2}{,} and third person \ai{=tsû}{3}{} clitics, which encode, sometimes redundantly, the sentential subject. All of the sentence-level clitics occur close to the left edge of the clause, often right after the first clausal constituent. Thus, they are second-position clitics (although information structure-dependent permutations of word order may obscure their second-position nature). In (\ref{posverbfinal}), the subordinate clause as a whole is treated as the first constituent in a matrix clause, whereas attaching a clitic to the first constituent within the subordinate clause is ungrammatical (\ref{posclitic}).
+
+    \ea \label{posclitic}
+    \gll \bad{\ob}ûnjin {\rm\{}=ngi, =tsû{\rm\}} {tûi='ni=nda{\cb}} avûja=ya. \\
+         rain {\rm\{}\textsc{=}1, \textsc{=}3{\rm\}}  splash=\textsc{loc=new} rejoice=\textsc{irr} \\
+    \glt intended: `I will be happy if it rains.'
+    \z 
+
+
+
+Subordinate clauses can have the function of verbal \textit{arguments} or \textit{adjuncts}. Just as infinitives in a language like English have both argument and adjunct uses, we demonstrate below that A'ingae \ai{=sa'ne}{appr} clauses do too. We therefore summarize these two classes of subordinate clauses in A'ingae, noting key similarities and differences.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ARGUMENT CLAUSES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Argument clauses}
+\label{sec:argumentclauses}
+
+In A'ingae, various types of subordinate clauses can serve as verbal arguments. All subordinate clauses carry enclitics on their main verbs which, due to the rigidly verb-final word order of subordinate clauses, are at the same time clause-final. The argument clause can appear to the left or right of the matrix clause.
+
+{One general strategy for sentential subordination involves the nominalizing subordinator \emph{='chu} `\textsc{sbrd}'. Since \emph{='chu} `\textsc{sbrd}' creates formal nominalizations, \emph{='chu} `\textsc{sbrd}' clauses can appear in all the same environments as NPs. Other sentential complementizers include the infinitival \emph{=ye} `\textsc{inf}', the manner deictic \ai{=khen}{mann.dem}, the adverbial \ai{=e}{adv}, attributive \emph{='sû} `\textsc{attr}', and apprehensional \sane[.]}
+
+The category of verbs selecting for infinitival \emph{=ye} `\textsc{inf}' clauses includes, among others, attitude verbs such as \emph{in'jan} `want' (\ref{injan}) or \emph{chi'ga} `not want' (\ref{chiga}) and aspectual verbs such as \emph{tsun} `do' (\ref{tsun}), prospective semantics, or \emph{atesû} `know' (\ref{atesu}), habitual or acquired ability semantics \citep{fischerhengeveld}.
+\begin{exe}
+    \ex \label{injan} %  \src{2019\_sinangoe}
+        \gll In'jan=gi {\ob}panza=ye.{\cb} \\
+             want=\textsc{1} hunt=\textsc{inf} \\
+        \glt `I want to hunt.'
+    \ex \label{chiga} % 17BH 15
+        \gll Chi'ga=fa          {{\ob}thûthû=ye.{\cb}}   \\
+             {not want=\textsc{pls}}  {fell=\textsc{inf}} \\
+        \glt `They did not want to chop down the trees.'
+        \\ \hfill (\texttt{20170731\_building\_house\_sapohe\_mmemq\_jc\_}: {\textsc{15}})
+    \ex \label{tsun} % 17AC 1
+        \gll {\ob}Ya      jañu=ngi {asha-en=ñe{\cb}}    tsun-jen=fa.    \\
+             already now\textsc{=}1 beginning-\textsc{caus=inf} do-\textsc{ipfv=pls} \\
+        \glt `Now we're going to start.'
+        \hfill (\texttt{20170801\_autobiography\_CLC}: {\textsc{1}})
+    \ex \label{atesu} % 17AJ 72
+        \gll {\ob}Tsa=ma      {tshe'tshe=pa{\cb}} yaya'khashe'ye=ye   {{\ob}ujun=ñe{\cb}}      atesû. \\
+             \textsc{ana=acc} mash=\textsc{ss}   grandfather=\textsc{honr} bathe=\textsc{inf} know \\
+        \glt `My grandfather, having mashed it, would use it to bathe.'
+        \\ \hfill (\texttt{20170807\_autobiography\_JWC}: {\textsc{72}})
+\end{exe}
+    
+Verba dicendi, \emph{in'jan} `think' (polysemous with `want'), \emph{tsun} `do' and \emph{iyikhu} `fight', select for manner deictic \ai{=khen}{mann.dem}{} clauses. With verba dicendi and \emph{in'jan} construed cognitively (\ie to mean `think'), the reading is that of speech % (\ref{quotedspeech})
+or thought report. % (\ref{injanthink}).
+With \emph{tsun} `do' and \emph{iyikhu} `fight', the reading is that of desire or intention. The verb \emph{da} `become' selects for accusative 2 nominalized clauses (marked by \ai{='chuve}{sbrd.acc2}{}) % (\ref{chuve})
+or adverbial clauses (marked by \ai{=e}{adv}{}). Motion verbs can select for attributive \emph{='sû} `\textsc{attr}' clauses to express the purpose of the motion.
+
+Finally, verbs such as  \emph{dyu} `be scared', \emph{dyuju} `be afraid',\footnote{Given the semantic relatedness and formal similarity, the verb \textit{dyuju} `be afraid' is presumably morphologically related to \textit{dyu} `be scared'. However, the semantic contribution of the unproductive formant \textit{-ju} is not clear, as no other instances of it have been identified.} \emph{ansa'nge} `be ashamed', \emph{se'pi} `prohibit', and \emph{chi'ga} `not want', select for \sane[.] The complementizer function of \ai{=sa'ne}{appr} is discussed more fully in \S\ref{sec:complementizerfunction}, especially since it is not immediately clear that these are complements as opposed to adjuncts with precautioning \ai{=sa'ne}{appr} (\ref{fearedobject}).
+    \ea \label{fearedobject}
+    \gll Dyuju=ngi        {\ob}thesi  ña=ma    mandian=sa'ne.{\cb} \\
+         {be.afraid\textsc{=}1} jaguar \textsc{1=acc} chase=\textsc{appr} \\
+    \glt argument paraphrase: `I am afraid that the jaguar would chase me.' \\*
+    adjunct paraphrase: \#`I would be afraid in case a jaguar would chase me.'
+    \z 
+        
+\subsubsection{Adjunct clauses}
+\label{sec:adjunctclauses}
+There are many available strategies in the language for adjunction. As adjunct clauses are not selected for by the matrix verb, but rather modify the predicate or the clause, there are no particular restrictions on which types of adjunct clauses can go together with which verbs. Like argument clauses, adjunct clauses carry enclitics and can appear on either side of the matrix clause.
+
+{Common strategies for adjunction include the nominalizing \ai{='chu}{sbrd}{} with oblique case marking, the adverbializing clitic \ai{=e}{adv}{}  for circumstance clauses, the locative clitic \emph{='ni} `\textsc{loc}'\footnote{{The locative {\textsc{`loc'}} can express location in time or space, hence the gloss.}} to signal a temporal relation between two clauses, % (\ref{locative}),
+the infinitive clitic \ai{=ye}{inf}{} to express positive purpose semantics, % (\ref{infinitival}),
+the new \ai{='ta}{new}{} and contrastive \ai{='ja}{cntr}{} topic clitics to signal a conditional relation between two clauses, % (\ref{topic}),
+as well as the apprehensional clitic \ai{=sa'ne}{appr} for undesirable outcome clauses in precautioning sentences (\ref{apprehensional}).
+The precautioning function of \ai{=sa'ne}{appr} is discussed more fully in \S\ref{sec:precautioningfunction}.}
+\begin{exe}
+    \ex \label{apprehensional}
+    \gll Pa'khu a'ta ja-je=ya       tsa     undikhûje=ma   khani=nde         tsa'u-ña=mba             ambian=ña   {\ob}tise   khashe athe=pa ja=sane.{\cb}\\
+         every  day  go-\textsc{ipfv=ver} \textsc{ana} robe=\textsc{acc} elsewhere=\textsc{rprt} house-\textsc{caus=ss} have=\textsc{ver} \textsc{3sg} {old woman} see=\textsc{ss} go=\textsc{appr} \\
+    \glt  `Every day he would go to see the clothes because he had them in another house far away so that his wife does not see them.'
+    \\ \hfill (\texttt{20170730\_kunsiana\_cuento\_VC2}: {\textsc{77-79}})
+\end{exe}
+  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PRECAUTIONING FUNCTION %%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Precautioning function} \label{sec:precautioningfunction}
+
+Having reviewed the landscape of other subordinate clauses in A'ingae, we turn now to our main focus, the apprehensional \sane. One typologically common apprehensional function is what \citet{lichtenberk1995apprehensional} has dubbed  \textit{precautioning}. The precautioning function involves two clauses: one \emph{apprehension-causing} clause, which expresses a negative potential situation, and one \emph{preemptive} clause, which expresses the precaution taken to either avert the apprehension-causing situation expressed in the other clause or else to be prepared for it, in case it should occur. \citet{lichtenberk1995apprehensional} has labeled these two cross-linguistically attested subfunctions of precautioning morphemes the \emph{avertive} and the \emph{`in-case'} function, respectively. In English, the former may be expressed with the somewhat archaic conjunction \emph{lest} or a negative purpose clause (\ref{lestclaw}).\footnote{The semantics literature on English dating back to \citet{faraci1974aspects} typically reserves the term \textit{purpose clause} for a very specific subtype of such clauses, ones where the clause specifically encodes the purpose of the direct object. Here, we broaden the usage in accord with its less technical sense. \label{fn:repeat}} The latter can be expressed with \emph{lest}, but not a negative purpose clause (\ref{lestrun}).
+\begin{exe}
+    \ex \label{lestclaw}
+    \glt \textit{I took a rifle \textup{\{}lest a jaguar kill me, so that a jaguar does not kill me\textup{\}}}.
+    \ex \label{lestrun}
+    \glt \textit{I took a rifle \textup{\{}lest I see a jaguar, \#so that I do not see a jaguar\textup{\}}}.
+\end{exe}
+
+The precautioning use of the apprehensional clitic \ai{=sa'ne}{appr} is its most common one. In (\ref{prec}), \ai{=sa'ne}{appr} has the avertive subfunction; we will illustrate the `in-case' subfunction of \ai{=sa'ne}{appr} below.
+    \ea \label{prec} % 17RC8
+    \gll Tse=fan         khi⟨'⟩tsha=jama   {\ob}khitsha thûña=sane.{\cb}  \\
+         \textsc{ana=pej.acc} pull⟨\textsc{plv}⟩=\textsc{proh} pull         break\textsc{=appr}   \\
+    \glt `Don't pull it so that you don't break it!' \\*
+    \hfill (\texttt{20170801\_river\_contamination\_ARLQ}: {\textsc{8}})
+    \z
+
+In principle, the syntactic relation between the apprehension-causing and the preemptive clause could be that of parataxis, coordination, or subordination. In A'ingae, the apprehension-causing \ai{=sa'ne}{appr} clauses are subordinate to the preemptive clauses, as we demonstrate below. They are adjuncts, their presence is optional -- they are not selected by particular verbs and have a similar distribution to other adjuncts, as shown in \S\ref{sec:adjunctclauses}.
+
+
+
+\subsection{Syntactic and semantic status}
+
+The apprehensional clitic \ai{=sa'ne}{appr} scopes over a full clause, whose subject as well as object can be overt. Whereas some subordinators in A'ingae encode switch reference, the subject of the apprehension-causing \ai{=sa'ne}{appr} clause can be the same (\ref{lestistarve}) or different (\ref{lestchildren}) from that of the preemptive clause.
+\begin{exe}
+    \ex \label{lestistarve} % \src{2019\_sinangoe}
+    \gll Sema-'je=ngi   {\ob}khiphue'sû=sa'ne.{\cb} \\
+        work-\textsc{ipfv=1} starve=\textsc{appr} \\
+    \glt `I am working lest I starve.' 
+    \ex \label{lestchildren}% \src{2019\_sinangoe}
+    \gll Sema-'je=ngi  {\ob}dû'shû=ndekhû khiphue'sû=sa'ne.{\cb} \\
+        work-\textsc{ipfv=1} child=\textsc{plh}        starve=\textsc{appr} \\
+    \glt `I am working lest my children starve.' 
+\end{exe}
+
+The apprehension-causing \ai{=sa'ne}{appr} clauses are subordinate. This can be demonstrated via the diagnostics introduced in \S\ref{sec:subordination}.
+
+First, we consider the interaction between \ai{=sa'ne}{appr} and scope-taking operators such as negation. A paratactic analysis of the apprehension-causing \ai{=sa'ne}{appr} clauses more or less approximates the apparent meaning when no such operator is present (\ref{boiling}). However, once we add in negation to the preemptive clause, we see that the paraphrase the paratactic analysis would provide is no longer even approximately right (\ref{notboiling}) -- the constituent in scope of negation is the preemptive clause as modified by the \ai{=sa'ne}{appr} clause.
+\begin{exe}
+    \ex \label{boiling}
+    \gll Tise=ta=tsû tsakhû=ma guathian-'jen {\ob}iyufa jin=sa'ne.{\cb} \\
+         \textsc{3sg=new=3} water=\textsc{acc} boil-\textsc{ipfv} worm be=\textsc{appr}   \\
+    \glt subordinate analysis: `He is boiling water lest there be germs.' \\*
+    paratactic analysis: `He is boiling water. There might be germs.'
+    \ex \label{notboiling}
+    \gll  Tise=ta=tsû tsakhû=ma guathian-'jen=mbi {\ob}iyufa jin=sa'ne.{\cb} \\
+          \textsc{3sg=new=3} water=\textsc{acc} boil-\textsc{ipfv=neg} worm be=\textsc{appr}   \\
+    \glt subordinate analysis: `He is not boiling water lest there be germs. (He is boiling it for chicha.)' \\*
+    paratactic analysis: \#`He is not boiling water. There might be germs.'
+\end{exe}
+    
+Second, the subordinate status of the undesirable outcome \ai{=sa'ne}{appr} clauses is corroborated by strict-verb finality (\ref{posverbfinalprec})--(\ref{negverbnonfinalprec}).
+\begin{exe}
+    \ex\label{posverbfinalprec}
+    \gll {\ob}ña dû'shû=ndekhû {khiphue'sû=sa'ne{\cb}} sema-'jen.    \\
+        \textsc{1sg} child=\textsc{plh}             {starve=\textsc{appr}}      work-\textsc{ipfv} \\
+    \glt `I am working lest my children starve.'  
+    \ex\label{negverbnonfinalprec}
+    \gll \bad{\ob}Khiphue'sû=sa'ne ña {dû'shû=ndekhû{\cb}} sema-'jen.  \\
+         starve=\textsc{appr}  \textsc{1sg}      {child=\textsc{plh}}           work-\textsc{ipfv} \\
+    \glt intended: `I am working lest my children starve.'
+\end{exe}
+
+Third, we find that second-position subject clitics in the apprehension-causing clause are ungrammatical (\ref{negcliticprec}). In sum, precautioning \ai{=sa'ne}{appr} clauses display all of the major syntactic and semantic properties associated with A'ingae subordinate clauses more generally.
+    \ea \label{negcliticprec}
+    \gll \bad{\ob}ña dû'shû=ndekhû {\rm\{}=ngi, =tsû{\rm\}} {khiphue'sû=sa'ne{\cb}} sema-'jen.    \\
+        \textsc{1sg} child=\textsc{plh} {\rm\{}\textsc{=}1, \textsc{=}3{\rm\}}   {starve=\textsc{appr}}      work-\textsc{ipfv} \\
+    \glt intended: `I am working lest my children starve.'  
+    \z
+
+In addition, the apprehensional clitic \ai{=sa'ne}{appr} is paradigmatically related to and in complementary distribution with other subordinating enclitics in the language (same subject \emph{=pa} `\textsc{ss}', different subject \emph{=si} `\textsc{ds}', frustrative \emph{='ma} `\textsc{frst}', and locative \emph{='ni} `\textsc{loc}') in that it combines with subject number {\textsc{num},} modal {\textsc{mod},}\footnote{{The semantic effect of coupling the apprehensional \ai{=sa'ne}{appr} with the irrealis \ai{=ya}{irr}{} is not clear (\ref{yasane}). If any, the difference is likely very subtle.}
+    \ea \label{yasane}
+    \gll In'jan=ngi panza\textup{(}=ya\textup{)}=sa'ne. \\
+         think\textsc{=1} hunt(=\textsc{irr})\textsc{=appr}\\
+    \glt `I'm thinking (what to do) so that he doesn't kill it.'
+    \z 
+} and polarity {\textsc{pol}} clitics to its left; and topic {\textsc{top}} and focus {\textsc{foc}} clitics to its right, as shown in \autoref{templatefragment}.
+    
+The apprehensional clitic \ai{=sa'ne}{appr} differs from the infinitive clitic \emph{=ye} `\textsc{inf}', which does not combine with modal {\textsc{mod}} and polarity {\textsc{pol}} clitics. The infinitive clitic \ai{=ye}{inf}{} creates purpose clauses (\ref{purposecl}), subject argument clauses, % (\ref{subjectarg}),
+or object argument clauses when selected for by matrix verbs.
+    \ea \label{purposecl} % 17TK39
+    \gll Yaje=ma kû'i=pa {\ob}tse='an fi'thi=ye.{\cb} \\
+         ayahuasca=\textsc{acc} drink=\textsc{ss} \textsc{ana=\textsc{pej}.acc} kill=\textsc{inf} \\
+    \glt `They drank ayahuasca to kill it.'
+    \hfill (\texttt{20170807\_tshararukuku\_RJCL}: {\textsc{39}})
+    \z 
+
+Finally, the apprehensional clitic \ai{=sa'ne}{appr} also stands apart from matrix clausal clitics, \ie the veridical \ai{='ya}{ver}{} and the four directive clitics, which include the three poorly understood imperative clitics \ai{ja}{=imp}, \ai{=kha}{imp2}, and \ai{='se}{imp3}, and the prohibitive \ai{=jama}{proh}. The matrix-clausal clitics do not combine with the topic {\textsc{top}} and focus {\textsc{foc}} clitics.
+
+\iffalse
+
+Lastly, \ai{=sa'ne}{appr} is paradigmatically distinct from the nominal subordinator \ai{='chu}{sbrd}, which creates argument clauses (\ref{sbrdobject}), attribute clauses (\ref{sbrdattribute}), as well as perfective clauses when attached to the matrix verb (\ref{sbrdpredicate}).
+\begin{exe}
+    \ex \label{sbrdobject} % 17DD72
+    \gll Paña=ña           {\ob}tise    dûshû=n'dekhû ina-jen='chu=ma.{\cb}\\
+         understand=\textsc{ver} \textsc{3sg} child=\textsc{plh}  cry-\textsc{ipfv=sbrd=acc}   \\
+    \glt  `He realized his children were crying.'
+    \hfill (\texttt{20170803\_dyandyaccu\_LC}: {\textsc{72}})
+    \ex \label{sbrdattribute} % 17AC147
+    \gll {{\ob}Khe='chu{\cb}} {año=ma=ngi}    {kunda}. \\
+         {err=\textsc{sbrd}}     {year=\textsc{acc=1}} {let know}  \\
+    \glt `I'm saying it's the year that's wrong.' \\
+    \hfill (\texttt{20170801\_autobiography\_CLC}: {\textsc{147}})
+    \ex \label{sbrdpredicate}
+    \gll {\ob}Ke=ta=ti=ki escuela=nga ka'ni=chu.{\cb} \\
+         \textsc{2sg=new=int=2} school=\textsc{dat} enter=\textsc{sbrd}   \\
+    \glt `Have you started school?'\footnote{Alternatively, \textit{\eq'chu} `{\textsc{sbrd}'} may be a subordinator here if the sentence is analyzed as 'Are you someone who started school?'}
+    \hfill (\texttt{20170801\_autobiography\_CLC}: {\textsc{35}})
+\end{exe}
+
+\fi
+
+In terms of linear order, the apprehension-causing \ai{=sa'ne}{appr} clauses can appear before or after preemptive clauses (\ref{sanefirst})--(\ref{sanelast}).
+\begin{exe}
+    \ex \label{sanefirst} % \src{sinangoe\_2019}
+    \gll {\ob}ña    chan=ma    iyikha'ye=sa'ne{\cb}=ngi shu'khaen. \\
+         \textsc{1sg} mother=\textsc{acc} annoy=\textsc{appr=1} cook \\
+    \glt `I cooked so that my mother does not get mad.'
+    \ex \label{sanelast}
+    \gll Ka'shi=ngi apishu'thu=ma {\ob}chan   ña=ma    iyû'û=sa'ne.{\cb} \\
+         wash=\textsc{1}  dish=\textsc{acc}   mother \textsc{1sg=acc} scold=\textsc{appr} \\
+    \glt `I washed the dishes so that my mother does not scold me.'
+\end{exe}
+
+\largerpage
+The content of the apprehension-causing \ai{=sa'ne}{appr} clauses contributes to the sentence's main point, \ie is \textit{at-issue} content in the sense of \citet{simons2010projects} and related work. This is demonstrated by showing that it can be directly dissented to (\ref{embeddingundernegation2}). The embeddability of \ai{=sa'ne}{appr} clauses further supports their at-issueness. The at-issueness was illustrated with negation above (\ref{notboiling}). In (\ref{antecedentembedding}), it is illustrated with the antecedent of a conditional clause (cf.\ \citealt{tonhauser2012diagnosing}).
+    \begin{exe} 
+        \ex \label{embeddingundernegation2} \begin{xlist}
+            \exi{A:}
+            \gll Tise=ta=tsû tsa'khû=ma guathian-'jen {\ob}iyufa jin=sa'ne.{\cb}  \\
+                 \textsc{3sg=new=3} water=\textsc{acc} boil-\textsc{ipfv} worm be=\textsc{appr}    \\
+            \glt {`He is boiling water in case there are germs.'}
+            \exi{B:}
+            \gll  Me'in guathian-'jen=tsû {\ob}kûnapecha=ma mandyi=ye.{\cb}  \\
+              no boil-\textsc{ipfv=3} chicha=\textsc{acc} squeeze=\textsc{inf}  \\
+            \glt `No, he's boiling it for chicha.'
+        \end{xlist}
+        \ex \label{antecedentembedding}
+    \gll {\ob}{\ob}Iyufa {jin=sa'ne{\cb}} tayu tsa'khû=ma {gua'thian='chu=ni{\cb}} khase gua'thian=ñe injienge=mbi. \\
+         worm be=\textsc{appr} already water=\textsc{acc} boil=\textsc{sbrd=loc} again boil=\textsc{inf}     {be important=\textsc{neg}} \\
+    \glt {`If the water has already been boiled in case there are germs, there is no reason to boil it again.'}
+    \end{exe}
+
+Lastly, the undesirability of the apprehension-causing \ai{=sa'ne}{appr} clauses is uniformly subject-oriented. In (\ref{agressor}), the judges of undesirability are the invadees (the subject), not the invaders (the speaker). In (\ref{likerain}), rain is undesirable to the elder (the subject), not the speaker, who overtly expresses his contrary preference.
+\begin{exe}
+    \ex \label{agressor}
+    \gll Tise'pa putaen'gu=ma am'bian='fa {\ob}ingi ja='fa=sa'ne.{\cb} \\
+    they rifle=\textsc{acc} have=\textsc{pls} we go=\textsc{pls=appr} \\
+    \glt `They got their shotguns ready in case we come.'
+    \ex \label{likerain}
+    \gll ûn'jin tûi=ye=ngi in'jan tsa'ma kuenza yaje=ma kûi {\ob}ûn'jin tûi=sa'ne.{\cb} \\
+    rain splash=\textsc{inf=1} want but elder ayahuasca=\textsc{acc} drink rain splash=\textsc{appr} \\
+    \glt `I want it to rain, but the elder drank yaje so that it does not rain.'
+\end{exe}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PRECAUTIONING SUBFUNCTIONS %%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Avertive and `in-case' subfunctions} \label{sec:precautioningsubfunctions}
+
+The apprehensional clitic \ai{=sa'ne}{appr} used in a precautioning fashion displays the two typologically attested subfunctions: \textit{avertive}, with the preemptive clause expressing an action undertaken to avoid the event expressed in the apprehension-causing clause, and \textit{`in-case'}, with the preemptive clause expressing an action undertaken to avoid the {undesirable} consequences of the event expressed in the ap\-pre\-hen\-sion-causing clause. Both readings are available with agentive verbs (\ref{avertiveagent})--(\ref{incaseagent}), non-agentive verbs (\ref{avertnonagent})--(\ref{incasenonagent}), as well as weather verbs (\ref{avertweather})--(\ref{incaseweather}).
+\begin{exe}
+    \ex \label{avertiveagent}
+    \gll Ka’shi=ngi apishu’thu=ma       {\ob}chan    ña=ma       iyû’û=sa’ne.{\cb} \\
+             wash=\textsc{1} dishes=\textsc{acc}  mother  \textsc{1sg=acc} scold=\textsc{appr} \\
+    \glt `I washed the dishes so that my mother does not scold me.'
+    \ex \label{incaseagent}
+    \gll Putaen'gu=ma am'bian {\ob}tetete=ndekhû ji='fa=sa'ne.{\cb} \\
+         rifle=\textsc{acc} have    Tetete=\textsc{plh} come=\textsc{pls=appr} \\
+    \glt `I got my rifle ready in case the Tetetes come.'
+    \ex \label{avertnonagent}
+    \gll Upûi=ngi {\ob}cha'ndi'sû=sa'ne.{\cb} \\
+         {cover up}\textsc{=}1 {be.cold=\textsc{appr}} \\
+    \glt `I covered myself so that I don't get cold.'
+    \ex \label{incasenonagent}
+    \gll Vasûi=ngi    tsûi  {\ob}iyu     khûi=sa'ne.{\cb} \\
+         slowly=\textsc{1}   walk    snake   lie=\textsc{appr} \\
+    \glt `I walked slowly in case snakes be there.'
+    \ex \label{avertweather}
+    \gll Kuenza=ja yaje=ma            kû'i {\ob}ûnjin tûi=sa'ne.{\cb} \\
+         old=\textsc{cntr} ayahuasca=\textsc{acc} drink  rain    splash=\textsc{appr} \\
+    \glt `The elder drank ayahuasca for rain not to come.'\footnote{Felicitous weather-averting scenarios often implicate shamanic training.}
+    \ex \label{incaseweather}
+    \gll Chaketa=ma=ngi     undikhû {\ob}ûnjin tûi=sa'ne.{\cb} \\
+         jacket=\textsc{acc=1}   don       rain    splash=\textsc{appr} \\
+    \glt `I put on a jacket in case it rains.'
+\end{exe}
+
+Undesirability associated with the precautioning \ai{=sa'ne}{appr} clauses is conventional (semantic). The avertive \ai{=sa'ne}{appr} clauses might contain predicates of negative (\ref{lestgetmad}), neutral (\ref{avertiveneutral}), or positive (\ref{lestlaugh}) emotional connotation, though the subject of the matrix clause is always presented by the speaker as being the judge of the undesirability of the prospective situation expressed by the avertive \ai{=sa'ne}{appr} clause (or the larger situation containing it in the `in-case' use). This distinguishes the `in-case' precautioning uses from the ostensibly similar English \textit{in case} construction, which need not have any {undesirability} associated with it.\footnote{The apparent similarity between the `in-case' function of the A'ingae \ai{=sa'ne}{appr} and the English \textit{in case} is equivocal. On one hand, English \textit{in case} constructions need not involve undesirability (\ref{incase}), which would mean that their semantics extends beyond apprehension. On the other hand, as observed by Eva Schultze-Berndt, they admit avertive semantics in some (though not all) dialects (\ref{cup}), which might testify to a permeability between the avertive and `in-case' functions.
+    \begin{exe}
+        \ex \label{incase} \textit{I will be happy in case I win the lottery}.
+        \ex \label{cup} \textit{I put the mug out of reach in case I knock it over}.
+    \end{exe}
+{We remain agnostic about the status of English \textit{in case} pending further evidence.}}
+\begin{exe}
+    \ex \label{lestgetmad} % \src{sinangoe\_2019}
+    \gll {\ob}ña    chan=ma    iyikha'ye=sa'ne{\cb}=ngi shu'khaen. \\
+         \textsc{1sg} mother=\textsc{acc} annoy=\textsc{appr=1} cook \\
+    \glt `I cooked so that my mother does not get mad.'
+    \ex \label{avertiveneutral}
+    \gll Jûnde ja {\ob}tise faengae ji=sa'ne.{\cb} \\
+         soon  go \textsc{3sg} together come=\textsc{appr} \\
+    \glt `I hurried up to leave so that he doesn't come with us.'
+    \ex \label{lestlaugh} 
+    \gll Pûshesû tsû tsandie aya'fa=ma     phikhu {\ob}feña=sa'ne.{\cb} \\
+         woman       \textsc{3}     man     mouth=\textsc{acc} cover  laugh=\textsc{appr} \\
+    \glt `She covered his mouth so that he does not laugh.'
+\end{exe}
+
+Likewise, the `in-case' \ai{=sa'ne}{appr} clauses may appear with verbs of negative (\ref{bittenbyasnake}), neutral (\ref{alcohol}), or positive (\ref{isane})--(\ref{jifasane}) emotional connotation. When the situation referred to by the \ai{=sa'ne}{appr} clause is unambiguously positive, only `in-case' readings are pragmatically available, \ie ones in which a larger potential situation including that described is deemed undesirable. {For example, my father bringing home the tapir and there being no hot water in (\ref{isane}) or my friends coming and the house being dirty in (\ref{jifasane}).}\footnote{{In many cases, this larger situation can be trivially thought of as a union of the \ai{=sa'ne}{appr} clause and the negation of the matrix clause. Nevertheless, hardwiring that into the semantics of \ai{=sa'ne}{appr} clauses would miss the intuition that there are many things the agent can do to avoid the undesirable outcome. In other words, the undesirable situation in (\ref{isane}) is not that of one's father bringing home a tapir and water not having been boiled, but rather that of having to deal with a decaying tapir. The latter, in turn, can be addressed via a multiplicity of means, e.g.\ by boiling water, making fire, sharpening knives, etc.}}
+\begin{exe}
+    \ex \label{bittenbyasnake} % \src{sinangoe\_2019}
+    \gll Seje'pa=ma=ngi      tsun-'jen  {\ob}ña    dû'shû iyu=nga       tsei-ye=sa'ne.{\cb} \\
+         medicine=\textsc{acc=1}  do-\textsc{ipfv} \textsc{1sg} child      snake=\textsc{dat} {bite-\textsc{pass=appr}} \\
+    \glt `I'm preparing medicine in case my son gets bitten by a snake.'   
+    \ex \label{alcohol}
+    \gll Jayi=mbi=ngi      fiesta=nga    {\ob}tsetse'pa jin=sa'ne.{\cb} \\
+         go.\textsc{prsp=neg=1} party=\textsc{dat} alcohol   be=\textsc{appr} \\
+    \glt `I'm not going to the party in case there is alcohol.'
+    \ex \label{isane} % \src{sinangoe\_2019}
+    \gll Tsa'khû=ma=ngi guathian-'jen {\ob}ña    yaya   khuvi=ma      i=sa'ne.{\cb} \\
+         water=\textsc{acc=1}  boil-\textsc{ipfv}  \textsc{1sg} father tapir=\textsc{acc} bring=\textsc{appr} \\
+    \glt `I am boiling water in case my father brings a tapir.'
+    \ex \label{jifasane} % \src{sinangoe\_2019}
+    \gll Tsa'u=ma=ngi    giyaen-'jen   {\ob}faengasû=ndekhû ji='fa=sa'ne.{\cb} \\
+         house=\textsc{acc=1} clean-\textsc{ipfv} friend=\textsc{plh}      come=\textsc{pls=appr} \\
+    \glt `I am cleaning my house in case my friends come.' 
+\end{exe}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% NEGATIVE PURPOSE CLAUSES %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Precautioning and negative purpose clauses} \label{sec:comparison}
+
+We define \textit{purpose clauses} as adjuncts that express the purpose of the action given by the matrix clause. In doing so, we deviate from the definition used in some previous literature (see Footnote \ref{fn:repeat}). English has several constructions capable of expressing purpose semantics (\ref{huntjaguar}).
+    \ea \label{huntjaguar}
+    \glt \textit{I took a rifle \textup{\{}to, in order to, so as to\textup{\}} hunt a jaguar}.
+    \z 
+    
+In A'ingae, positive purpose clauses are most typically introduced with the infinitive clitic \ai{=ye}{inf}{}~(\ref{purpclause}).
+    \ea \label{purpclause} % 17ES 194
+    \gll Ciendo  dolar=khû=ki  ja=ya      Lago=ni            {\ob}chava=ye.{\cb} \\
+         hundred dollar=\textsc{inst=}2 go=\textsc{irr} {Lago Agrio}=\textsc{loc} buy=\textsc{inf} \\
+    \glt `You're going to Lago Agrio with \$100 to buy something.' \\*
+    \hfill (\texttt{20170801\_escuela\_CLC}: {\textsc{194}})
+    \z 
+
+The subjects of the matrix and subordinate purpose clauses may or may not be the same (\ref{yesamesubject})--(\ref{yedifferentsubject}); if no subject is overtly given in the purpose clause, it is interpreted as co-referential with the subject of the matrix clause (\ref{yesamesubject}). 
+\begin{exe}
+    \ex \label{yesamesubject}
+    \gll Sema-'je=ngi    {{\ob}\rm(}ña{\rm)}   ankhe'sû=ma a'mbian=ñe.{\cb} \\
+         work-\textsc{ipfv=1} \textsc{1sg} food=\textsc{acc}   have=\textsc{inf} \\
+    \glt `I am working to have food.'
+    \ex \label{yedifferentsubject}
+    \gll Sema-'je=ngi    {\ob}dû'shû  ankhe'sû=ma a'mbian=ñe.{\cb} \\
+         work-\textsc{ipfv=1} children    food=\textsc{acc}   have=\textsc{inf} \\
+    \glt `I am working so that my child can have food.'
+\end{exe}
+
+There is, to a large extent, semantic parallelism between \emph{=ye} `\textsc{inf}' and \sane[:] the infinitival \emph{=ye} `\textsc{inf}' purpose clauses are the positive counterpart to the avertive \ai{=sa'ne}{appr} clauses; the purpose \ai{=ye}{inf}{} clauses express a desirable outcome which is intended to be brought about by the matrix clause, whereas the avertive \ai{=sa'ne}{appr} clauses express the apprehension-causing situation that is supposed to be forestalled by the matrix clause.
+
+This parallelism may be the reason why \citet{fischerhengeveld} gloss \emph{=sa'ne} as a negative purpose clause clitic `\textsc{neg.purp}'. Yet, although one function of the clitic \ai{=sa'ne}{appr} is to head negative purpose clauses, this does not capture its versatility, as it can also head precautioning `in-case' clauses, complements of certain verbs (\S\ref{sec:complementizerfunction}), and timitive adjuncts (\S\ref{sec:timitivefunction}). % \textsc{ott}{fear complements too, yeah?}
+A better candidate for a properly negative purpose operator is the complex \ai{=mbe kañe}{neg.adv aux.inf} with exclusively avertive semantics.
+    
+The complex operator \ai{=mbe kañe}{neg.adv aux.inf} provides a periphrastic means by which to express a combination that violates the syntactic restrictions on clitic co-occurrence discussed above. As shown in \autoref{templatefragment}, the infinitive clitic \emph{=ye} `\textsc{inf}' does not combine with the negative polarity clitic \emph{=mbi} `\textsc{neg}' (\ref{negmbiye}).
+    \ea \label{negmbiye} % sinangoe 2019
+    \gll \bad Sema-'je=ngi    {\ob}vana=mbi=ye.{\cb}\\
+          work-\textsc{ipfv=1}  suffer=\textsc{neg=inf} \\
+    \glt intended: `I'm working to not be in trouble.'
+    \z
+
+\hspace*{-1.8pt}The dummy auxiliary verb \emph{kan} `\textsc{aux}' originates as a lexical verb \emph{kan} `watch'~(\ref{watch1}) and simultaneously functions as a productive modal auxiliary of tentative (\ie `try') semantics (\ref{try}). Nevertheless, its use in the complex construction \ai{=mbe kañe}{neg.adv aux.inf} is distinct from the other two, as evidenced by the fact that encoding an infinitival negative tentative (\ie `not to try') requires employing both the tentative \emph{kan} `try' and the auxiliary \emph{kan} `\textsc{aux}' (\ref{kankan}).
+\begin{exe}
+    \ex \label{watch1}
+    \gll %jenda tayu    ke     faesû=ma       ambianchupa=ma=nda=tsû
+    Ke=ma      kan=ña=mbi. \\
+         %then  already \textsc{2sg} other=\textsc{acc} lover=\textsc{acc}=new=3
+    \textsc{2sg=acc} look=\textsc{irr=neg} \\
+    \glt  `He is not going to look for you.'
+    \hfill (\texttt{20170731\_attembi\_a'i}: {\textsc{18}})
+    \ex \label{try}
+    \gll Me'in ña an kan=mbi=ngi ña.\\
+         no    \textsc{1sg} eat try=\textsc{neg=}1 \textsc{1sg}\\
+    \glt `No, I have not tried it.' 
+    \hfill (\texttt{20170801\_fishing\_CLC}: {\textsc{22}})
+    \ex \label{kankan}
+    \gll In'jan=ngi panza kan=mb=e kan=ñe.   \\
+         want\textsc{=}1  hunt  try=\textsc{neg=adv} \textsc{aux=inf}  \\
+    \glt `I want not to try to hunt.'
+\end{exe}
+    
+In forming \ai{=mbe kañe}{neg.adv aux.inf}, \emph{=mbi} `\textsc{neg}' is first combined with \emph{=e} `\textsc{adv}' to yield the negative adverbial clitic \emph{=mbe} `\textsc{neg.adv}'. Aside from the periphrastic negative purpose clauses to be discussed, \emph{=mbe} `\textsc{neg.adv}' is used to form negative circumstance clauses, as shown in (\ref{mbe}).
+    \ea \label{mbe} % 17CC 206
+    \gll Tsa'kan=nda {{\ob}u⟨'⟩ya=mb=e{\cb}}          dyai=ye. \\
+         thus=\textsc{new} move⟨\textsc{plv}⟩\textsc{=neg=adv} sit=\textsc{inf} \\
+    \glt `Then I will sit still.'\\
+    \hfill (\cite{fischerhengeveld}; \texttt{20170801\_cuiccu\_chicha\_ARLQ}: {\textsc{206}})
+    \z 
+    
+Second, the auxiliary \emph{kan} `\textsc{aux}' combines with the negative adverbial clause. The dummy verb is there to carry the infinitive clitic \emph{=ye} `\textsc{inf}', which conveys the purpose semantics.
+    
+The complex operator % \textsc{ott}{complex operator? I don't quite know what composite means here}
+\ai{=mbe kañe}{neg.adv aux.inf} 
+is used to create negative purpose clauses proper. {Negative purpose \emph{=mbe kañe} `\textsc{=neg.adv aux.inf}' clauses have the same interpretation as the avertive \ai{=sa'ne}{appr} clauses. This is to say, in (\ref{avertivecomparison}), the meaning is the same regardless of whether \textit{ansa'ne} %  {`eat=\textsc{appr}'}
+or \textit{ambe kañe} % `{eat=\textsc{neg=\allowbreak} adv aux=\allowbreak inf}'
+is used. The uses of the operator \ai{=mbe kañe}{neg.adv aux.inf} are limited to the avertive.}
+    \ea \label{avertivecomparison}
+    \gll Putaen'gu=ma=ngi am'bian {\ob}thesi  ña=ma     {\rm\{}an=sa'ne,     an=mb=e          {kan=ñe.{\rm\}}{\cb}} \\
+         rifle=\textsc{acc=1}  have    jaguar \textsc{1=acc} \{eat=\textsc{appr},      eat=\textsc{neg=adv} {\textsc{aux=inf\}}} \\
+    \glt `I have a rifle so that a jaguar does not eat me.'
+    \z 
+
+Negative purpose \emph{=mbe kañe} `\textsc{=neg.adv aux.inf}' clauses and precautioning \emph{=sane} `\textsc{appr}' clauses diverge in contexts where \ai{=sa'ne}{appr} clauses receive `in-case' readings. Compare (\ref{isane})--(\ref{jifasane}) with the pragmatically aberrant (\ref{imbekane})--(\ref{jifambekane}), whose infelicity is readily signalled by native speakers.
+\begin{exe}
+    \ex[\#]{ \label{imbekane} % \src{sinangoe\_2019}
+    \gll  Tsa'khû=ma=ngi guathian-'jen {\ob}ña   yaya   khuvi=ma     i=mb=e           {kan=ñe.{\cb}} \\
+         water=\textsc{acc=1}   boil-\textsc{ipfv}  \textsc{1sg} father tapir=\textsc{acc} bring=\textsc{neg=adv} {\textsc{aux=inf}} \\
+    \glt \#`I am boiling water so that my father does not bring a tapir.'
+    }
+    \ex[\#]{ \label{jifambekane} % \src{sinangoe\_2019}
+    \gll  Tsa'u=ma=ngi   giyaen-'jen    {\ob}faengasû=ndekhû ji='fa=mb=e         {kan=ñe.{\cb}} \\
+         house=\textsc{acc=1} clean-\textsc{ipfv} friend=\textsc{plh}       come=\textsc{pls=neg=adv} {\textsc{aux=inf}} \\
+    \glt \#`I am cleaning my house so that my friends do not come.'
+    }
+\end{exe}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% PRECAUTIONING FUNCTION ANALYSIS %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Relating the subfunctions} \label{sec:relating}
+
+With two precautioning strategies, one capable of expressing both precautioning subfunctions (\sane), the other restricted to the avertive subfunction (\ai{=mbe kañe}{neg.adv aux.inf}), A'ingae parallels To'aba'ita exactly \citep{lichtenberk1995apprehensional}. To'aba'ita's first strategy involves the apprehensional conjunction \ai{ada}{appr}, analogous to \ai{=sa'ne}{appr} (\ref{ada}). Its second strategy involves the purpose clause conjunction \ai{fasi}{purp}, which in combination with a grammatically negative clause yields negative purpose semantics (\ref{fasi}).
+
+\newpage
+\begin{exe}
+    \ex \label{ada}
+    \langinfo{To'aba'ita}{Austronesian}{\citealt[ex.\ (12), glossing simplified]{lichtenberk1995apprehensional}} \\
+    \gll Nau ku agwa 'i buira  fau  ada {\ob}wane 'eri ka riki nau.{\cb} \\
+         I  I:\textsc{fact}      hid  at behind rock \textsc{appr} man that he see me \\
+    \glt `I hid behind a rock so that the man might not see me.'
+    \ex \label{fasi}
+    \langinfo{To'aba'ita}{Austronesian}{\citealt[ex.\ (17), glossing simplified]{lichtenberk1995apprehensional}} \\
+    \gll Ngali-a kaleko 'aa'ako {\ob}fasi 'osi gwagwari 'afa rodo.{\cb} \\
+         take-them   clothes warm \textsc{purp} you.\textsc{neg} {be cold} at night \\
+    \glt `Take warm clothes so that you are not cold at night.'
+\end{exe}
+    
+Discussing the two precautioning strategies in To'aba'ita, \citet{lichtenberk1995apprehensional} raises the question of how the avertive and `in-case' subfunctions are related. Having considered ambiguity and polysemy, he concludes that they are polysemous (``semantically rather than pragmatically ambiguous'', p. 302), thus granting the two uses equal status. His three main pieces of evidence for the avertive and the `in-case' functions being ``conceptually distinct from each other'' (p.~302) are: % \cite{lichtenberk1995apprehensional} bases his argument on are:
+
+\begin{quote}
+(a) that an element used to encode negative purpose need not have an `in-case' function; (b) that there is a formal difference between negative-purpose and `in-case' clauses in at least one language; and (c) that there are differences in paraphrase possibilities between negative-pur\-pose and `in-case' clauses \citep[302]{lichtenberk1995apprehensional}.
+\end{quote}
+
+The idea that avertive and `in-case' clauses have equal status, with morphemes like A'ingae \ai{=sa'ne}{appr} and To'aba'ita \ai{ada}{appr}{} simply being ambiguous between the two, cannot be rejected without a more thorough typology. There are, however, reasons for skepticism. First, we can note that the one language with a formal difference between negative-purpose and `in-case' clauses \citet{lichtenberk1995apprehensional} references is Martuthunira, where both avertive and `in-case' uses deploy the same apprehensional morpheme, \ai{-wirri}{appr}{,} and differ only in that the avertive use combines with an accusative \ai{-i}{acc}{} case marker, whereas the `in-case' use combines with a locative \ai{-la}{loc}{} case marker or no case marker at all \citep{dench1988complex}. Without a more detailed understanding of case marking in Martuthunira, then, it is not clear how precisely to interpret this data.
+
+More generally, there appears to be an asymmetry in the attested precautioning morphemes. While we find a number of elements like A'ingae \ai{=sa'ne}{appr}\pagebreak and To'aba'ita \ai{ada}{appr}, which have both uses, as well as elements like A'ingae \ai{=mbe kañe}{neg.adv aux.inf} and To'aba'ita \ai{fasi}{purp}, which only have avertive uses, we are not aware of precautioning morphemes which only have the `in-case' use, but cannot be used in avertive cases as well.\footnote{{Another component distinguishing between the avertive and `in-case' functions proposed in the previous literature, as Eva Schultze-Berndt (p.c.) observes, is that of control of the main clause subject over avoiding the event encoded by the precautioning clause. In the avertive uses, the subject has control over the precautioning clause, while in the `in-case' uses, the subject need not have control over the precautioning clause. Observe that this is not the case in A'ingae, as `in-case' precautioning readings are available even when the subject has full control over whether the events in the \ai{=sa'ne}{appr} clause take place (\ref{gotoforest}).}
+\begin{exe}
+    \ex \label{gotoforest}
+    \gll \textit{Tise} \textit{tsû} \textit{am'bian} \textit{putaen'gu=ma} {\ob}\textit{tsampi=ni} \textit{ja=sa'ne.}{\cb} \\
+    (s)he \textsc{3} have rifle=\textsc{acc} forest=\textsc{loc} go=\textsc{appr} \\
+    \glt `He\textsubscript{$x$} got his shotgun in case he\textsubscript{$x$} goes hunting.'
+\end{exe}}
+
+In contrast to \citet{lichtenberk1995apprehensional} and what seems to have been at least implicitly assumed in subsequent literature, we have at times above discussed the two uses in a somewhat different, asymmetrical way which we make explicit here. In our analysis, the situation denoted by the \ai{=sa'ne}{appr} clause is contained within a possible undesirable situation which is contextually salient or otherwise recoverable. If the containment is proper (\ie the undesirable situation contains, but is not identical to the argument of \sane), the `in-case' function obtains. For example, this is the case in (\ref{incaseagent}), where the arrival of the Teteté is contained within a larger undesirable situation (the Teteté coming and killing the subject). If the containment is improper (\ie the undesirable situation is identical to the argument of  \sane), the avertive function obtains. This is, for example, the case in (\ref{avertiveagent}), where the undesirable situation of being scolded by one's mother is encoded in the \ai{=sa'ne}{appr} clause. In short, elements like A'ingae \ai{=sa'ne}{appr} require a salient undesirable situation containing the one they introduce, whereas elements like A'ingae \ai{=mbe kañe}{neg.adv aux.inf} require the situation they introduce itself to be undesirable.
+
+Since the situation explicitly stated in the \ai{=sa'ne}{appr} clause is necessarily salient, this approach therefore captures the apparent typological asymmetry between the avertive and `in-case' uses. Moreover, it illuminates why the two subfunctions are expressed in the same way in so many languages in a way that the `ambiguity' account does not. Finally, as we will argue in \S\ref{sec:timitivefunction}, the same mechanism that allows for the `in-case' uses also explains the semantics of the timitive.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% COMPLEMENTIZER FUNCTION %%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Complementizer function} \label{sec:complementizerfunction}
+
+It has been observed in previous descriptive work that the morphemes which serve apprehensional functions might also act as complementizers with verbs of fearing \citep{lichtenberk1995apprehensional, dobrushina2017fear, wiemer2018major}. We refer to this as the \emph{complementizer} function. In English, for example, \emph{lest} can be a somewhat archaic complementizer of the predicate \emph{fear} (\ref{englishfear}).
+    \ea \label{englishfear}
+    \glt I fear lest a jaguar eat me.
+    \z
+
+In To’aba’ita, complements of `fear' predicates are introduced by the apprehensional morpheme \ai{ada}{appr}{} discussed above (\ref{adafear}).
+    \ea \label{adafear}
+    \langinfo{To'aba'ita}{Austronesian}{\citealt[ex.\ (8), glossing simplified]{lichtenberk1995apprehensional}} \\
+    \gll Nau ku ma'u {'asia na'a} {\ob}ada laalae to'a baa {ki keka} lae mai keka thaungi kulu.{\cb} \\
+    I I:\textsc{fact} {be.afraid} very \textsc{appr} later people that they go hither they kill us\\
+    \glt `I am scared the people might come and kill us.'
+    \z
+    
+In A'ingae, the apprehensional clitic \ai{=sa'ne}{appr} can introduce complements of `fear' predicates as well (\ref{firstfear}).
+    \ea \label{firstfear} % 20170731_yaje2_MM 53
+    \gll Tsama ña   {{\ob}dañu=sane=khe{\cb}}         dyuju-je=ya. \\
+         but \textsc{1sg} {be.hurt=\textsc{appr=mann.dem}} {be.afraid-\textsc{ipfv=ver}} \\
+    \glt `But I didn't want to get hurt.' \hfill (\texttt{20170731\_yaje2\_MM}: {\textsc{53})} \nopagebreak\\\nopagebreak
+    literally: `But I was afraid to get hurt.'
+    \z 
+    
+Nevertheless, the formal status of the so-called `fear' complementizer uses is often far from obvious and its analysis is fraught with difficulties.
+The complement status of the apprehensional clauses when used with `fear' predicates is difficult to discern since they can also be interpreted as `in-case' precautioning uses (\ref{fearprec}). The extant literature rarely provides explicit arguments for the genuine complement status of such uses.
+    \ea \label{fearprec}
+    \glt I fear it might rain. $\approx$ I (would) fear (it) in case it rained.
+    \z 
+
+On the other hand, other researchers report apprehensional morphemes acting as complementizers of a wider range of predicates \citep{yallop1997alyawarra, francois2003semantique}. A'ingae fits in the latter category: the apprehensional \ai{=sa'ne}{appr} clauses can function as complements and their distribution is not limited to `fear' predicates. Since there are strong parallelisms between the apprehensional and the infinitival constructions, this finding is not implausible. Like the apprehensional \ai{=sa'ne}{appr} clauses, the infinitival \ai{=ye}{inf}{} clauses have both complement uses and purpose-like adjunct uses cross-linguistically, including in A'ingae. Furthermore, both clause types can be {arguments} of the switch-reference subordinating conjunction \srcn[,] possibly to the exclusion of all other clausal types.
+
+We analyze `fear' complementizer uses as involving genuine complementation and argue against the other \textit{a priori} available alternatives: the adjunct and paratactic analyses. % -- with arguments from the scope of polar and temporal operators.
+While we argue that \ai{=sa'ne}{appr} has uses as a complementizer, there are also many cases which have the superficial appearance of complements, but whose interactions with operators such as negation do not support this conclusion. {Moreover, the two categories can be distinguished on semantic grounds: \ai{=sa'ne}{appr} functions as a complementizer to verbs which have the component of undesirability and as an adjunct to verbs which do not.}
+
+To see how the alternative analyses yield incorrect meanings, first consider the case of negated `fear' predicates. Although all three paraphrases (complement, adjunct, and paratactic) are sensible semantic approximations when the polarity of the matrix clause is positive (\ref{positivecopied}), the adjunct and paratactic paraphrases fail to properly reflect the meaning of A'ingae sentences when negated~(\ref{negativecopied}).
+\begin{exe}
+    \ex \label{positivecopied}
+    \gll Ansa'nge=ngi        {\ob}ña=ma       feña=sa'ne.{\cb} \\
+         {be.ashamed=\textsc{1}} \textsc{1sg=acc} laugh=\textsc{appr} \\
+    \glt complement paraphrase: `I am afraid that he might laugh at me.'\footnotemark\\*
+         adjunct paraphrase: `I am afraid in case he laughs at me.' \\*    
+         paratactic paraphrase: `I am afraid. He might laugh at me.'
+
+\footnotetext{The semantics of the A'ingae \textai{ansa'nge} `be ashamed', `be afraid' differs from the English \textit{be ashamed} in that the English predicate takes a past or present situation but not a potential future situation as a complement. Thus, the meaning of \textai{ansa'nge} can perhaps be more adequately paraphrased as `be fearful of a situation that would cause one to feel shame.'}
+
+    \ex \label{negativecopied}
+    \gll Ansa'nge=mbi=ngi        {\ob}ña=ma       feña=sa'ne.{\cb} \\
+         {be.ashamed=\textsc{neg=1}} \textsc{1sg=acc} laugh=\textsc{appr} \\
+    \glt complement paraphrase: `I am not afraid that he might laugh at me.' \\*
+         adjunct paraphrase: \#`I am not afraid in case he laughs at me.' \\*   
+         paratactic paraphrase: \#`I am not afraid. He might laugh at me.' 
+\end{exe}
+
+
+
+The paratactic paraphrase of (\ref{negativecopied}) asserts that the speaker is not afraid\footnote{A'ingae is a pro-drop language, where most verbal complements need not be overtly expressed if they are recoverable from context. Thus, (\ref{ex:i_am}) is by itself a well-formed sentence.
+    \begin{exe}
+        \ex \label{ex:i_am}
+        \gll \textit{Ansa'nge=ngi.}  \\
+        {be.ashamed=\textsc{1}} \\
+        \glt `I am afraid/ashamed.'
+    \end{exe}}
+and that someone might laugh at them. In this paraphrase, the negation of the first clause fails to scope over the second clause, yielding incorrect semantics.
+
+The adjunct paraphrase of (\ref{negativecopied}) asserts that the speaker is not afraid with the prospect of someone else laughing at them. Importantly, it does not assert that it is being laughed at specifically that the speaker does not fear, failing to adequately capture the meaning of the sentence. Further evidence against the adjunct paraphrase will be provided below with \textit{se'pi} `prohibit' and \textit{chi'ga} `not want'. These verbs do not have sensible intransitive paraphrases (one can simply be afraid but not prohibiting or not wanting), which supports the assumption about the truth conditions here.
+
+
+
+\iffalse
+    
+The complement analysis is further supported by the high scope taken by temporal operators: if the situation of the matrix clause has past temporal reference, so does the \ai{=sa'ne}{appr} clause. This is predicted by the complement analysis, while unaccounted for by the other two (\ref{threereadings}), given that other adjunct clauses do not show such dependence in A'ingae. In the adjunct paraphrase, in particular, the expected meaning of the subordinate \ai{=sa'ne}{appr} clause is prospective or future-oriented, contrary to what we observe here. And if this meaning did characterize the subordinate \ai{=sa'ne}{appr} clause, we would expect the matrix clause (\ie the one with the `fear' predicate) to be marked for counterfactuality, irrealis modality, or future temporality, which is likewise not the case.
+    \ea \label{threereadings}
+    \gll Kani=ngi dyu {\ob}thesi=nga {mandian-ñe=sa'ne{\cb}} tsa'ma=ngi me'in {ja'ñu.} \\
+         yesterday\textsc{=}1 {be.scared} jaguar=\textsc{dat} chase-\textsc{pass=appr} but\textsc{=}1 no {today}  \\
+    \glt complement paraphrase: `Yesterday I got scared that a jaguar was chasing me. But today I am not scared anymore.' \\*
+         adjunct paraphrase: `\#Yesterday I got scared in case a jaguar is chasing me. But today I am not scared anymore.' \\*
+         paratactic paraphrase: `\#Yesterday I got scared. A jaguar might be chasing me. But today I am not scared anymore.'
+    \z 
+    
+\fi 
+
+As complements, the apprehensional \ai{=sa'ne}{appr} clauses are subordinate and pass the three subordination diagnostics introduced in \S\ref{sec:subordination}. They pass the first semantic test (\ref{positivecopied}). They pass the second test of strict verb-finality (\ref{complementfinal})--(\ref{complementnonfinal}). Lastly, they pass the third test of second-position clitic-shunning (\ref{negcliticsane}).
+
+  \begin{exe} \ex \label{complementfinal}
+    \gll {\ob}Thesi ña=ma {an=sa'ne{\cb}} dyuju. \\
+         jaguar \textsc{1sg=acc} eat=\textsc{appr} {be.afraid} \\
+    \glt `I fear the jaguar might eat me.'
+    \ex \label{complementnonfinal}
+    \gll \bad{\ob}ña=ma an=sa'ne {thesi{\cb}} dyuju. \\
+         \textsc{1sg=acc} eat=\textsc{appr} jaguar {be.afraid} \\
+    \glt intended: `I fear the jaguar might eat me.'
+    \ex \label{negcliticsane}
+    \gll \bad{\ob}ña=nda\textup{\{}=ngi, =tsû\textup{\}} tise=ma {tshai=sa'ne=tsû{\cb}} dyuju. \\
+         \textsc{1sg=new}\textup{\{}=1, \textsc{=}3\textup{\}} \textsc{3sg=acc} hit=\textsc{appr=3} {be.afraid} \\
+    \glt intended: `He's afraid I'll hit him.'
+\end{exe}
+
+As seen above, the verb \emph{ansa'nge} `be ashamed' is one verb with `fear'-like semantics which can take \ai{=sa'ne}{appr} complements. Two more such `fear'-like verbs are \emph{dyuju} `be afraid' (\ref{dyujufear}) and \emph{dyu} `be scared' (\ref{dyufear}).
+\ea \label{dyujufear} % sinangoe2019
+    \gll Dyuju=ngi   {\ob}thesi=nga      mandia-ñe=sa'ne.{\cb} \\
+    {be.afraid\textsc{=}1} jaguar=\textsc{dat} chase-\textsc{pass=appr} \\
+    \glt `I'm afraid of being chased by a jaguar.'
+    \ex \label{dyufear} % sinangoe2019
+    \gll Kani=ngi  dyu         {\ob}thesi=nga      mandia-ñe=sa'ne.{\cb} \\
+    yesterday\textsc{=}1 {be.scared} jaguar=\textsc{dat} chase-\textsc{pass=appr} \\
+    \glt `Yesterday I got scared that a jaguar would chase me.'
+\z
+
+Other verbs with negative semantics which can take \ai{=sa'ne}{appr} complements include \emph{se'pi} `prohibit', where \ai{=sa'ne}{appr} expresses the object of prohibition (\ref{sepifear}), and \emph{chi'ga} `not want' where it expresses the object of distaste~(\ref{chigafear}).
+
+    \ea \label{sepifear}
+    \gll Yaya=tsû se'pi {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 prohibit child=\textsc{plh} sit=\textsc{pls=appr}   \\
+    \glt `The father prohibited the children from sitting (in the hammock).'
+    \ex \label{chigafear} % elicitations with Hugo
+    \gll Yaya=tsû chi'ga {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 {not.want} child=\textsc{plh} sit=\textsc{pls=appr} \\
+    \glt `The father does not want the children to sit (in the hammock).'
+\z
+
+The complement status of the \ai{=sa'ne}{appr} clauses in these cases (\ref{sepifear})--(\ref{chigafear}) is corroborated by their semantics under negation (\ref{sepifearneg})--(\ref{chigafearneg}).
+    \ea \label{sepifearneg}
+    \gll Yaya=tsû se'pi=mbi {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 prohibit=\textsc{neg} child=\textsc{plh} sit=\textsc{pls=appr}   \\
+    \glt `The father did not prohibit the children from sitting (in the hammock).'
+    \ex \label{chigafearneg} % elicitations with Hugo
+    \gll Yaya=tsû chi'ga=mbi {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 {not.want=\textsc{neg}} child=\textsc{plh} sit=\textsc{pls=appr} \\
+    \glt `The father does not mind the children sitting (in the hammock).'
+\z
+    
+As such, the negatively-valenced verb \emph{chi'ga} `not want' contrasts starkly with the positively-valenced \emph{in'jan} `want, think'. While we can find sentences with \emph{in'jan} and a \ai{=sa'ne}{appr} clause, careful consideration of them shows that these are in fact adjuncts headed by `in-case' precautioning uses of \ai{=sa'ne}{appr} rather than complements. First, looking at the simple sentences, we see that -- unlike in the case of intuitively negative predicates -- the object of \emph{in'jan} is coreferential with something from prior discourse rather than the content of the \ai{=sa'ne}{appr} clause, which is reflected in back-translations (\ref{injanfear}). Second, we find a quite different interaction with negation than what we have seen above for \emph{chi'ga} `not want' (\ref{injanfearneg}). Taken together, these observations confirm that whereas \ai{=sa'ne}{appr} can serve as a complementizer for negative-valenced predicates, sentences that are superficially similar except for having a positive predicate have a quite different structure, one not involving complementation.
+    \ea \label{injanfear}
+    \gll Yaya=tsû in'jan {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 want child=\textsc{plh} sit=\textsc{pls=appr}   \\
+    \glt `The father wants it in case the children sit (in the hammock).'
+    \ex \label{injanfearneg} % elicitations with Hugo
+    \gll Yaya=tsû in'jan=mbi {\ob}dûshû=ndekhû phi='fa=sa'ne.{\cb} \\
+         father\textsc{=}3 want=\textsc{neg} child=\textsc{plh} sit=\textsc{pls=appr} \\
+    \glt `The father does not want it in case/because the children might sit (in the hammock).'
+\z
+
+To account for the complementizer uses, we propose a pathway of diachronic development from precautioning uses. In the absence of relevant historical data, we hypothesize that this development can be attributed to the pragmatic near-equality between the two uses in simple positive unembedded statements. This is to say, we observe that being afraid in case of an event is nearly equal to being afraid of that event. This, we posit, facilitated a syntactosemantic tightening of the `in-case' precautioning adjuncts into proper complements of verbs of fearing, such as \emph{dyuju} `be afraid', \emph{dyu} `be scared', and \emph{ansa'nge} `be ashamed'. Analogous reasoning applies to \emph{chi'ga} `not want' and \emph{se'pi} `prohibit'. As for the former, we observe that a distaste in case of an event is near equal to a distaste of that event; as for the latter -- that a prohibition given lest an event occur is near equal to a prohibition of that event.
+
+Our account is thus close to that of \citegen{lichtenberk1995apprehensional} account of To'aba'ita's analogous data. In relating the complementizer function to other apprehensional functions, \citet[305]{lichtenberk1995apprehensional} observes that ``[a]n undesirable future situation is likely to be feared'' and proposes that ``[t]hrough this metonymy, \textit{ada} clauses began to be embedded under predicates of fearing.'' Our proposal, however, goes beyond \citegen{lichtenberk1995apprehensional} in that it extends to other verbs of negative emotional valence (\ie \emph{chi'ga} `not want' and \emph{se'pi} `prohibit') and provides syntactosemantic tests for the genuine complement status of this function.\footnote{Given the range of predicates which we find take \ai{=sa'ne}{appr} complements in A'ingae, we might wonder whether \citegen{lichtenberk1995apprehensional} characterization of the To'aba'ita data in terms of `fear' specifically is correct, or whether there too, we might find other negative desire predicates in this category. If not, some further explanation would seem to be needed since undesirable future situations are not only feared, but also likely not wanted, or prohibited.}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TIMITIVE FUNCTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Timitive function} \label{sec:timitivefunction}
+
+A third apprehensional function proposed in previous literature is the \emph{timitive}. The timitive function picks out a noun phrase that refers to a feared entity and relates it to the matrix-clausal situation triggered by the feared entity. Since timitive morphemes prototypically attach to NPs, this function is sometimes referred to as the timitive case marker or adposition \citep{vuillermet2018a, VuillermetM2018questionnaire}. Timitive phrases can function as either adjuncts or arguments. When they convey non-essential information, they are understood to be adjuncts. When they are selected for by verbs of `fearing' (and other negative verbs), they are understood to be arguments. Although there is no dedicated timitive morphology in English, the timitive can often be approximated with the periphrastic \emph{for fear of} (\ref{forfear}).
+    \ea \label{forfear}
+    \glt \textit{I ran for fear of the jaguar}.
+    \z
+
+In A'ingae, \ai{=sa'ne}{appr} can attach to nominal phrases in the function of a timitive, although it appears quite rarely in naturalistic speech (\ref{naturaltim}).
+    \ea \label{naturaltim} % 17GM 34
+    \gll Tuyakaen ña     ambian setsani=da=tsû     jin=ña  ña=mbe   ushachu,   {{\ob}ayafakhupi=sane{\cb}}      kûpakhu. \\
+         and      \textsc{1sg} have   downriver=\textsc{new=}3 be=\textsc{ver} \textsc{1=ben} everything {mouth.sore=\textsc{appr}} {prayer.plant} \\
+    \glt `I have prayer plant downriver [at my old house] in case of mouth sores.' \\*
+    \hfill (\texttt{20170803\_garden\_medicinal\_plants\_LC}: {\textsc{34}})
+    \z
+
+As discussed by \citet{vuillermet2018a}, there appears to be considerable cross-lin\-guis\-tic variation with respect to the semantic properties of the timitive. For example, the timitive in Ese Ejja does not require that the feared entity be avoided \citep{vuillermet2018a}, while the analogous morpheme in Marrithiyel does \citep{green1989marrithiyel}. In Ese Ejja, stand-alone uses of the timitive are not attested \citep{vuillermet2018a}, while in Manambu, they are \citep{aikhenvald2008manambu}. It is therefore desirable to outline the parametrization of the A'ingae timitive, which we will later relate to other uses of \sane.
+    
+To begin with, the timitive \ai{=sa'ne}{appr} can combine with non-human entities such as weath\-er conditions (\ref{nonhumantim}) and with inanimate entities such as mycosis (\ref{mycosis}).
+\begin{exe}
+    \ex \label{nonhumantim}
+    \gll Tsa'u=ni=ngi   jayi       {\ob}ûnjin=sa'ne.{\cb} \\
+         house=\textsc{loc=}1 go.\textsc{prsp} rain=\textsc{appr}  \\
+    \glt `I'm going home for fear of rain.'
+    \ex \label{mycosis} % Quinsetsse\_Canseye\_con\_1982, p. 11
+    \gll Tsumba tsu'the, thenangu='ki, shamandakhû=ma='khe santshe        san'jan=ña='chu {\ob}asapa'chu=sa'ne.{\cb} \\
+         then   foot     leg\textsc{=}2      armpit=\textsc{acc=add}     drily dry=\textsc{irr=sbrd}     mycosis=\textsc{appr} \\
+    \glt `You must then thoroughly dry your feet, legs, and armpits to avoid mycosis.'  \hfill \citep[p. 11]{pederson1982quinsetsse}
+\end{exe}
+    
+{The timitive \ai{=sa'ne}{appr} can introduce the object of `fear' predicates (\ref{feartimdyuju})--(\ref{feartimdyu}).\footnote{Analogous to the `fear' complement uses discussed in \S\ref{sec:complementizerfunction}, some or all of the \sane{}-marked objects could potentially be best analyzed as precautioning-like adjuncts rather than arguments per se. We leave demonstrating their genuine object status to future work.} It coexists alongside strategies with the accusative \ai{=ma}{acc}{} marking the object of \textit{dyuju} `be afraid' (\ref{fearacc}) and the dative \ai{=nga}{dat}{} marking the stimulus of \textit{dyu} `be scared' (\ref{feardat}). Intriguingly, the two strategies tend to be back-translated differently. Accusative and dative objects are translated with nominal phrases; timitive objects -- with full clauses.}\footnote{The distribution and back-translation of timitive objects (discussed later in this section) suggests that the A'ingae timitive might be a result of semantic coercion of a noun phrase into a clausal reading or clausal ellipsis. While the account we propose for the timitive is consistent with semantic coercion, there are two considerations that argue against an analysis with syntactic ellipsis. First, there is no tendency for the elided material to appear in previous linguistic context. Second, \sane[] cannot attach to a case-marked DP (\ref{timbad}).
+
+
+\ea[*]{ \label{timbad}
+\gll  \textit{Kuenza=ndekhû} \textit{uke='fa}     \textit{uvepa'chu} \textit{tsau'pa=ma} {\ob}\textit{anchan=nga=sa'ne.}{\cb} \\
+         elder=\textsc{plh}    burn=\textsc{pls} termite    nest=\textsc{acc} mosquito=\textsc{dat=appr} \\
+    \glt `The elders burn termites' nests to avoid (getting stung by) mosquitoes.'
+    }
+\z
+}
+    \begin{exe} \ex \label{feartimdyuju}
+      \gll Dyuju=ngi        {\ob}thesi=sa'ne.{\cb} \\
+         {be.afraid=\textsc{1}} jaguar=\textsc{appr} \\
+    \glt `I am afraid there could be a jaguar.' \\
+        `I am afraid I'll encounter a jaguar.'
+    \ex \label{feartimdyu}
+        \gll Dyu=ngi {\ob}thesi=sa'ne.{\cb} \\
+         {be.scared=\textsc{1}} jaguar=\textsc{appr} \\
+    \glt `I got scared there would be a jaguar.'
+    \ex \label{fearacc}
+    \gll Dyuju=ngi thesi=ma. \\
+        {be.afraid=\textsc{1}} jaguar=\textsc{acc} \\
+    \glt `I am afraid of the jaguar.'
+    \ex \label{feardat}
+    \gll Dyu=ngi thesi=nga. \\
+         {be.scared=\textsc{1}} jaguar=\textsc{dat} \\
+    \glt `I got scared of a jaguar.'
+\end{exe}
+
+Timitive phrases are available in narratives (\ref{mosquitostim}), conveying the fear of the sentence subject, not speaker, and co-occur with any main sentence type, \eg the interrogative (\ref{questiontim}).
+
+  \begin{exe} \ex \label{mosquitostim}
+    
+    \gll Kuenza=ndekhû uke='fa     uvepa'chu tsau'pa=ma {\ob}anchan=sa'ne.{\cb} \\
+         elder=\textsc{plh}    burn=\textsc{pls} termite    nest=\textsc{acc} mosquito=\textsc{appr} \\
+    \glt `The elders burn termites' nests to avoid mosquitoes.'
+    \ex \label{questiontim}
+    \gll Kuenza=ndekhû=ti uke='fa     uvepa'chu tsau'pa=ma {\ob}anchan=sa'ne.{\cb} \\
+         elder=\textsc{plh=int}    burn=\textsc{pls} termite    nest=\textsc{acc} mosquito=\textsc{appr} \\
+    \glt `Do the elders burn termites' nests to avoid mosquitoes?'
+\end{exe}
+
+    
+A timitive phrase can stand on its own, but only when there is a strong cultural association between its object and the threat it poses and it can be interpreted elliptically in a pragmatically rich context (\ref{justtim})--(\ref{rain}).
+
+    \begin{exe} \ex \label{justtim}
+    \gll {\ob}Thesi=sa'ne.{\cb} \\
+         jaguar=\textsc{appr} \\
+    \glt `In case of jaguars.' [uttered upon handing in a rifle]
+    \ex \label{rain}
+    \gll {\ob}ûnjin=sa'ne.{\cb} \\
+         rain=\textsc{appr} \\
+    \glt `In case of rain.' [uttered upon handing in an umbrella]
+\end{exe}    
+
+Nevertheless -- aside from its `fear'-complement function (\ref{feartimdyuju})--(\ref{feartimdyu}) -- the timitive clitic \ai{=sa'ne}{appr} is restricted to {entities which make salient a situation avoided by the main clause event, paralleling the `in-case' semantics of the precautioning function (\ref{timagentive}). In this respect, A'ingae \ai{=sa'ne}{appr} timitive phrases differ from the English \textit{for fear of} phrases, as the latter can also introduce the cause or stimulus of the main clause event (\ref{timnonagentive}).}
+
+   \ea {\label{timagentive}
+     \gll Tsampi=ni     ja=mbi=ngi  {\ob}thesi=sa'ne.{\cb}  \\
+         forest=\textsc{loc} go=\textsc{neg=}1 jaguar=\textsc{appr} \\
+    \glt `I did not go to the forest for fear of a jaguar.' } 
+    \z
+    \ea[\#]{\label{timnonagentive}
+    \gll Juva=tsû \textup{\{}i'na, fûndu\textup{\}} {\ob}unkumari=sa'ne.{\cb}  \\
+         \textsc{dist=3} \{cry, scream\} bear=\textsc{appr} \\
+    \glt intended: `He \{cried, screamed\} for fear of the bear.'}
+\z  
+
+The timitive cannot generally combine with nouns of positive emotional connotation, such as \emph{chan} `mother' (\ref{negmothertim}). Instead, its semantics is expressed with a precautioning \ai{=sa'ne}{appr} that makes explicit the nature of the avertive situation (\ref{mothercorrection}) or a periphrastic \emph{dyu} `be scared' construction (\ref{periphrasticmother}).
+
+    
+    \ea[\#]{ \label{negmothertim}
+    \gll  Shu'khaen=ngi ña   {\ob}chan=sa'ne.{\cb} \\
+         cook\textsc{=}1       \textsc{1sg} mother=\textsc{appr} \\
+    \glt intended: `I cooked for fear of my mother.'
+    }
+    \z
+
+    \begin{exe}
+    \ex { \label{mothercorrection}
+    \gll {\ob}ña   chan=ma       iyikha'ye-en=sa'ne{\cb}=ngi    shu'khaen. \\
+         \textsc{1sg} mother=\textsc{acc} annoy-\textsc{pass=appr=}1 cook \\
+    \glt `I cooked so that my mother does not get mad.'
+    }
+    \ex{ \label{periphrasticmother}
+    \gll {\ob}ña   chan=ma       dyu='chu=i'khû{\cb}=ngi       shu'khaen. \\
+         \textsc{1sg} mother=\textsc{acc} {be.scared=\textsc{sbrd=inst=1}} cook \\
+    \glt `I cooked for fear of my mother.'
+    }
+\end{exe}
+
+
+Finally, it can be combined with neutral nouns, such as \emph{tsetse'pa} `chicha', though its distribution is restricted. Such uses are judged as felicitous only when the preceding linguistic context explicitly sets up the unwelcome situation (\ref{inantim}). Even then, though, including a verb makes it better, with \ai{=sa'ne}{appr} preferably heading a sentence, rather than a noun phrase (\ref{inantimtwo}).
+
+    \ea[\#]{ \label{inantim}
+        \gll \textup{(}Pûi fiesta=nga   tsû tsetse'pa jin=ñe atesû.\textup{)} {\rm\textsuperscript{?}}jayi=mbi=ngi     fiesta=nga   {\ob}tsetse'pa=sa'ne.{\cb} \\
+         each  party=\textsc{dat} \textsc{3}  chicha    be=\textsc{inf} know  go.\textsc{prsp=neg=1} party=\textsc{dat} chicha=\textsc{appr} \\
+    \glt `There is alcohol at every party. I'm not going to the party for fear of alcohol.'
+    }
+    \z
+    \begin{exe}
+    \ex \label{inantimtwo}
+    \gll Pûi fiesta=nga   tsû tsetse'pa jin=ñe atesû. jayi=mbi=ngi     fiesta=nga   {\ob}tsetse'pa {\rm\textsuperscript{?}(}jin{\rm)}=sa'ne.{\cb} \\
+         each  party=\textsc{dat} \textsc{3}  chicha    be=\textsc{inf} know  go.\textsc{prsp=neg=1} party=\textsc{dat} chicha             be=\textsc{appr} \\
+    \glt `There is alcohol at every party. I'm not going to the party to avoid (for fear of) alcohol.'
+\end{exe}
+
+We understand the avertive, `in-case', and timitive functions of the apprehensional \ai{=sa'ne}{appr} to be underpinned by uniform semantics: \ai{=sa'ne}{appr} encodes the avoidance of a potential undesirable situation which includes the situation (or entity) expressed by its argument. That is to say, the semantics of the timitive is that laid out in \S\ref{sec:precautioningfunction}, where the clitic \ai{=sa'ne}{appr} is posited to encode the apprehension of a situation which contains its argument. This accounts for all the discussed properties of its timitive function.
+
+First, it accounts for the rarity of timitive \sane, as noun phrases do not prototypically denote situations (\ai{=sa'ne}{appr} preferably combines with clauses).
+
+Second, it accounts for its occurrences with eventive nouns, as the timitive use of \ai{=sa'ne}{appr} is common with eventive nouns such as \emph{ûnjin} `rain' (\ref{nonhumantim}) or \emph{tsanda} `thunder' (\ref{thundertim}), which make salient such situations.
+        \ea \label{thundertim}
+        \gll Chaketa=ma    undikhû=ja {\ob}tsanda=sa'ne.{\cb} \\
+             jacket=\textsc{acc} don=\textsc{imp}   thunder=\textsc{appr} \\
+        \glt `Put on a jacket in case of thunder.'
+        \z 
+
+Third, it accounts for its occurrences with negatively connoted nouns and events stereotypically associated with them. The timitive use of \ai{=sa'ne}{appr} is likewise common with nouns such as \emph{asapa'chu} `mycosis' (\ref{mycosis}), \emph{thesi} `jaguar' (\ref{justtim}) or \emph{anchan} `mosquito' (\ref{mosquitostim}), where an association between the noun phrase and the undesired situation is immediate (\ie being eaten by a jaguar, ravaged by mycosis, or stung by mosquitoes). On the other hand, when such an association is lacking, as is the case with mothers not inherently perilous (\ref{negmothertim}), the timitive construction is deemed infelicitous. (Thus, the timitive is different from the precautioning function where the undesirability is conventionally coded by \sane[.])
+
+
+Fourth, it accounts for its availability for complementation with negative verbs (\ref{feartimdyuju})--(\ref{feartimdyu}) and the sensitivity of back-translations to the complementation strategy used. The timitive objects tend to be rendered with full clauses, which brings in close correspondence to their situational semantics.
+    
+Fifth, it accounts for its availability in narratives and with any main sentence type (\ref{mosquitostim})--(\ref{questiontim}), by analogy with precautioning uses which encode subject, not speaker, fear.
+
+Sixth, it accounts for its occasional ability to stand on its own (\ref{justtim}), possibly when interpretable as ellipsis in a pragmatically loaded context, by analogy with monoclausal uses elaborated in~\S\ref{sec:monoclausaluses}. 
+
+Seventh, it accounts for its restriction to {entities which make salient a situation avoided by the main clause event, paralleling the `in-case' semantics of the precautioning function (\ref{timagentive})--(\ref{timnonagentive}). The argument of \ai{=sa'ne}{appr} maps to a situation avoided by the main clause event, paralleling the precautioning `in-case' uses.}
+
+And finally, eighth, it accounts for the amelioration of certain infelicitous examples in rich contexts (\ref{inantim}), since making the dispreferred situation explicit makes it more easily recoverable.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% MONOCLAUSAL USES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Apprehensive function} \label{sec:monoclausaluses}
+
+The precautioning, complementizer, and timitive uses are the main functions of the apprehensional clitic \sane[.] These main functions all involve subordination (with precautioning and sentential complementizer uses) or NP-com\-ple\-men\-ta\-tion (with timitive uses). The last use of the A'ingae \ai{=sa'ne}{appr} clitic is the apprehensive proper, although this function is attested only marginally.
+
+The \emph{apprehensive} function is used to mark potential undesirable future events. It is most closely rendered by the English \emph{watch out} (\ref{watchout}), \emph{might} (\ref{might}), or the negative imperative (\ref{negimp}). Unlike the other apprehensional uses, the negativity with apprehensives is typically speaker-, not subject-, oriented (the situation is undesirable in the judgment of the speaker). 
+
+
+\begin{exe}
+    \ex \label{watchout}
+     Watch out for the curb.
+    \ex \label{might}
+    You might trip.
+    \ex \label{negimp}
+     Don't trip!
+\end{exe}
+
+The apprehensive is prototypically used with warning speech acts where the speaker is worried about some potential negative situation, often but not always one the addressee can take actions to avoid (\ref{waterend}).
+    \ea \label{waterend}
+    \gll {\ob}Tsa'khû=ma sefa-en{\cb}=sa'ne. \\
+    water=\textsc{acc} {end-\textsc{caus=appr}} \\
+    \glt `Don't use up all the water.'
+    \hfill \citep[p. 37]{borman1990lessons}
+    \z
+
+Although functionally independent, apprehensive uses have the formal properties of subordinate clauses and disallow second-position clitics (\ref{insubprectestthree}).
+    \ea \label{insubprectestthree}
+    \gll {\ob}Ke{\rm(*}=ki{\rm)} ana=sa'ne.{\cb} \\
+         \textsc{2sg=2} sleep=\textsc{appr}\\
+    \glt `You might fall asleep.'
+    \z
+
+The data above suggest insubordination, defined by \citet[p. 367]{evans2007insubordination} as ``conventionalized main clause use of what, on \emph{prima facie} grounds, appear to be formally subordinate clauses.'' The development of the apprehensive use out of the precautioning use is a typologically attested pathway, first proposed by \citet{lichtenberk1995apprehensional}. 
+
+While the matrix clausal apprehensive uses here discussed are attested, they are strongly dispreferred. Native speakers characterize them as most appropriate as elliptical answers, conceptualizing them within larger discourse (\ref{quans}). When a dis\-course-initial position is demanded of them, often paraphrases are offered where the lacking matrix clausal verb \emph{in'jan'jen} `be careful' is supplied (\ref{becareful}).
+\begin{exe} 
+    \ex \label{quans} \begin{xlist}
+    \exi{A:} \gll Jungueje=ngi yuku=ma kû'i=ya. \\
+             why\textsc{=}1     yoco=\textsc{acc} drink=\textsc{irr} \\
+        \glt `Why should I drink yoco?'
+    \exi{B:} \gll {\ob}Ke anae'sû=sa'ne.{\cb} \\
+            \textsc{2sg} {be.sleepy=\textsc{appr}} \\
+        \glt `Because you might fall asleep.' \\*
+             `So that you don't fall asleep.'
+    \end{xlist}
+    \ex \label{becareful}
+    \gll {{\ob}Tsai-ye=sa’ne{\cb}} in'jan-'jen=jan. \\
+         bite-\textsc{pass=appr} {watch.out-\textsc{ipfv=imp}} \\
+    \glt `(Watch out) you might get bitten.'
+\end{exe}
+
+This suggests that the insubordination is in its early stages where the elided material is recoverable, and the ellipsis is preferably altogether avoided given insufficient contextual priming. 
+
+The transitional nature of A'ingae insubordination is further evident from the fact that native speakers differ in whether they allow it. Some translate the below in a manner congruent with the insubordination hypothesis. For others, the insubordination reading is unavailable even when the context is very loaded. The translation offered by those suggests they interpret it as an ellipsis of linguistically recoverable material in a rich enough context. That is to say, for those speakers, the ellipsis has not reached the stage where it is conventionalized. 
+    \ea \label{tshipasane}
+    \gll {\ob}Tshipa=sa'ne.{\cb} \\
+         {be.wet}=\textsc{appr} \\
+    \glt back-translation A: `Don't get wet.'/`Avoid getting wet.'\\
+         back-translation B: `So that you don't get wet.' [uttered upon handing in an umbrella]
+    \z
+    
+Lastly, the ongoing insubordination hypothesis is supported by the availability of third-person-oriented apprehension (\ref{dog}) given a sufficiently rich context.
+\begin{exe} 
+    \ex \label{dog} \begin{xlist}
+    \exi{A:} \gll Khuvi mingae=tsû da-'je?   \\
+             tapir how\textsc{=}3 become-\textsc{ipfv}  \\
+        \glt `What's up with the tapir?' [uttered upon seeing a running tapir]
+    \exi{B:} \gll {\ob}Thesi tise=ma fi'thi=sa'ne.{\cb}   \\
+             jaguar \textsc{3sg=acc} kill=\textsc{appr}   \\
+        \glt `It's afraid the jaguar will kill it.' 
+    \end{xlist}
+\end{exe}
+
+All this testifies to the fact that insubordination in A'ingae is in its first stage, where both first-person (\ref{waterend}) and third-person (\ref{dog}) monoclausal `fear' uses can be analyzed as ``underlying subordinate clauses whose main clauses have been ellipsed but can plausibly be restored for analytic purposes'' \citep[430]{evans2007insubordination}. Plausible restorations for (\ref{waterend}) and (\ref{dog}) are given in (\ref{waterendrestored}) and (\ref{dogrestored}), respectively.
+\begin{exe}
+    \ex \label{waterendrestored}
+    \gll {\ob}Tsa'khû=ma {sefa-en=sa'ne{\cb}} in'jan-'jen=jan. \\
+    water=\textsc{acc} {end-\textsc{caus=appr}} {watch.out-\textsc{ipf=imp}} \\
+    \glt `Pay attention lest you use up all the water.'
+    \ex \label{dogrestored}
+    \gll {\ob}Thesi tise=ma {fi'tti=sa'ne{\cb}} dyuju.  \\
+        jaguar \textsc{3sg=acc} kill=\textsc{appr} {be.afraid}  \\
+    \glt `It's afraid the jaguar will kill it.' 
+\end{exe}
+    
+The insubordination of the apprehensive uses has not reached its second stage, whereby ``the structure itself may still be adequately described by treating it as an underlying subordinate clause'', but only at the cost of ``turning a blind eye to the greater semantic specificity associated with the insubordinated clause, and ignoring the fact that certain logically possible `restored' meanings or functions are never found with the insubordinated construction'' \citep[430--431]{evans2007insubordination}.\footnote{Trivially, therefore, apprehensive insubordination has not reached its third stage either, in which insubordinate ``clauses have been so nativized as main clauses that the generalizations gained by drawing parallels with subordinate structures are outweighed by the artificiality of not including them in the muster of main clause types'' \citep[431]{evans2007insubordination}.} In relationship to the apprehensive function, this refers to the narrowing of the pool of potential grammatical persons towards which the apprehension is oriented. In prototypical apprehensives, it is only the speaker's fear that can be thus encoded. Since in A'ingae monoclausal uses of the \ai{=sa'ne}{appr} clitics can express both first and third persons' fear, we know this stage has not been achieved.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% CONCLUSIONS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Conclusions}\label{sec:conclusions}
+
+The A'ingae apprehensional clitic \ai{=sa'ne}{appr} has robust precautioning uses, both avertive and `in-case', restricted timitive uses, and marginal apprehensive uses. Furthermore, it can serve as a complementizer to a number of negatively-valenced verbs. The apprehensional clitic \ai{=sa'ne}{appr} thus presents us with novel typological properties, as this particular range of function has not been reported in previous literature.
+For a more fully fleshed-out typological framework that facilitates describing and comparing apprehensional synchrony and diachrony, see \citet{anderbois-llc}.
+
+For several languages, attempts have been made to explicate the ranges of usage for their respective apprehensional morphologies on diachronic grounds. \citep[among others,][]{lichtenberk1995apprehensional, dobrushina2017fear, wiemer2018major}. We argue that the particular functional range of the A'ingae apprehensional clitic \ai{=sa'ne}{appr}, and in particular the range of available precautioning and timitive uses, should be accounted for on synchronic -- both semantic and syntactic -- grounds.
+For a formalization of our argument, see \citet{dabkowski2024jos}.
+
+Semantically, \ai{=sa'ne}{appr} expresses the avoidance of a possible undesirable situation which contains that of its argument. If the containment is proper (\ie the undesirable situation contains and is not identical to the argument of \ai{=sa'ne}{appr}, the `in-case' function obtains. If, on the other hand, the undesirable situation is identical to the argument of \ai{=sa'ne}{appr}, the avertive function obtains. Semantically, then, the possibility for a timitive use (at least given its semantics in A'ingae) automatically\footnote{Of course, other languages may have precautioning morphemes with `in-case' uses which lack timitive uses altogether for syntactic reasons. We therefore do not predict that any precautioning morpheme with `in-case' uses must have timitive uses, but rather that if it lacks such uses, it is for syntactic reasons rather than semantic ones.} follows from the presence of the `in-case' use. The timitive use is limited due to the recoverability of the apprehensional situation from a noun phrase. For further elaboration of the argument and cross-linguistic evidence, see \citet{anderbois2020salt}.
+
+Syntactically, \ai{=sa'ne}{appr} is a subordinator, a status which we have supported by both semantic evidence as well as through examining language-par\-tic\-ular syntactic properties of subordinate clauses (see \S\ref{sec:subordination} and \S\ref{sec:precautioningfunction}). The marginal apprehensive uses are therefore understood as contextual ellipsis or incipient insubordination of the precautioning or `fear'-complementation uses, given their dependence on context and their retention of A'ingae subordinate clause hallmarks.
+
+
+\section*{Abbreviations}
+\begin{tabularx}{.49\textwidth}{@{}lQ}
+%\begin{tabularx}{.45\textwidth}{ Y X }
+\textsc{1}       & first person   subject clitic \\
+\textsc{1sg}     & first person   singular pronoun \\
+\textsc{1pl}     & first person   plural pronoun \\
+\textsc{2}       & second person   subject clitic \\
+\textsc{2sg}     & second person   singular pronoun \\
+\textsc{2pl}     & second person   plural pronoun \\
+\textsc{3}       & third person   subject clitic \\
+\textsc{3pl}     & third person   plural pronoun \\
+\textsc{abl}     & ablative case \\
+\textsc{acc}     & accusative case \\
+\textsc{acc2}    & accusative case 2 \\
+\textsc{add}     & additive focus \\
+\textsc{adj}     & adjectivizer \\
+\textsc{adv}     & adverbializer \\
+\textsc{ana}     & anaphoric demonstrative \\
+\textsc{and}     & andative direction \\\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ@{}}
+\textsc{appr}    & apprehensional marker \\
+\textsc{attr}    & attributive marker \\
+\textsc{aux}     & dummy auxiliary verb \\
+\textsc{ben}     & benefactive case \\
+\textsc{3sg}     & third person   singular pronoun \\
+\textsc{caus}    & causative voice \\
+\textsc{cmp}     & comparative marker \\
+\textsc{cntr}    & contrastive topic \\
+\textsc{dat}     & dative case \\
+\textsc{dmn}     & diminutive aspect \\
+\textsc{ds}      & different subject \\
+\textsc{elat}    & elative case \\
+\textsc{excl}    & exclusive focus \\
+\textsc{fact}    & factive \\
+\textsc{foc}     & focal clitics \\
+\textsc{frst}    & frustrative marker \\\end{tabularx}
+
+\begin{tabularx}{.45\textwidth}{@{}lQ}
+\textsc{hes}     & hesitative particle \\
+\textsc{honr}    & honorific marker \\
+\textsc{imp}     & imperative mood \\
+\textsc{imp2}    & imperative mood 2 \\
+\textsc{imp3}    & imperative mood 3 \\
+\textsc{inf}     & infinitive marker \\
+\textsc{inst}    & instrumental case \\
+\textsc{int}     & polar interrogative \\
+\textsc{ipfv}    & imperfective aspect \\
+\textsc{irr}     & irrealis mood \\
+\textsc{iter}    & iterative aspect \\
+\textsc{loc}     & locative case \\
+\textsc{mann.dem} & {manner demonstrative} \\
+\textsc{mod}     & modal clitics \\
+\textsc{neg}     & negative polarity \\
+\textsc{new}     & new topic \\
+\textsc{num}     & subject number clitics \\
+\textsc{pass}    & passive voice \\
+\textsc{pej}     & pejorative marker \\
+\textsc{plh}     & human plurality   \\\end{tabularx}
+\begin{tabularx}{.45\textwidth}{lQ@{}}
+\textsc{pls}     & subject plurality \\
+\textsc{plv}     & pluractionality    (verbal plurality) \\
+\textsc{pol}     & polarity clitics  \\
+\textsc{prcm}    & precumulative aspect \\
+\textsc{proh}    & prohibitive mood \\
+\textsc{prox}    & proximal demonstrative \\
+\textsc{prsp}    & prospective aspect \\
+\textsc{purp}    & purpose clause marker  \\
+\textsc{qual}    & qualitative marker \\
+\textsc{recp}    & reciprocal voice \\
+\textsc{rprt}    & reportative evidential \\
+\textsc{sbrd}    & nominal subordinator \\
+\textsc{srcn}    & switch-reference \\
+            & conjunction \\
+\textsc{ss}      & same subject \\
+\textsc{tax}     & dependency \\
+            & (taxis clitics) \\ 
+\textsc{top}     & topical clitics \\
+\textsc{ven}     & venitive direction \\
+\textsc{ver}     & veridical mood \\
+\\
+\end{tabularx}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% ACKNOWLEDGEMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Acknowledgements}
+
+First of all, our heartfelt thanks to the A'i who have welcomed and shared their language with us. Thanks especially to Shen Aguinda, Hugo Lucitante, and Leidy Quenamá who graciously spent their time thinking about the data and ideas discussed here. Thanks also to Eva Schultze-Berndt, Martina Faller, Pauline Jacobson, Wilson Silva, Marine Vuillermet, and anonymous reviewers for Syntax of the World's Languages 8, for helpful discussion of the data and analysis here.
+
+Our research has been supported in part by Scott AnderBois and Wilson Silva's ELDP Grant \texttt{\#SG0481} ``Kofán Collaborative Project: Collection of Audio-Video Materials'', NSF DEL Grant \texttt{\#BCS-1911348/1911428} ``Collaborative Research: Perspective Taking and Reported Speech in an Evidentially Rich Language'' and Maksymilian Dąbkowski's Royce Fellowship grant for ``A'ingae Language Preservation''.
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newpage
+%\nocite{*}
+\sloppy
+\printbibliography[heading=subbibliography, notkeyword=this]
+
+
+\end{document}

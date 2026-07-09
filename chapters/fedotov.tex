@@ -1,0 +1,1354 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook}
+\ChapterDOI{10.5281/zenodo.19708128}
+\author{Maksim Fedotov\orcid{0000-0002-7100-1719}\affiliation{Institute for Linguistic Studies, Russian Academy of Sciences (St. Petersburg, Russia)}}
+\title{The Apprehensional construction in Gban}
+\abstract{This paper focuses on the dedicated Apprehensional construction in Gban (South Mande, Côte d'Ivoire), which expresses several meanings related to fear or undesirability. The Apprehensional construction is used in main clauses and in dependent clauses. In main clauses, three readings or functions can be identified: expressing pure apprehension, warning, and threat. Two different dependent uses have been attested: in `fear' predicate complements and in negative purpose clauses. The paper describes the formal make-up of the construction, its semantic and syntactic properties, its relation to negative polarity and to the grammatical system of Gban in general. Diachronic sources for the elements comprising the construction and possible scenarios of its grammaticalization are proposed.}
+
+%move the following commands to the "local..." files of the master project when integrating this chapter
+
+% \usepackage{inputnormalization}
+
+
+
+\IfFileExists{../localcommands.tex}{
+   \addbibresource{../localbibliography.bib}
+   \input{../localpackages}
+   \input{../localcommands}
+   \input{../localhyphenation}
+   \boolfalse{bookcompile}
+   \togglepaper[23]%%chapternumber
+}{}
+
+\begin{document}
+% \Uinputnormalization=0
+\XeTeXinputnormalization 0
+
+\maketitle
+
+\section{Introduction}
+\label{sec:fedotov:intro}
+
+
+\ili{Gban} (\textit{gbá̰}; ISO 639-3 code: ggu, Glottocode: gagu1242) \citep{fedotov2016,fedotov2017,fedotov2021} is a South \ili{Mande} language spoken by about 60,000 people in the central part of Côte d'Ivoire. This study is based on the Bovo dialect.
+
+\ili{Gban} has a dedicated grammatical construction that expresses meanings belonging to the apprehensional semantic domain (the domain of fear and undesirability) \citep{lichtenberk1995, Dobrushina2006, vuillermet2018, chapters/introduction} -- henceforth the \textit{Apprehensional construction}.
+
+The Apprehensional construction in \ili{Gban} covers almost all meanings\slash uses that are cross-linguistically associated with the apprehensional domain. It has main-clause uses (expressing pure apprehension, warning, or threat), uses in `fear' predicate complements, and uses in negative purpose (= precautioning) clauses.
+
+Both the construction and the semantic domain may be provisionally illustrated by examples (\ref{ex:Fed1})--(\ref{ex:Fed3}).
+
+
+
+
+\ea \label{ex:Fed1} \textnormal{Main-clause pure-apprehension use} \\
+\gll \textit{E̋!} \textit{W-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{ı̰̀} \textit{mɔ̰́} \textit{wȍtló} \textit{kṵ̋a̰̋!} \\
+oh \textsc{3pl-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} I for car steal\textsc{[inf]} \\
+\glt [The speaker has left his/her car outside for the night  unattended. He/she is now in bed, talking to him/herself, just expressing his/her anxiety:] `--- Oh, my car \textbf{might} get stolen!'
+\ex \label{ex:Fed2} \textnormal{`Fear' predicate complement}\\
+\gll \textit{{\E}} \textit{gbɛ̰̏} \textup{[}\textit{n\'{ı̰}} \textit{Flȁ̰sóá} \textup{(}\textit{y}\textup{)}\textit{-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gà}\textup{]}\textit{.} \\
+\textsc{3sg} \textsc{\textsc{ipfv}\backslash}be\_afraid that François \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} die\textsc{[inf]} \\
+\glt `She's \textbf{afraid} that François \textbf{might} die.'
+\ex \label{ex:Fed3} \textnormal{Negative purpose} \\
+\gll \textit{Ɔ̏} \textit{nṵ̏} \textit{kwà} \textit{zɔ̰̏} \textit{ɛ̀} \textit{di̋} \textup{[}\textit{ı̰́} \textit{gwȁ} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ɛ̀} \textit{kpɛ̋} \textit{kplɔ̰̏} \textit{lɛ̌}\textup{]}\textit{.} \\
+\textsc{3pl} \textsc{ipfv}\backslash come arm descend\textsc{[inf]} {you\_\textsc{sg}} under that stone \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} you\_\textsc{sg} foot scratch\textsc{[inf]} because \\
+\glt `[T]hey will lift you up in their hands, \textbf{so that} you will \textbf{not} strike your foot against a stone.' (Luke 4:11)
+%\footnotetext{Throughout the paper, I will contrast \textit{thou} (archaic) and \textit{you} in the glosses to differentiate between the 2nd-person singular and plural pronouns, respectively.}
+\z
+
+
+This paper will explore in detail the different types of uses, as well as other properties of the construction. Some typologically relevant parameters will be discussed for each use\slash reading, including its compatibility with different grammatical persons, with situations located in the past, the present, and the future, and with preventable and unpreventable situations.
+
+
+
+In \sectref{sec:fedotov:form}, I will describe the formal properties of the Apprehensional construction. In \sectref{sec:fedotov:paradigmaticstatus}, I will discuss its paradigmatic status with respect to other core grammatical constructions of \ili{Gban}. In \sectref{sec:fedotov:synsemmain}, the usage of the construction in main clauses will be discussed, with the three attested readings\slash functions: expression of pure apprehension (\sectref{subsec:expression}), warnings (\sectref{subsec:warnings}), and threats (\sectref{subsec:threats}). In \sectref{sec:fedotov:synsemdependent}, I will describe the two types of syntactically dependent uses: `fear' predicate complement uses (\sectref{subsec:fearpredicate}) and negative-purpose uses (\sectref{subsec:negativepurpose}). In \sectref{sec:fedotov:diachrony}, I will present the most probable diachronic sources for the elements comprising the Apprehensional construction and propose possible scenarios of its grammaticalization as a whole. Finally, in \sectref{sec:fedotov:apprpolarity}, I will separately discuss the synchronic relation of the Apprehensional construction to polarity.
+
+
+The study is based on field data (elicitation and spontaneous texts) from the Bovo dialect collected in Côte d'Ivoire in 2011--2020, as well as on the text of the New Testament translation \citep{gbanNT}. Elicitation was partially guided by Marine Vuillermet's ``Questionnaire on the apprehensional domain'' \citep{chapters/vuillermet}. Most of the description is built on elicited data.\footnote{This is partially due to the fact that the construction is very infrequent in the texts (except for the negative-purpose uses, see \sectref{subsec:negativepurpose}), and partially because only elicitation made possible a fine-grained study of the semantics of the construction and of different combinations of the examined parameters. Still, it would have been desirable, of course, to have more examples from natural texts in the data.} Examples from spontaneous texts and from the New Testament will be marked accordingly (``Narrative text'', ``2 John 1:8'', etc.), while elicited examples will be left unmarked.
+
+In the examples throughout the paper, I use the following notation. A superscript ``OK'' before an example indicates that the whole example was constructed by me in \ili{Gban} and then was approved by the speaker as felicitous (while an asterisk ``*'' or one or several ``?'' indicate a greater or lesser degree of infelicitousness). Examples without ``OK'' were translated from French into \ili{Gban}, suggested by the speaker in the course of the discussion, or taken from texts. The symbol ``\#'' before an example indicates that the sentence is either a) grammatically correct, but was said to be nonsensical, or b) cannot be used with the given interpretation (but may be absolutely felicitous with some other interpretation, which is irrelevant to the discussion). Square brackets ``[ ]'' are used in some of the translations to indicate those semantic components (or a more general context) which are not explicitly expressed in the example. Curly brackets ``\{ \}'' are used to enclose the translation of the omitted parts of the example (which had been present in the \ili{Gban} text, but which I removed for reasons of space). A tilde ``$\sim$'' is placed before some translations to mark them as approximate (including those cases where the translation was missing from the data and I produced a provisional one myself). Additionally, for some examples I provide not only the English translation, but also, in parentheses, the original (vernacular) French translation given by the speaker.
+
+
+\section{Form}
+\largerpage
+\label{sec:fedotov:form}
+
+The Apprehensional construction in \ili{Gban} contains a dedicated predicative marker\footnote{Predicative markers are special grammatical markers that are placed right after the subject NP and that participate in the expression of TAM and other sentential grammatical categories (i.e.\ categories pertaining to the whole predication, hence the term \textit{predicative}). See \sectref{sec:fedotov:paradigmaticstatus} for more details on predicative markers and the grammatical system of \ili{Gban} in general.} \textit{-a̋/-ǎ} `\textsc{appr}' at the beginning of the clause and a dedicated invariable auxiliary verb \textit{n{\ù}} (glossed here as `\textsc{appr}', too), which introduces the zero-marked infinitive form of the main verb:
+
+\ea \label{ex:Fed4}
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ɛ̀} \textit{blɛ̋} \textit{ɛ̀} \textit{kwà} \textit{\textbf{ylɛ̏}.} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} you\_\textsc{sg} self you\_\textsc{sg} arm break[\textsc{\textbf{inf}}] \\
+\glt `[\textbf{It would be bad if}] you (sg.) broke your arms [this way]', \\
+`You \textbf{might} break your arms [this way]' (to a child playing on a staircase); `[\textbf{Be careful not to}] break your arms!'
+\z
+
+ A sample paradigm of the Apprehensional construction with the lexical verb \textit{n{\ù}} `come' and different person-number markers is presented in \tabref{tab1}. (While formally identical to the Apprehensional auxiliary, this second \textit{n{\ù}} is not part of the apprehensional construction, but the infinitive form of `come', see further \sectref{sec:fedotov:diachrony}.)
+
+\begin{table}
+
+\begin{tabular}{l lll lll}
+\lsptoprule
+  & \multicolumn{3}{c}{\textsc{sg}} & \multicolumn{3}{c}{\textsc{pl}} \\
+  \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+1st & \textit{m‑\textbf{a̰̋}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} & \textit{w‑\textbf{a̋}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} \\
+ & \textsc{1sg-appr} & \textsc{appr} & come{[}\textsc{inf}{]} & \textsc{1pl-appr} & \textsc{appr} & come{[}\textsc{inf}{]} \\\addlinespace
+2nd & \textit{n‑\textbf{a̰̋}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} & \textit{a̋‑\textbf{a̋}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} \\
+ & \textsc{2sg-appr} & \textsc{appr} & come{[}\textsc{inf}{]} & \textsc{2pl-appr} & \textsc{appr} & come{[}\textsc{inf}{]} \\ \addlinespace
+3rd & \textit{y‑\textbf{ǎ}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} & \textit{w‑\textbf{ǎ}} & \textit{\textbf{n{\ù}}} & \textit{n{\ù}} \\
+ & \textsc{3sg-appr} & \textsc{appr} & come{[}\textsc{inf}{]} & \textsc{3pl-appr} & \textsc{appr} & come{[}\textsc{inf}{]} \\ 
+ \lspbottomrule
+ \end{tabular}
+\caption{Apprehensional construction in combination with different person-number markers: `{[}I'm afraid that{]} I/we/you (sg./pl.)/(s)he/they might come'.}
+\label{tab1}
+\end{table}
+
+It is important to distinguish the predicative marker \textit{-a̋/-ǎ} `\textsc{appr}' from a quasi-homonymous (although most certainly diachronically related, see \sectref{sec:fedotov:diachrony}) predicative marker \textit{-a̋/-ǎ} `\textsc{sbjv.neg}' in the Negative Subjunctive construction. The latter, too, has two allomorphs \textit{-a̋} and \textit{-ǎ}, but these have a slightly different distribution. A sample paradigm is given in \tabref{tab2}. Note that this construction does not involve an auxiliary and features a different form of the verb with a different tone pattern.
+
+
+\begin{table}
+
+\begin{tabular}{l ll ll}
+\lsptoprule
+ & \multicolumn{2}{c}{\textsc{sg}} & \multicolumn{2}{c}{\textsc{pl}/\textsc{pl\_incl}} \\ \cmidrule(lr){2-3}\cmidrule(lr){4-5}
+1st & \textit{m‑\textbf{a̰̋}}  & \textit{nṵ̋} & \textit{w‑\textbf{a̋}} & \textit{nṵ̋} \\
+ & \textsc{1sg-sbjv.neg} & \textsc{ipfv}\backslash come & \textsc{1pl-sbjv.neg} & \textsc{ipfv}\backslash come \\
+ &  &  & \textit{à}(\textit{ù})\textit{w‑\textbf{a̋}} & \textit{nṵ̋} \\
+ &  &  & \textsc{1pl\_incl.sbjv-sbjv.neg} & \textsc{ipfv}\backslash come \\
+\addlinespace
+2nd & \textit{n‑\textbf{ǎ̰}} & \textit{nṵ̋} & \textit{\textbf{ȁa̋}} & \textit{nṵ̋} \\
+    & \textsc{2sg-sbjv.neg} & \textsc{ipfv}\backslash come & \textsc{2pl:sbjv.neg} & \textsc{ipfv}\backslash come \\
+\addlinespace
+3rd & \textit{y-\textbf{ǎ}} & \textit{nṵ̋} & \textit{w-\textbf{ǎ}} & \textit{nṵ̋} \\
+ & \textsc{3sg-sbjv.neg} & \textsc{ipfv}\backslash come & \textsc{3pl-sbjv.neg} & \textsc{ipfv}\backslash come \\
+\lspbottomrule
+\end{tabular}
+\caption{Negative Subjunctive construction in combination with different person-number markers: `I/we/we and you (pl.)/you (sg./pl.)/(s)he/they shouldn't come.'}
+\label{tab2}
+\end{table}
+
+
+The subtle difference in the form of the marker itself can be seen in the 2nd person. For the Apprehensional predicative marker, an allomorph \textit{-a̋} with an extra-high tone is chosen, while the Negative Subjunctive marker has an allomorph \textit{-ǎ} with a rising tone.\footnote{In the case of the 2nd-person plural marker, this is realized as spanning over two vowels: \textit{ȁa̋}.}
+
+At the same time, a predicative marker that is formally fully identical to \textit{-a̋/-ǎ} `\textsc{appr}' is used in another construction, the Enimitive construction,\footnote{In this construction, this marker will be glossed as `\textsc{enim}' for convenience, although it could be glossed in both constructions as `\textsc{appr/enim}' (or with some simplex gloss that would somehow cover the functions of both constructions). Any such decision is arbitrary, since it is not clear whether \textit{-a̋/-ǎ} `\textsc{appr}' and \textit{-a̋/-ǎ} `\textsc{enim}' should be considered synchronically as one and the same marker or as two different homonymous ones.
+
+In using this label, I follow \citet{panov2020}, who suggested the term \textit{enimitive} for a very close range of meanings (the term itself is derived from the Latin particle \textit{enim} expressing similar semantics).} which has the totally unrelated meaning\slash function `{\dots} isn't it?, {\dots} right?; indeed, certainly'. A sample paradigm for the construction is presented in \tabref{tab3} and an illustration of its use in example \REF{ex:Fed5} below.
+
+
+\begin{table}
+
+\begin{tabular}{l llllll}
+\lsptoprule
+ & \multicolumn{3}{c}{\textsc{sg}} & \multicolumn{3}{c}{\textsc{pl}} \\ \cmidrule(lr){2-4}\cmidrule(lr){5-7}
+1st & \textit{m‑\textbf{a̰̋}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} & \textit{w‑\textbf{a̋}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} \\
+ & \textsc{1sg-enim} & \textsc{ipfv}\backslash come & \textsc{enim} & \textsc{1pl-enim} & \textsc{ipfv}\backslash come & \textsc{enim} \\ \addlinespace
+2nd & \textit{n‑\textbf{a̰̋}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} & \textit{\textbf{a̋a̋}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} \\
+ & \textsc{2sg-enim} & \textsc{ipfv}\backslash come & \textsc{enim} & \textsc{2pl:enim} & \textsc{ipfv}\backslash come & \textsc{enim} \\ \addlinespace
+3rd & \textit{y‑\textbf{ǎ}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} & \textit{w‑\textbf{ǎ}} & \textit{nṵ̋} & \textit{\textbf{nı̰̀}} \\
+ & \textsc{3sg-enim} & \textsc{ipfv}\backslash come & \textsc{enim} & \textsc{3pl-enim} & \textsc{ipfv}\backslash come & \textsc{enim} \\
+\lspbottomrule
+\end{tabular}
+\caption{Enimitive construction (in Non-past) in combination with different person-number markers: `I/we/you (sg./pl.)/(s)he/they come(s) indeed.'}
+\label{tab3}
+\end{table}
+
+
+
+
+\ea \label{ex:Fed5}
+\gll \textit{N-\textbf{a̰̋}} \textit{ye̋e̋} \textit{yɔ̰̈} \textit{\textbf{nı̰̀}!} \\
+\textsc{2sg-\textbf{enim}} \textsc{ipfv}\backslash be there \textsc{\textbf{enim}} \\
+\glt [To a person who is standing close to two children fighting, but isn't trying to pull them apart:] `--- [Hey!] You're [standing] there, \textbf{aren't you!}' [Why aren't you doing something?]
+\z
+
+\noindent As can be seen, while sharing the predicative marker \textit{-a̋/-ǎ} with the Apprehensional construction, the Enimitive construction formally differs from it by the lack of the invariable auxiliary \textit{n{\ù}} and the presence of a special clause-final particle \textit{nı̰̀} and also by the fact that the Enimitive construction combines with finite (inflecting) forms of the main verb.
+
+
+
+\section{Paradigmatic status}
+\label{sec:fedotov:paradigmaticstatus}
+
+The Apprehensional construction is an integral part of the grammatical tense-aspect-mood system of \ili{Gban}, and can be shown to be one of its core sentential constructions.\footnote{They
+  are regarded as sentential and not verbal because they are not expressed (solely) by finite verb forms, but by sentence-level constructions that combine predicative markers and finite verb forms; see below.
+
+  By a \textit{core} grammatical construction (opposed to a \textit{peripheral} one) I understand a construction that belongs to a certain closed set of grammatical constructions from which it is obligatory to choose and employ one (and only one) construction whenever one utters a finite clause in this language.\label{footnote6}
+}
+
+As mentioned above, the Apprehensional construction contains a predicative marker \textit{-a̋/-ǎ} `\textsc{appr}'. Let us first discuss the predicative markers in general.
+
+\ili{Gban} has an SOV word order. The predicative markers make up five rigid consecutive slots at the beginning of the sentence, right after the subject NP (if present) and before the direct object NP and the verb. In each of these slots, only one marker can appear at a time; all five of them can be occupied simultaneously by non-zero markers. An overview of the predicative marker system is given in \tabref{tab4}, with the Apprehensional predicative marker in bold.
+
+%\begin{table}
+%\small
+%\begin{tabular}{l lllll l l}
+%\lsptoprule
+%S & \multicolumn{5}{c}{PMs} & \multicolumn{1}{c}{(DO)} & \multicolumn{1}{c}{V \dots} \\ \cmidrule(lr){2-6}
+% & Slot 1 & Slot 2 & Slot 3 & Slot 4 & Slot 5 &  &  \\ \midrule
+ %& {\textit{ı̰̀/m}(\textit{ı̰̀})} & {-∅} & {-∅} & {-∅} & -∅ &  &  \\
+ %& {`\textsc{1sg}'} & {`\textsc{neutr}'} & {`\textsc{ncond.aff}'} & {`\textsc{npst}'} & `\textsc{nipfvpst}' &  &  \\
+% \addlinespace
+ %& {\textit{ù/w}(\textit{ì})\textit{/wù}} & {\textit{-lí/-lè}} & {\textit{-kè/-à}} & {‑\textupstep} & \textit{‑è} &  &  \\
+ %& {`\textsc{1pl}'} & {`\textsc{foc}'} & {`\textsc{ind.neg}'} & {`\textsc{pst}'} & `\textsc{ipfv.hest}' &  &  \\
+ %\addlinespace
+ %& {\textit{àù/à}(\textit{ù})\textit{w}} & {\textit{‑lè}(\textit{è})} & {\textit{‑kȅ‶}} & {} & \textit{‑é} &  &  \\
+ %& {`\textsc{1pl\_incl.sbjv}'} & {`\textsc{prsv}'} & {`\textsc{cond.aff}'} & {} & `\textsc{ipfv.preh}' &  &  \\
+ %\addlinespace
+ %& {\textit{ɛ̀/n}(\textit{ı̰̀})} & {} & {\textit{‑kě}} & {} &  &  &  \\
+ %& {`\textsc{2sg}'} & {} & {`\textsc{cond.neg}'} & {} &  &  &  \\
+ %\addlinespace
+ %& {\textit{bȅ}} & {} & {\textit{‑a̋/‑ǎ}} & {} &  &  &  \\
+ %& {`\textsc{2sg.sbjv}'} & {} & {`\textsc{sbjv.neg}'} & {} &  &  &  \\
+ %\addlinespace
+ %& {∅} & {} & {\textit{\textbf{-a̋}/\textbf{-ǎ}}} & {} &  &  &  \\
+ %& {`\textsc{2sg.imp}'} & {} & {`\textsc{\textbf{appr}/enim}'} & {} &  &  &  \\
+ %\addlinespace
+ %& {\textit{bë}} & {} & {} & {} &  &  &  \\
+ %& {`\textsc{2sg.imp\_pol}'} & {} & {} & {} &  &  &  \\
+ %\addlinespace
+ %& {\textit{à}} & {} & {} & {} &  &  &  \\
+ %& {`\textsc{2pl}'} & {} & {} & {} &  &  &  \\
+ %\addlinespace
+ %& {\textit{ɛ̏‶/‶/}∅\textit{/y}(\textit{ȅ})} & {} & {} & {} &  &  &  \\
+ %& {`\textsc{3sg}'} & {} & {} & {} &  &  &  \\
+ %\addlinespace
+ %& {\textit{ɔ̏‶/‶/}∅\textit{/w}(\textit{ȍ})} & {} & {} & {} &  &  &  \\
+ %& {`\textsc{3pl}'} & {} & {} & {} &  &  &  \\ 
+%\lspbottomrule
+%\end{tabular}
+%\caption{The structure of the predicative marker slots and their linear position in the sentence. \emph{Notes:} 1. The predicative markers (PMs) are located between the subject (S) and the direct object (DO) or the (intransitive) verb (V). 2. The person-number markers in Slot 1 have complex allomorphy; only the first few allomorphs are listed. 3. The Past predicative marker {-\textupstep} is a tonal morpheme that shifts the tone of the preceding syllable two levels up. 4. Two of the glosses for zero markers, `\textsc{ncond}' and `\textsc{nipfvpst}', are simplified: for `\textsc{ncond}', see Footnote \ref{footnote9}; `\textsc{nipfvpst}' stands for `everything else but Imperfective Hesternal/Pre-hesternal Past'. 5. There are a few restrictions on combinations, but in general, most semantically coherent combinations of markers in different slots are possible. 6. Several non-obligatory predicative markers can occur after Slot 5; they are not presented here.} 
+%\label{tab4}
+%\end{table}
+
+
+\begin{table}
+\small
+\begin{tabular}{l lllll l l}
+\lsptoprule
+S & \multicolumn{5}{c}{PMs\footnote{The predicative markers (PMs) are located between the subject (S) and the direct object (DO) or the (intransitive) verb (V). Several non-obligatory predicative markers can occur after Slot 5; they are not presented here.  There are a few restrictions on combinations, but in general, most semantically coherent combinations of markers in different slots are possible.}} & \multicolumn{1}{c}{(DO)} & \multicolumn{1}{c}{V \dots} \\ \cmidrule(lr){2-6}
+ & Slot 1\footnote{The person-number markers in Slot 1 have complex allomorphy; only the first few allomorphs are listed.} & Slot 2 & Slot 3 & Slot 4 & Slot 5 &  &  \\ \midrule
+ & {\textit{ı̰̀/m}(\textit{ı̰̀})} & {-∅} & {-∅} & {-∅} & {-∅} &  &  \\
+ & {`\textsc{1sg}'} & {`\textsc{neutr}'} & {`\textsc{ncond.aff}'} & {`\textsc{npst}'} & `\textsc{nipfvpst}'\footnote{Two of the glosses for zero markers, `\textsc{ncond}' and `\textsc{nipfvpst}', are simplified: for `\textsc{ncond}', see Footnote \ref{footnote9}; `\textsc{nipfvpst}' stands for `everything else but Imperfective Hesternal/Pre-hesternal Past'.} &  &  \\
+ \addlinespace
+ & {\textit{ù/w}(\textit{ì})\textit{/wù}} & {\textit{-lí/-lè}} & {\textit{-kè/-à}} & {‑\textupstep} & \textit{‑è} &  &  \\
+ & {`\textsc{1pl}'} & {`\textsc{foc}'} & {`\textsc{ind.neg}'} & {`\textsc{pst}'\footnote{The Past predicative marker {-\textupstep} is a tonal morpheme that shifts the tone of the preceding syllable two levels up.}} & `\textsc{ipfv.hest}' &  &  \\
+ \addlinespace
+ & {\textit{àù/à}(\textit{ù})\textit{w}} & {\textit{‑lè}(\textit{è})} & {\textit{‑kȅ‶}} & {} & \textit{‑é} &  &  \\
+ & {`\textsc{1pl\_incl.sbjv}'} & {`\textsc{prsv}'} & {`\textsc{cond.aff}'} & {} & `\textsc{ipfv.preh}' &  &  \\
+ \addlinespace
+ & {\textit{ɛ̀/n}(\textit{ı̰̀})} & {} & {\textit{‑kě}} & {} &  &  &  \\
+ & {`\textsc{2sg}'} & {} & {`\textsc{cond.neg}'} & {} &  &  &  \\
+ \addlinespace
+ & {\textit{bȅ}} & {} & {\textit{‑a̋/‑ǎ}} & {} &  &  &  \\
+ & {`\textsc{2sg.sbjv}'} & {} & {`\textsc{sbjv.neg}'} & {} &  &  &  \\
+ \addlinespace
+ & {∅} & {} & {\textit{\textbf{-a̋}/\textbf{-ǎ}}} & {} &  &  &  \\
+ & {`\textsc{2sg.imp}'} & {} & {`\textsc{\textbf{appr}/enim}'} & {} &  &  &  \\
+ \addlinespace
+ & {\textit{bë}} & {} & {} & {} &  &  &  \\
+ & {`\textsc{2sg.imp\_pol}'} & {} & {} & {} &  &  &  \\
+ \addlinespace
+ & {\textit{à}} & {} & {} & {} &  &  &  \\
+ & {`\textsc{2pl}'} & {} & {} & {} &  &  &  \\
+ \addlinespace
+ & {\textit{ɛ̏‶/‶/}∅\textit{/y}(\textit{ȅ})} & {} & {} & {} &  &  &  \\
+ & {`\textsc{3sg}'} & {} & {} & {} &  &  &  \\
+ \addlinespace
+ & {\textit{ɔ̏‶/‶/}∅\textit{/w}(\textit{ȍ})} & {} & {} & {} &  &  &  \\
+ & {`\textsc{3pl}'} & {} & {} & {} &  &  &  \\ 
+\lspbottomrule
+\end{tabular}
+\caption{The structure of the predicative marker slots and their linear position in the sentence.} 
+\label{tab4}
+\end{table}
+
+As for the verb forms, the (finite) verb can have four different tonal forms, see \tabref{tab5}. First, the verb can retain its lexical tone (i.e.\ no tonal changes occur). Such unmarked forms express the Affirmative Subjunctive, the Imperative, the Polite Imperative, and the Perfective Hodiernal Past (and also the non-finite form of the Infinitive).\footnote{In \label{zero} this paper I follow the convention of glossing these zero verb forms differently, according to the construction they occur in, i.e.\ `[\textsc{sbjv}]', `[\textsc{imp}]', `[\textsc{imp\_pol}]', `[\textsc{pfv.hod}]', and `[\textsc{inf}]'.} Second, the verb can become a tonal enclitic, copying onto itself the tone of the last syllable of the preceding word (such as the direct object \textit{sa̋} `house' in the example below). This form expresses the Imperfective; it is also used in all Non-past and Negative Subjunctive constructions. Third and fourth, there are two forms where the verb acquires a fixed grammatical tone. The extra-low tone expresses the Perfective Hesternal Past, and the rising tone the Perfective Pre-hesternal Past.
+
+
+\begin{table}[t]
+\begin{tabularx}{\textwidth}{Xrl}
+\lsptoprule
+Form & \multicolumn{2}{l}{Example and gloss} \\ \midrule
+Unmarked (zero) forms & \textit{gò} & `buy[\textbf{\dots}]'\footnote{The three dots stand for a number of different glosses for different zero forms, see Footnote \ref{zero}.} \\
+Imperfective & \textit{\textcolor{gray}{sa̋} g\textbf{ő}} & `\textcolor{gray}{house} \textsc{\textbf{ipfv}}\backslash buy' \\
+Perfective Hesternal Past & \textit{g\textbf{ȍ}} & `buy\backslash\textsc{\textbf{pfv.hest}}' \\
+Perfective Pre-hesternal Past & \textit{g\textbf{ö}} & `buy\backslash\textsc{\textbf{pfv.preh}}' \\ 
+\lspbottomrule
+\end{tabularx}
+\caption{The four finite verb forms}
+\label{tab5}
+\end{table}
+
+
+When combined, the paradigms of bound predicative markers described above, together with different forms of the verb (and sometimes with some other additional elements) form \ili{Gban}'s seven sentential grammatical categories: person-number, informational status, mood, polarity, tense, temporal distance, and aspect. 
+Examples \REF{ex:Fed6} and \REF{ex:Fed7} illustrate combinations of members of these categories.
+
+
+
+\ea \label{ex:Fed6}%\todo{is \textit{ȁ‶} intentional?}\todo{check {\E}}
+\gll \textit{\textbf{{\E}-lè-ke̋}}\textbf{\upshape-\textupstep}\textit{\textbf{-è}} \textit{ȁ‶} \textit{tȁ} \textit{sɔ̰̏.} \\
+\textsc{\textbf{3sg-foc-ind.neg-pst-ipfv.hest}} he/she/it \textsc{\textbf{ipfv}}\backslash sow today \\
+\glt `It's him who wasn't going to sow it today.' \\
+(3rd person sg. + Subject focus + Indicative + Negative + Past + Hesternal + Imperfective)
+
+
+\ex \label{ex:Fed7}
+\gll \textit{Sɔ̀kȕ} {\textbf{\textit{\'ɛ}}‑\FedotovBoldEmpty{}‑\FedotovBoldEmpty{}\textbf{\upshape-\textupstep}‑\FedotovBoldEmpty{}\textup{\footnotemark}} \textit{yì} \textit{zɛ̀} \textit{tűɛ̋} \textit{sȁkȁȁ.}\\
+Soku \textsc{\textbf{3sg-}neutr-ncond.aff-\textbf{pst}-nipfvpst} sleep kill\textsc{[\textbf{pfv.hod}]} at\_night well\\
+\glt `Soku slept (lit.\ `killed sleep') well this night.' \\
+(3rd person sg. + Neutral informational status + Indicative + Affirmative + Past + Hodiernal + Perfective)
+\footnotetext{In this example, the null predicative markers are shown and glossed for illustrative purposes, but henceforth in the paper they will not be.}
+\z
+
+
+
+%\begin{table}
+%\begin{tabularx}{\textwidth}{p{\widthof{Apprehensional~}} Q}
+%\lsptoprule
+%Meaning & Form \\ \midrule
+%Affirmative Indicative & ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)} {\dots} + V (different forms) \\
+%\tablevspace
+%Negative\newline Indicative & \textit{‑kè/‑à} `\textsc{ind.neg}' \textsuperscript{(Slot 3)} {\dots} + V (different forms) \\
+%\tablevspace
+%Affirmative\newline Conditional & \textit{‑kȅ‶} `\textsc{cond.aff}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) \\
+%\tablevspace
+%Negative\newline Conditional & \textit{‑kě} `\textsc{cond.neg}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) \\
+%\tablevspace
+%Affirmative\newline Subjunctive & ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} + V \textsuperscript{(lexical tone)} `\textsc{sbjv}' \\
+%\tablevspace
+%Negative\newline Subjunctive & \textit{‑a̋/‑ǎ} `\textsc{sbjv.neg}' \textsuperscript{(Slot 3)}  {\dots} + V \textsuperscript{(tonal enclitic)} `\textsc{ipfv}' \\
+%\tablevspace
+%Imperative & ∅ `\textsc{2sg.imp}' \textsuperscript{(Slot 1)} + ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} +~V~\textsuperscript{(lexical\,tone)} `\textsc{imp}' \\
+%\tablevspace
+%Polite\newline imperative & \textit{bë} `\textsc{2sg.imp\_pol}' \textsuperscript{(Slot 1)} + ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} +~V~ \textsuperscript{(lexical\,tone)} `\textsc{imp\_pol}' \\
+%\tablevspace
+%Enimitive & \textit{‑a̋/‑ǎ} `\textsc{appr/enim}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) + final particle \textit{nı̰̀} `\textsc{enim}' \\
+%\tablevspace
+%\textbf{Apprehensional} & \textit{‑a̋/‑ǎ} `\textsc{appr/enim}' \textsuperscript{(Slot 3)} + auxiliary verb \textit{n{\ù}} `\textsc{appr}'  {\dots} +~V~\textsuperscript{(lexical\,tone)} `\textsc{inf}' \\
+%\lspbottomrule
+%\end{tabularx}
+%\caption{The Mood and Polarity constructions. \emph{Notes:} 1. In the constructions represented with ``V (different forms)'', the verb can have many forms according to other grammatical categories. 2. In contrast to them, those constructions for which a specific verbal form is indicated, are characterized by this form as their constant feature. 3. The dots (``{\dots}'') before the verb stand for the direct object NP, if present, and\slash or for other minor units that can occur in this part of the clause.}
+%\label{tab6}
+%\end{table}
+
+
+\begin{table}
+\begin{tabularx}{\textwidth}{p{\widthof{Apprehensional~}} Q}
+\lsptoprule
+Meaning & Form \\ \midrule
+Affirmative Indicative & ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)} {\dots} + V (different forms)\footnote{In the constructions represented with ``V (different forms)'', the verb can have many forms according to other grammatical categories. In contrast to them, those constructions for which a specific verbal form is indicated, are characterized by this form as their constant feature. The dots (``{\dots}'') before the verb stand for the direct object NP, if present, and\slash or for other minor units that can occur in this part of the clause.}\\
+\tablevspace
+Negative\newline Indicative & \textit{‑kè/‑à} `\textsc{ind.neg}' \textsuperscript{(Slot 3)} {\dots} + V (different forms) \\
+\tablevspace
+Affirmative\newline Conditional & \textit{‑kȅ‶} `\textsc{cond.aff}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) \\
+\tablevspace
+Negative\newline Conditional & \textit{‑kě} `\textsc{cond.neg}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) \\
+\tablevspace
+Affirmative\newline Subjunctive & ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} + V \textsuperscript{(lexical tone)} `\textsc{sbjv}' \\
+\tablevspace
+Negative\newline Subjunctive & \textit{‑a̋/‑ǎ} `\textsc{sbjv.neg}' \textsuperscript{(Slot 3)}  {\dots} + V \textsuperscript{(tonal enclitic)} `\textsc{ipfv}' \\
+\tablevspace
+Imperative & ∅ `\textsc{2sg.imp}' \textsuperscript{(Slot 1)} + ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} +~V~\textsuperscript{(lexical\,tone)} `\textsc{imp}' \\
+\tablevspace
+Polite\newline imperative & \textit{bë} `\textsc{2sg.imp\_pol}' \textsuperscript{(Slot 1)} + ‑∅ `\textsc{ncond.aff}' \textsuperscript{(Slot 3)}  {\dots} +~V~ \textsuperscript{(lexical\,tone)} `\textsc{imp\_pol}' \\
+\tablevspace
+Enimitive & \textit{‑a̋/‑ǎ} `\textsc{appr/enim}' \textsuperscript{(Slot 3)}  {\dots} + V (different forms) + final particle \textit{nı̰̀} `\textsc{enim}' \\
+\tablevspace
+\textbf{Apprehensional} & \textit{‑a̋/‑ǎ} `\textsc{appr/enim}' \textsuperscript{(Slot 3)} + auxiliary verb \textit{n{\ù}} `\textsc{appr}'  {\dots} +~V~\textsuperscript{(lexical\,tone)} `\textsc{inf}' \\
+\lspbottomrule
+\end{tabularx}
+\caption{The Mood and Polarity constructions}
+\label{tab6}
+\end{table}
+
+ Returning now to the Apprehensional construction, we can see that the predicative marker \textit{-a̋/-ǎ} `\textsc{appr}' puts it in contrast with several other sentential constructions that cumulatively express different mood and polarity meanings. These constructions and their formal makeup are presented in \tabref{tab6}. Examples of Negative Indicative \REF{ex:Fed6} and Affirmative Indicative \REF{ex:Fed7} were already given above.
+
+
+In this paradigmatic set of constructions, the choice of one or another is obligatory. Even in Slot 3, the zero marker can be attributed a clear-cut, albeit idiosyncratic, semantics: it simultaneously expresses Affirmative and either Indicative, Subjunctive, Imperative, or Polite Imperative.\footnote{I.e.\ Slot 3 has a zero marker only in Affirmative Indicative, Affirmative Subjunctive, (Affirmative) Imperative, and (Affirmative) Polite Imperative constructions, while having different (non-zero) markers in all Conditional, Enimitive, and Apprehensional constructions and in all Negative constructions. The choice of the gloss `\textsc{ncond.aff}' for this zero marker, denoting `Affirmative Non-Conditional', is a simplification.\label{footnote9}}
+
+Given that the Apprehensional construction is included in the same set, it is coherent to regard the Apprehensional as a special mood in \ili{Gban}. As for its relation to polarity, at this point I will confine myself to stating that the Apprehensional construction cannot be negated\slash does not have a different-polarity version in any of its uses; for more details, see \sectref{sec:fedotov:apprpolarity}.
+
+It is also justifiable to assign the Apprehensional construction the status of one of \ili{Gban}'s core grammatical constructions (see Footnote \ref{footnote6}), since it belongs to a closed set of obligatorily-chosen constructions constituting the grammatical categories of mood and polarity.
+
+
+
+\section{Semantics and syntax: Usage in main clauses}
+\label{sec:fedotov:synsemmain}
+
+The Apprehensional construction can be used in main clauses as well as in dependent clauses.
+
+In this section, I will describe the readings\slash functions available in main clauses: expression of pure apprehension (\sectref{subsec:expression}), warnings (\sectref{subsec:warnings}), or threats (\sectref{subsec:threats}). These are illustrated in \REF{ex:Fed1}, \REF{ex:Fed8} and \REF{ex:Fed9} respectively.
+
+
+\begin{exe} \ex \label{ex:Fed8} \textnormal{Warning} \\
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{sȉȅ} \textit{ɛ̀} \textit{í} \textit{tɔ̏=ɛ̋.} \\
+\textsc{2sg-\textbf{appr}} \textbf{\textsc{appr}} \textsc{emph} spoil\textsc{[inf]} you\_\textsc{sg} \textsc{gen} cloth=with \\
+\glt [Mother to a child who is playing with a knife, about to spoil his/her clothes:] `--- \textbf{Don't} spoil your clothes! / You \textbf{might} spoil your clothes!'
+\end{exe}
+
+
+
+\ea \label{ex:Fed9} \textnormal{Threat} \\
+\gll \textit{M-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{ɛ̀} \textit{zɛ̀!} \\
+\textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} you\_\textsc{sg} kill[\textsc{inf}] \\
+\glt [In the street, a robber who wants to rob a person:] `--- I \textbf{might} kill you / I\textbf{'ll} kill you!'
+\z
+
+ One of the characteristics dividing these readings is that the first one (pure apprehension) presumes undesirability for the speaker and the other two (warning and threat) undesirability for the addressee.\footnote{I do not assert here that the inverse combinations (a pure-apprehension use with a situation undesirable for the addressee and a warning\slash threat use with a situation undesirable for the speaker) are logically impossible. However, it seems reasonable to assume at least that in pure-apprehension uses the situation is always undesirable \textbf{at least} for the speaker and that in warning\slash threat uses the situation is always undesirable \textbf{at least} for the addressee. In the first case, it seems that even if we could refer (using an apprehensional marker) to an unpreventable situation that is bad mostly for the addressee (cf.\ [In court, before the verdict is announced:] \textit{Oh dear, you might get a big fine}), we would still express our own ``undesiring'' of it, which arises from empathy. Similarly, in the second case, even if we uttered a warning about a situation that is bad mostly for us (cf.\ \textit{Watch out, you might run me over!}), it would be the addressee's empathic ``undesiring'' of it that we would appeal to.} More detailed definitions will be given in the respective subsections. It is also important to note that these readings, although they are treated separately here, are not always easily distinguishable and probably even not mutually exclusive.
+
+A passing remark to be made here is that in \ili{Gban}, main clauses with the Apprehensional construction cannot be used as questions:
+
+\ea[*]{ \label{ex:Fed10}
+\gll \textit{Nɔ̰̌} \textit{bȅbèɛ̀} \textit{dò} \textit{y-ǎ} \textit{n{\ù}} \textit{bɔ̀} \textit{ȁ} \textit{nɛ̰̏} \textit{\textbf{lìì}?} \\
+thing bad one \textsc{3sg-appr} \textsc{appr} arrive[\textsc{inf}] he/she/it on \textsc{\textbf{q}} \\
+\glt Intended meaning:  `Might something bad happen to him?'
+}
+\z
+
+\subsection{Expression of pure apprehension}
+\label{subsec:expression}
+
+First, in main clauses, the Apprehensional construction can express pure apprehension -- i.e.\ convey just the speaker's emotion of fear, apprehension, or anxiety (or, probably, more neutral undesirability) with respect to some possible situation.\footnote{This function is basically what Dobrushina calls in Russian \textit{aprexensiv} `apprehensive', contrasting it with the term \textit{preventiv} `preventive' for the warning function \citep{Dobrushina2006}.} It is assumed that such uses do not convey any additional illocutionary component other than expressivity.
+
+In \ili{Gban}, this pure apprehension reading is available in all three persons (which is not the case in some other languages, where person can affect the interpretation of the apprehensional construction, \citealt{chapters/vuillermet}).
+
+Consider a series of examples with a nervous mother expressing her anxieties: with a human 3rd-person subject (\ref{ex:Fed11}), (\ref{ex:Fed13b}), an inanimate 3rd-person subject \REF{ex:Fed12}, a 1st-person subject \REF{ex:Fed13a}, and a 2nd-person subject \REF{ex:Fed13b}.
+
+
+\judgewidth{\textsuperscript{\textsc{ok}}}
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed11}
+\gll  \textit{Ù} \textit{nı̰̋} \textit{bɛ̏} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}.} \\
+we child there \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} get\_lost[\textsc{inf}] \\
+\glt  [A boy has gone for a walk in a forest, alone. His parents discuss this, knowing that at the moment they can do nothing to prevent bad things from happening to him. His mother:] `--- [I fear that] our son \textbf{might} get lost.'
+}
+\z
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed12}
+\gll \textit{Nɔ̰̌} \textit{bȅbèɛ̀} \textit{dò} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{bɔ̀} \textit{ȁ} \textit{nɛ̰̏!} \\
+thing bad one \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} arrive[\textsc{inf}] he/she/it on \\
+\glt [A constantly nervous mother, after the departure of her son, is worrying and expresses her fears aloud, talking to herself:] `--- Something bad \textbf{might} happen to him.'
+}
+\z
+
+
+
+\ea \label{ex:Fed13}
+\ea \label{ex:Fed13a}
+\gll \textit{M-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ȁ} \textit{gɔ̰̀} \textit{wò} \textit{vɔ̰̏ṵ̏ṵ̏!} \\
+\textsc{1sg-\textbf{appr}} \textbf{\textsc{appr}} he/she/it stay[\textsc{inf}] put\textsc{[inf]} cold \\
+\glt [In the same context as in \REF{ex:Fed12}:] `--- [My son might get lost and] I \textbf{might} become sorrowful/anxious' (lit.\ `{\dots} `stay cold/sad')! \\
+\ex \label{ex:Fed13b}
+\gll \textit{Ɛ̀} \textit{nı̰̋} \textit{bɛ̏} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}.} \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ȁ} \textit{gɔ̰̀} \textit{wò} \textit{vɔ̰̏ṵ̏ṵ̏!} \\
+you\_\textsc{sg} child there \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} get\_lost[\textsc{inf}] \textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} he/she/it stay[\textsc{inf}] put\textsc{[inf]} cold \\
+\glt [In the same context, but now she speaks to the father:] `--- Your son \textbf{might} get lost [and] you \textbf{might} become sorrowful/anxious!'
+\z
+\z
+
+ Consider also example \REF{ex:Fed14} with an overcautious or squeamish person speaking.
+
+
+\ea \label{ex:Fed14}
+\gll \textit{N\textbf{-a̰̋}} \textit{\textbf{n{\ù}}} \textit{gà} \textit{dɔ̀} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} illness put\textsc{[inf]} I at \\
+\glt [The addressee is sick. The speaker does not want to touch him/her. (S)he is explaining why (s)he does not offer his/her hand (this is the first utterance in the dialogue):] `--- You \textbf{might} infect me.' / `--- \textbf{For} you \textbf{not to} infect me.'\footnote{This second version of the translation (Fr. `Pour ne pas me contaminer') hints at a different interpretation, with a detached negative purpose clause (see \sectref{subsec:negativepurpose}), answering to a silent question `Why aren't you offering me a hand?'.}
+\z
+
+ All clear examples of pure-apprehension uses in my data are elicited. However, there is one example of such use from the New Testament translation:
+
+\ea \label{ex:Fed15}
+\gll \textup{[}{\ldots}\textup{]} \textit{{\E}-kě} \textit{ta̋} \textit{nɔ̰́,} \textit{ȁ} \textit{mɔ̰́} \textit{nṵ̏=ȅ} \textit{n{\ù}a̰=le} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ı̰̀} \textit{gbí} \textit{bò.} \\
+{} \textsc{3sg-cond.neg} \textsc{ipfv}\backslash be.\textsc{neg} like\_that he/she/it \textsc{gen} come=\textsc{loc2} constantly?=\textsc{nmlz} \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} I breast remove[\textsc{inf}] \\
+\glt \{{\dots} yet because this widow keeps bothering me, I will grant her justice.\} `Otherwise, she will keep coming and wear me out.' (Luke 18:5) \\
+(More precisely: `{\dots} Otherwise (lit.\ `If it's not like that'), her continual coming \textbf{might} upset me.')
+\z
+
+All the examples presented above feature situations that are inherently undesirable, so it may not yet be obvious that the Apprehensional construction itself expresses undesirability here. However, there are several examples in my data where the situations expressed by the predicates are not inherently undesirable, but are interpreted as undesirable in the context of the Apprehensional construction. This is illustrated in example \REF{ex:Fed16} with `come', in example \REF{ex:Fed18} with `be\slash become cold', and especially in example \REF{ex:Fed71prime} with `see my son again'.\footnote{Examples of neutral situations are also attested in the dependent uses of the Apprehensional construction; compare \REF{ex:Fed41} and (\ref{ex:Fed55})--(\ref{ex:Fed57}) in the following sections.}
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed16}
+\gll \textit{M-a̰̋} \textit{n{\ù}} \textit{n{\ù}.} \\
+\textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} come[\textsc{inf}] \\
+\glt `[I \textbf{fear} that] I might come [there].'
+}
+\z
+
+ As for the temporal localization of the situation, the Apprehensional construction in pure-apprehension uses is compatible only with future situations and not with past \REF{ex:Fed17} or present \REF{ex:Fed18} situations. This is similar, for example, to the apprehensive marker in \ili{Ese Ejja} \citep[265]{vuillermet2018}, but different from the one in \ili{To'aba'ita}, which is temporally-neutral \citep[296]{lichtenberk1995}.
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed17}
+\gll \textit{M-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}.} \\
+\textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} get\_lost[\textsc{inf}] \\
+\glt 1. [Worrying:] `--- [I'm afraid that] I might get lost [in the future].' \\
+2. \text{*}[Worrying:] `--- [I'm afraid that] I might have got lost [already].'
+}
+\z
+
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed18}
+\gll \textit{Y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yè} \textit{fɔ̰̏ṵ̏fɔ̰̏ṵ̏.} \\
+\textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} be[\textsc{inf}] cold \\
+\glt 1. `[It would be bad for / We don't want] it [e.g.\ the water] to be/become cold [in the future].' \\
+2. \text{*}`[I'm afraid that] it [e.g.\ the water] is cold [now, already].'
+}
+\z
+
+ An interesting characteristic of the Apprehensional construction in pure\hyp apprehension uses is that it seems to be compatible only with situations that are preventable at least in principle. \textit{Preventability}\footnote{I introduce here the notion of preventability, which is related to control(lability), but should be differentiated from it. A similar opposition ``avertible--non-avertible'' is mentioned in \citeauthor{lichtenberk1995} (\citeyear[311]{lichtenberk1995}).} of a situation P can be defined as the possibility of a controllable (by the interlocutors) situation Q that would cause non-P. For example, getting lost in a forest (P) is an uncontrollable situation itself, but it is preventable: the person can be or could have been persuaded (Q) not to go there. Preventability can be generic (situations that are preventable in principle, theoretically) or actual (situations that are currently preventable).
+
+In all previous examples, the situations were at least in principle preventable (although in actual circumstances the situation may be already unpreventable). Getting infected \REF{ex:Fed14} can still be prevented by not touching the sick person. The situations of one's son getting lost \REF{ex:Fed11}, getting into trouble \REF{ex:Fed12}, or making his parents mournful \REF{ex:Fed13} could all have been prevented by not letting the son go, although now it is already too late.
+
+But consider now an example about raining, which is in principle unpreventable. In \ili{Gban}, the Apprehensional construction is infelicitous in such a context:
+
+\ea[\#]{ \label{ex:Fed19}
+\gll \textit{Gwlɛ̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ka̋.} \\
+rain \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} fall[\textsc{inf}] \\
+\glt Intended meaning: [A person comes out of the house in the morning and sees dark clouds in the sky. As today is the day of a feast (s)he is preparing, (s)he does not want rain. (S)he begins to worry:] `--- It might rain.'\\
+(But a commentary was made that this could be possible for ``mystic people who speak with the rain'' and who thus may indeed \textbf{prevent} the rain from falling.)
+}
+\z
+
+ At the same time, this unpreventable situation of raining (in general) can be converted into a very similar but preventable one -- by introducing an additional participant (which is under the control of the interlocutors). The Apprehensional construction becomes felicitous in this case:
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed20}
+\gll \textit{Gwlɛ̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ka̋=le̋} \textit{ı̰̀} \textit{mɔ̰́} \textit{wȍtló} \textit{nɔ̰́} \textit{là.} \\
+rain \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} fall[\textsc{inf}]=\textsc{loc2} I for car that on \\
+\glt [I left my car outside in the open air. I’m worried:] `— It might rain on my car.'
+}
+\z
+
+There is also a similar example in my data about the weather getting cold (which is in principle unpreventable as well). A constructed version of it with the Apprehensional construction was, too, considered infelicitous by the speaker with the commentary ``It's as if you prevent the cold from coming''.
+
+This behaviour of the Apprehensional construction in \ili{Gban} is rather peculiar, if we compare it to what is known about apprehensional markers in (some) other languages of the world. For example, the \ili{Russian} apprehensional construction with \textit{kak by {\dots} ne} is perfectly compatible even with situations that are in principle unpreventable \REF{ex:Fed21}. The same is reported for \ili{Ese Ejja} \citep[274]{vuillermet2018}. Analogous examples are found in \ili{To'aba'ita} \REF{ex:Fed22} and in a variety of Tatar \REF{ex:Fed23}.
+
+\ea \label{ex:Fed21} \langinfo{Russian} {} {personal knowledge} \\
+\gll \textit{\textbf{Kak}} \textit{\textbf{by}} \textit{\textbf{ne}} \textit{pošël} \textit{dožd'.} \\
+how \textsc{sbjv} \textsc{neg} go.\textsc{pfv.pst.m.sg} rain \\
+\glt `[I'm worried that] It might rain.'
+\z
+
+
+\ea \label{ex:Fed22} 
+\langinfo{To'aba'ita} {Austronesian}{\citealt[295]{lichtenberk1995}}  \\
+\gll \textit{\textbf{Ada}} \textit{dani} \textit{ka} \textit{'aru.} \\
+\textsc{appr} rain it.\textsc{seq} fall \\
+\glt `It may rain.'
+\z
+
+
+\ea \label{ex:Fed23} \langinfo{Mordovian varieties of Mishar Tatar} {Turkic} {\citealt[33]{Dobrushina2006}} \\
+\gll \textit{Jaŋɣyr} \textit{jau-\textbf{ma-ɣaj}.} \\
+rain fall-\textsc{neg-opt} \\
+\glt `It might rain.'
+\z
+
+ Consider also the claim by Dobrushina that the apprehensional (``apprehensive'') ``does not have a (\dots) restriction on controllability'' and ``expresses controllable as well as fully uncontrollable situations'' \citep[57--59]{Dobrushina2006}.
+
+
+\subsection{Warnings}
+\label{subsec:warnings}
+
+Another possible use of the Apprehensional construction in main clauses is in warnings\footnote{\citet{Dobrushina2006} uses the Russian term \textit{preventiv} `preventive' for this warning function. The term \textit{admonitive} (Russian \textit{admonitiv}) is also sometimes used in the literature (see \cite[39--40]{vuillermet2018}; \cite[29]{Dobrushina2006}).} -- i.e.\ in utterances that inform the addressee of an undesirable situation which the addressee can prevent if (s)he pays attention to it. One illustration of such a use is example \REF{ex:Fed4} above. Consider also examples \REF{ex:Fed24b}, \REF{ex:Fed25b}, and \REF{ex:Fed26} below.
+
+It can be seen that in 2nd-person warning contexts, the Negative Subjunctive (which is, among its different uses, the standard negative counterpart to the Imperative) can also be used. In this section, the Negative Subjunctive versions are always given before the Apprehensional versions, in the (a) subexamples.
+
+
+\ea \label{ex:Fed24}
+\ea \label{ex:Fed24a}
+\gll \textup{(}\textit{Súɛ́ɛ́,}\textup{)} \textit{n-ǎ̰} \textit{gbe̋a̋} \textit{ké!} \\
+watch\_out \textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash fall \textsc{emph} \\
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed24b}
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{gbȅa̋!} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} fall[\textsc{inf}] \\
+\glt [A warning to a child:] `--- (Watch out,) \textbf{don't} fall!' \\
+(Fr. `[Attention,] faut pas tomber') / `--- (Watch out,) you \textbf{might} fall!'
+}
+\z
+\z
+
+
+\ea \label{ex:Fed25}
+\ea \label{ex:Fed25a}
+\gll \textit{Súɛ́ɛ́,} \textit{n-ǎ̰} \textit{tő=lȅ} \textit{ké} \textit{mı̰̏ɛ̰̏} \textit{là!} \\
+watch\_out \textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash leave=\textsc{loc2} \textsc{emph} snake on \\
+\ex \label{ex:Fed25b}
+\gll \textit{Súɛ́ɛ́,} \textit{n-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{tő=le̋} \textit{ké} \textit{mı̰̏ɛ̰̏} \textit{là!} \\
+watch\_out \textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} leave\textsc{[inf]=loc2} \textsc{emph} snake on \\
+\glt `(Watch out,) \textbf{don't} step on a snake! / (Watch out,) you \textbf{might} step on a snake!' (\textit{Súɛ́ɛ́} can also be omitted.)
+\z
+\z
+
+
+
+\ea \label{ex:Fed26}
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{sȉȅ} \textit{ɛ̀} \textit{í} \textit{tɔ̏=ɛ̋.} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} spoil[\textsc{inf}] you\_\textsc{sg} \textsc{gen} cloth=with \\
+\glt [Mother to a child who is playing with a knife, about to spoil his/her clothes:] `--- \textbf{Don't} spoil your clothes! / You \textbf{might} spoil your clothes!'
+\z
+
+ The distribution of the Apprehensional and the Negative Subjunctive in these uses is not exactly clear, but there are hints that the Negative Subjunctive is more felicitous than the Apprehensional in imminent warnings, while the Apprehensional is rather used in more neutral, less urgent warnings with potential danger. In example \REF{ex:Fed24}, for instance, \REF{ex:Fed24a} was considered by the speaker to be more felicitous than \REF{ex:Fed24b} if we are trying to prevent an imminent falling, while for \REF{ex:Fed24b} a more suitable context would be when the child is running or walking in the mud or any other behaviour that only can lead to a falling event. At the same time, the Apprehensional seems infelicitous in more general warnings, without a current direct motivation -- see (\ref{ex:Fed27})--(\ref{ex:Fed28}).
+
+
+
+\ea \label{ex:Fed27}
+\ea[]{ \label{ex:Fed27a}
+\gll \textit{N-ǎ̰} \textit{gbe̋a̋} \textit{ké} \textit{di̋=à.} \\
+\textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash fall \textsc{emph} road=on \\
+\glt [A mother is warning her son before sending him to school in the morning:] `--- \textbf{Don't} fall along the way!'
+}
+\ex[\#]{ \label{ex:Fed27b}
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{gbȅa̋} \textit{ké} \textit{di̋=à.} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} fall[\textsc{inf}] \textsc{emph} road=on \\
+\glt Intended meaning: `Don't fall along the way!'
+}
+\z
+\z
+
+
+
+\ea \label{ex:Fed28}
+\ea[]{ \label{ex:Fed28a}
+\gll \textit{N-ǎ̰} \textit{si̋e̋} \textit{ké} \textit{ɛ̀} \textit{í} \textit{tɔ̏=ɛ̋.} \\
+\textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash spoil \textsc{emph} you\_\textsc{sg} \textsc{gen} cloth=with \\
+\glt [A mother is warning her son before sending him to school in the morning:] `---\textbf{Don't} spoil your clothes!'
+}
+\ex[\#]{ \label{ex:Fed28b}
+\gll \textit{N-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{sȉȅ} \textit{ɛ̀} \textit{í} \textit{tɔ̏=ɛ̋.} \\
+\textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}}  \textsc{emph} spoil[\textsc{inf}] you\_\textsc{sg} \textsc{gen} cloth=with \\
+\glt Intended meaning: `Don't spoil your clothes!' \\
+(But example \REF{ex:Fed28b} was said to be felicitous as a more direct warning, see \REF{ex:Fed26} above.)
+}
+\z
+\z
+
+
+
+Apart from 2nd-person uses (that can be viewed as canonical for warnings), \ili{Gban} also allows the Apprehensional construction with 1st- and 3rd-person subjects in warnings. An example with a 1st-person subject:
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed29}
+\gll \textit{M\textbf{-a̰̋}} \textit{\textbf{n{\ù}}} \textit{vȉ} \textit{di̋} \textit{ɛ̀} \textit{là!} \\
+\textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} throw[\textsc{inf}] down you\_\textsc{sg} on \\
+\glt [A person climbing down from a tree:] `--- [Watch out there,] I \textbf{might} fall down on you!'
+}
+\z
+
+ And a version of example \REF{ex:Fed4} with a 3rd-person subject:
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed4prime}
+\gll \textit{Ɛ̀} \textit{kwà} \textup{[}\textit{y}\textup{]}\textit{-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ylɛ̏!} \\
+you\_\textsc{sg} arm \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} break[\textsc{inf}] \\
+\glt `[Be careful,] don't break your arms!' (lit.\ `Your arms \textbf{might} break!')
+}
+\z
+
+ Consider also a 3rd-person example \REF{ex:Fed35} from the next section, in which the threat reading was found implausible, but which is felicitous with the reading of a friendly warning or advice.
+
+It follows from the definition of a warning given above that, from a theoretical point of view, warnings (as well as threats, see \sectref{subsec:threats}) must introduce situations that are currently preventable, unlike pure-apprehension contexts. For example, if I am trying to warn a person that (s)he might fall (\textit{Watch out, you might fall!}), this would only make sense if the fall is still preventable. However, it should be noted that the event \textit{explicitly} referred to in a warning utterance needs not itself be preventable, but may just imply the possibility of some undesirable consequence which, in turn, can be prevented\footnote{I am grateful to the editors of the volume for bringing this to my attention.} (compare `in-case' contexts, discussed in the end of \sectref{subsec:negativepurpose}). For example, we could utter \textit{Hey, it might rain today} to a person leaving the house, meaning it as a warning,  for the person to take an umbrella. In this case, the warning still semantically introduces a currently preventable situation (of getting wet), but does so implicitly (as a possible consequence of raining).
+
+Returning to \ili{Gban}, here such ``indirect'' warnings that explicitly introduce an unpreventable situation are infelicitous. Consider example \REF{ex:Fed30}.
+
+\ea[\#]{ \label{ex:Fed30}
+\gll \textit{Yi̋} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yèè} \textit{fɔ̰̏ṵ̏fɔ̰̏ṵ̏.} \\
+water \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} be[\textsc{inf}] cold \\
+\glt Intended meaning: [A person wants to swim in a lake tomorrow, but we know that the forecast is bad and we warn him/her:] `--- The water might be [too] cold [tomorrow].' \\
+(But the example was said to be felicitous in the case of some small, controllable amount of water: `[Don't throw ice into water,] it might be/become too cold.')
+}
+\z
+
+
+\noindent This situation of water in a lake being cold at the time of swimming is unpreventable (regardless of the fact that it implies a possible preventable situation: a possibility for a swimmer to get cold). However, if we rather speak, for instance, about some water in a glass, this situation is preventable, and the warning becomes felicitous.
+
+
+\subsection{Threats}
+\label{subsec:threats}
+
+The Apprehensional construction can also be used in threats, i.e.\ in utterances that express a currently preventable situation undesirable for the addressee that might be brought about (directly or indirectly) by the speaker, if the addressee does not carry out what (s)he is asked to.
+
+There are clear examples of threat usage for the 1st and 2nd persons:
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed31}
+\gll \textup{(}\textit{N-ǎ̰} \textit{gbi̋e̋=ȅ} \textit{ı̰̀} \textit{nɛ̰̀!}\textup{)}\hspace*{4cm} \textit{\textbf{M}-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ɛ̀} \textit{zɛ̀} \textit{gbɛ̰̏} \textit{yɛ̋!} \\
+\textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash drag=\textsc{loc1} I at \textsc{\textbf{1sg}-\textbf{appr}} \textsc{\textbf{appr}} you\_\textsc{sg} kill\textsc{[inf]} knife with \\
+\glt [On encountering a robber in the street, a person pulls out a knife and says:] `--- (Don't come any closer!) \textbf{I'll} stab you (sg.)!'
+}
+\z
+
+
+
+\ea \label{ex:Fed32}
+\ea \label{ex:Fed32a}
+\gll \textit{\textbf{M}-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{ɛ̀} \textit{zɛ̀!} \\
+\textsc{\textbf{1sg}-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} you\_\textsc{sg} kill\textsc{[inf]} \\
+\ex \label{ex:Fed32b}
+\gll \textit{\textbf{W}-\textbf{a̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{ɛ̀} \textit{zɛ̀!} \\
+\textsc{\textbf{1pl}-\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} you\_\textsc{sg} kill\textsc{[inf]} \\
+\glt [In the street, a robber or several robbers who want to rob a person:] `\textbf{I might} kill you / \textbf{I'll} kill you!'\footnote{My consultant commented that this threat sounded ``advice-like''.} / `\textbf{We might} kill you / \textbf{We'll} kill you!'
+\z
+\z
+
+
+\ea \label{ex:Fed33}
+\gll \textit{\textbf{N}-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{gà!} \textup{(}\textit{Bȅ} \textit{ı̰̀} \textit{gb{\à}} \textit{la̋lȁ} \textit{yɛ̋!}\textup{)} \\
+\textsc{\textbf{2sg}-\textbf{appr}} \textsc{\textbf{appr}} die[\textsc{inf}]  \textsc{2sg.sbjv} I give\textsc{[sbjv]} money with \\
+\glt [A robber:] `--- \textbf{You (sg.) might} die! (Give me the money!)'
+\z
+
+
+\ea \label{ex:Fed34}
+\gll \textit{\textbf{A̋}} \textit{\textbf{n{\ù}}} \textit{ké} \textit{gà} \textit{gȍgȍ!} \\
+\textsc{\textbf{2pl}:\textbf{appr}} \textsc{\textbf{appr}} \textsc{emph} die[\textsc{inf}] empty \\
+\glt [A robber:] `— \textbf{You (pl.)'re gonna/might} die in vain!' [Give me that money!]
+\z
+
+
+ In the 3rd person, the threat interpretation of the Apprehensional construction seems to become more problematic, although it is still available. For example, in \REF{ex:Fed35}, the use of the Apprehensional construction was considered felicitous not with a threat reading, but rather with an advice or friendly warning reading.
+
+
+\ea[\#]{ \label{ex:Fed35}
+\gll \textit{N-ǎ̰} \textit{te̋=kpȅ} \textit{ɔ̏} \textit{nɛ̰̏,} \textit{\textbf{w}-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ɛ̀} \textit{ki̋ȍű.} \\
+\textsc{2sg-sbjv.neg} \textsc{ipfv}\backslash approach=\textsc{loc1} they on \textsc{\textbf{3pl}-\textbf{appr}} \textsc{\textbf{appr}} you\_\textsc{sg} bite\textsc{[inf]} \\
+\glt Intended meaning: [On encountering a robber in the street, a person with dogs threatens:] `--- Don't come closer! \textbf{They'll} bite you!' \\
+(The following comment was given for the example: ``It can't be a threat; it's like advice, as if we help the robber''.)
+}
+\z
+
+ However, in example \REF{ex:Fed36}, the threat interpretation was considered possible.
+
+
+\ea \label{ex:Fed36}
+\gll \textit{\textbf{Y}-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gà!}  \textup{(}\textit{Bȅ} \textit{ı̰̀} \textit{gb{\à}} \textit{la̋lȁ} \textit{yɛ̋!}\textup{)} \\
+\textsc{\textbf{3sg}-\textbf{appr}} \textsc{\textbf{appr}} die\textsc{[inf]} \textsc{2sg.sbjv} I give[\textsc{sbjv}] money with \\
+\glt [A robber has caught the wife of the man he wants to rob and threatens him:] `--- \textbf{She might} die! (Give me the money!)'
+\z
+
+ Another observation on threat uses is that, in general (for all persons), the threat interpretation seems to be most felicitous when the Apprehensional construction is accompanied by a preceding imperative\slash prohibitive clause, as in \REF{ex:Fed31}. However, the problem for the analysis of such examples is that in this case they become indistinguishable from syntactically dependent negative-purpose uses without an overt subordinator (see \sectref{subsec:negativepurpose}).
+
+
+
+\section{Semantics and syntax: Dependent uses}
+\label{sec:fedotov:synsemdependent}
+
+In this section, I will describe the two attested dependent uses of the Apprehensional construction, i.e.\ uses in complements of `fear' predicates (and probably in negative irrealis complement clauses, too) (\sectref{subsec:fearpredicate}) and in negative purpose clauses (but not in `in-case' contexts) (\sectref{subsec:negativepurpose}).
+
+When the Apprehensional construction is used in dependent clauses, it is combined with certain markers of subordination. These additional subordinators will also be discussed, in the respective subsections.
+
+\subsection{`Fear' predicate complement}
+\label{subsec:fearpredicate}
+
+The Apprehensional construction can be used in the complement clauses of `fear' predicates such as \textit{gbɛ̰̏} `be afraid', where it simply introduces the mental content associated with the `fear' predicate; see examples (\ref{ex:Fed37})--(\ref{ex:Fed43}) and (\ref{ex:Fed48})--(\ref{ex:Fed49}) below.
+
+Here the Apprehensional competes with the Negative Subjunctive \REF{ex:Fed37b}, \REF{ex:Fed39b} and with the Indicative \REF{ex:Fed39c}, \REF{ex:Fed42} with no obvious difference in semantics, although with some restrictions (see below).
+
+The complement clauses are introduced by the complementizer \textit{nı̰́} `that' (in some cases considered optional, see \REF{ex:Fed48}). This marker \textit{nı̰́} (of uncertain etymology) is the default complementizer in \ili{Gban}, used with verbs of speech and thought and in irrealis clauses with matrix predicates such as `make (somebody do something)', `prevent', `have to', `need', and `want'. It is also used as a subordinator introducing purpose clauses (see \sectref{subsec:negativepurpose}). The same \textit{nı̰́} can be used as a quotative marker to introduce direct speech.
+
+
+
+\ea \label{ex:Fed37}
+\ea \label{ex:Fed37a}
+\gll \textit{Ḭ̀} \textit{\textbf{gbɛ̰̀}} \textup{[}\textit{\textbf{nı̰́}} \textit{ù} \textit{nı̰̋} \textit{bɛ̏} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}}\textup{]}\textit{.}\\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} we child there \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} get\_lost\textsc{[inf]} \\
+\ex \label{ex:Fed37b}
+\gll \textit{Ḭ̀} \textit{\textbf{gbɛ̰̀}} \textup{[}\textit{\textbf{nı̰́}} \textit{ù} \textit{nı̰̋} \textit{bɛ̏} \textit{y-ǎ} \textit{gṵ̋a̰̋}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} we child there \textsc{3sg-sbjv.neg} \textsc{ipfv}\backslash get\_lost \\
+\glt [A boy has gone for a walk in a forest, alone. His parents discuss this, although at the moment they can do nothing to prevent anything that can happen to him. His mother:] `--- I \textbf{fear} \textbf{that} our son \textbf{might} get lost.'
+\z
+\z
+
+
+\ea \label{ex:Fed38}
+\gll {\textup{[}\dots\textup{]}} \textit{wȍ-é} \textit{\textbf{gbɛ̰́}} \textup{[}\textit{\textbf{nḭ}} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{bato} \textit{dɛ̰̀-ka=le} \textit{Siite} \textit{yɛ̰-tu} \textit{kpaa=nṵ}\textup{]}{\textup{[}\dots\textup{]}}  \\
+{} \textsc{3pl-ipfv.preh} \textsc{ipfv}\backslash be\_afraid \textbf{that} \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} ship stop-\textsc{caus[inf]=loc2} Syrtis sand-heap big=\textsc{pl} \\
+\glt `Because they \textbf{were afraid} they \textbf{would} run aground on the sandbars of Syrtis,' \{they lowered the sea anchor and let the ship be driven along\}. (Acts 27:17) \\
+(More precisely: `They \textbf{feared that} it [= the wind] \textbf{might} make the ship run aground at the large sandbank of Syrtis [\dots]')
+\z
+
+
+
+\ea \label{ex:Fed39}
+\ea[]{ \label{ex:Fed39a}
+\gll \textit{{\E}} \textit{\textbf{gbɛ̰̏}} \textup{[}\textit{\textbf{nı̰́}} \textit{Flȁ̰sóá} (\textit{y})\textit{-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gà}\textup{]}\textit{.} \\
+\textsc{3sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} François \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} die\textsc{[inf]} \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed39b}
+\gll \textit{{\E}} \textit{\textbf{gbɛ̰̏}} \textup{[}\textit{\textbf{nı̰́}} \textit{Flȁ̰sóá} \textit{y-ǎ} \textit{ga̋}\textup{]}\textit{.} \\
+\textsc{3sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} François \textsc{3sg-sbjv.neg} \textsc{ipfv}\backslash die \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed39c}
+\gll \textit{{\E}} \textit{\textbf{gbɛ̰̏}} \textup{[}\textit{\textbf{nı̰́}} \textit{Flȁ̰sóá} \textit{‶} \textit{sȅ} \textit{ɛ̏} \textit{gȁ}\textup{]}\textit{.} \\
+\textsc{3sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} François \textsc{3sg} \textsc{ipfv}\backslash can \textsc{3sg} \textsc{ipfv}\backslash die \\
+\glt `She's \textbf{afraid} \textbf{that} François \textbf{might} die.' \\
+(A commentary was made that the Apprehensional version \REF{ex:Fed39a} conveys here a preventive meaning, for example if François wants to go to a place where there is a mortal danger.)
+}
+\z
+\z
+
+
+The dependent status of these clauses is at least partially confirmed by a) the possible occurrence of a clause-final subordinator \textit{lɛ̌} (see below) and b) the observed absence of deictic shift, as in \REF{ex:Fed40}. The absence of deictic shift manifests itself in that pronominal elements in the clause are chosen according to the primary speaker's perspective, as in traditional indirect speech/thought: \textit{You're afraid lest \textbf{you} might fall ill} (which, in case of clauses expressing mental content, is associated with subordination and not with main clause status). They are not shifted according to the internal perspective of the participant, as they would be in direct speech\slash thought, i.e.\ in a quote: \textit{You're afraid \textup{[}saying\slash thinking to yourself\textup{]}}: \textit{\mbox{``\textbf{I}/\#You} might fall ill''}.
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed40}
+\gll \textit{\textbf{À}} \textit{\textbf{gbɛ̰̀}} \textup{[}\textit{\textbf{nı̰́}} \textit{\textbf{à}} \textit{bò} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{kpǒ} \textup{(}\textit{\textbf{lɛ̌}}\textup{)}\textup{]}\textit{.} \\
+\textsc{2pl} \textsc{ipfv}\backslash be\_afraid \textbf{that} \textbf{you\_\textsc{pl}} head \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} break\textsc{[inf]} \textbf{because} \\
+\glt `\textbf{You (pl.)} are afraid that \textbf{you (pl.)} might fall ill' (lit.\ `{\dots} that your (pl.) head might break').
+}
+\z
+
+ Interestingly, in several of the translated examples, the `fear' predicate complement clause was marked not only with the subordinator \textit{nı̰́} `that', but also, optionally, with the dedicated clause-final reason\slash purpose marker \textit{lɛ̌} `because, in order to'; see examples (\ref{ex:Fed40})--(\ref{ex:Fed41}). In these cases, the marking was thus identical to the one used in negative purpose clauses (see \sectref{subsec:negativepurpose}). Moreover, such marking seems to be possible even in `fear' complement clauses that do not contain the Apprehensional construction, see example \REF{ex:Fed42} with the Indicative.
+
+\ea \label{ex:Fed41}
+\gll \textit{Ḭ̀} \textit{\textbf{gbɛ̰̀}} \textup{[}\textit{\textbf{nı̰́}} \textit{w-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ȁ} \textit{vȍ} \textit{bò} \textit{bɛ̋} \textsuperscript{\textsc{ok}}\textup{(}\textit{\textbf{lɛ̌}}\textup{)}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid \textbf{that} \textsc{3pl-\textbf{appr}} \textbf{\textsc{appr}} he/she/it already head take[\textsc{inf}] \textbf{because} \\
+\glt [A person who is late:] `--- I'm afraid they might already start [without me].'
+\z
+
+
+\ea \label{ex:Fed42}
+\gll \textit{Ḭ̀} \textit{\textbf{gbɛ̰̀}} \textit{nɔ̰̀} \textup{[}\textit{\textbf{nı̰́}} \textit{yȅȅ} \textit{fɔ̰̏ṵ̏fɔ̰̏ṵ̏} \textsuperscript{\textsc{ok}}\textup{(}\textit{\textbf{lɛ̌}}\textup{)}\textup{]}. \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid here \textbf{that} \textsc{3sg:ipfv}\backslash be cold \textbf{because} \\
+\glt `I'm afraid it [water from the fridge] might be too cold.'
+\z
+
+ Apart from \textit{gbɛ̰̏} `be afraid', similar complement-clause uses have been attested with some other, synonymous, predicates, such as `worry':
+
+\ea \label{ex:Fed43}
+\gll \textit{Ḭ̀} \textit{\textbf{gbí}} \textit{‶} \textit{\textbf{v{\ȕ}}} \textup{[}\textit{nı̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}}\textup{]}\textit{.} \\
+I breast \textsc{3sg} \textsc{ipfv}\backslash stir that \textsc{3sg-\textbf{appr}} \textbf{\textsc{appr}} get\_lost[\textsc{inf}] \\
+\glt `I \textbf{worry\slash fear} (lit.\ `my breast is stirring') that he might get lost.'
+\z
+
+
+ As for the temporal localization of the situation, the Apprehensional construction in a `fear' predicate complement is compatible only with future\slash posterior readings (illustrated by any of the examples above). For past\slash anterior and present\slash simultaneous situations, other constructions must be used, like the Indicative:
+
+
+\ea \label{ex:Fed44}
+\ea[]{ \label{ex:Fed44a}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textit{nı̰́} \textit{ɛ́} \textit{yȁ} \textit{bàà} \textit{\textbf{wíɛ̏}}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid that \textsc{3sg\backslash pst} go\_away\backslash\textsc{pfv.hest} village yesterday \\
+\glt `I'm afraid that he might have gone to town \textbf{yesterday}.'
+}
+\ex[*]{ \label{ex:Fed44b}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textit{nı̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yà} \textit{/} \textit{yȁ} \textit{bàà} \textit{\textbf{wíɛ̏}}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid that \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} go\_away[\textsc{inf}] {} go\_away\backslash\textsc{pfv.hest} village yesterday \\
+\glt Intended meaning: `I'm afraid that he might have gone to town yesterday.'
+}
+\z
+\z
+
+
+
+\ea \label{ex:Fed45}
+\ea[]{ \label{ex:Fed45a}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textit{nɔ̰̀} \textup{[}\textit{nı̰́} \textit{ı̰̋} \textit{gṵ̀{\à}}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid here that \textsc{1sg\backslash pst} get\_lost[\textsc{pfv.hod}] \\
+\glt `I'm afraid that I might have got lost [already].' \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed45b}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textit{nɔ̰̀} \textup{[}\textit{nı̰́} \textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{gṵ̀{\à}}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid here that \textsc{1sg-\textbf{appr}} \textbf{\textsc{appr}} get\_lost[\textsc{inf}] \\
+\glt 1. `I'm afraid that I might get lost [at a later time].' \\
+2. \text{*}`I'm afraid that I might have got lost [already].'
+}
+\z
+\z
+
+
+
+\ea \label{ex:Fed46}
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed46a}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textit{nɔ̰̀} \textup{[}\textit{nı̰́} \textit{yȅȅ} \textit{fɔ̰̏ṵ̏fɔ̰̏ṵ̏}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid here that \textsc{3sg:ipfv\backslash}be cold \\
+\glt `I'm afraid that it [the water from the fridge] might be cold [now, already].' \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed46b}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textit{nɔ̰̀} \textup{[}\textit{nı̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yè} \textit{fɔ̰̏ṵ̏fɔ̰̏ṵ̏}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid here that \textsc{3sg-\textbf{appr}} \textbf{\textsc{appr}} be[\textsc{inf}] cold \\
+\glt 1. `I'm afraid that it [the water from the fridge] might be cold [at a later time].' \\
+2. \text{*}`I'm afraid that it [the water from the fridge] might be cold [now].'
+}
+\z
+\z
+
+ Just like the pure-apprehension uses (\sectref{subsec:expression}), `fear' predicate complement uses seem (unexpectedly) not compatible with unpreventable situations. Example \REF{ex:Fed47} is infelicitous because the raining event is not preventable in principle.
+
+\ea[\#]{ \label{ex:Fed47}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textup{(}\textit{nı̰́}\textup{)} \textit{gwlɛ̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ka̋}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid that rain \textsc{3sg-\textbf{appr}} \textbf{\textsc{appr}} fall\textsc{[inf]} \\
+\glt Intended meaning: [A person comes out of the house in the morning and sees dark clouds in the sky. As today is the day of a festival (s)he is preparing, (s)he does not want rain. (S)he says:] `--- I'm afraid it might rain.'
+}
+\z
+
+
+In this case, a different construction is used, the (Affirmative) Indicative:
+
+\ea \label{ex:Fed48}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textup{(}\textit{nı̰́}\textup{)} \textit{gwlɛ̰́} \textit{‶} \textit{kȁ} \textit{nı̰̋nɛ̰́}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid that rain \textsc{3sg} \textsc{ifpv}\backslash fall just\_now \\
+\glt `I'm afraid it might rain.'
+\z
+
+
+ If the situation of raining is converted into a preventable one by introducing a controlled participant \REF{ex:Fed49}, the Apprehensional construction becomes felicitous again.
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed49}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textup{(}\textit{nı̰́}\textup{)} \textit{gwlɛ̰́} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ka̋=le̋} \textit{ı̰̀} \textit{mɔ̰́} \textit{wȍtló} \textit{nɔ̰́} \textit{là}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv}\backslash be\_afraid that rain \textsc{3sg-\textbf{appr}} \textbf{\textsc{appr}} fall[\textsc{inf=loc2}] I for car that on \\
+\glt [Oh, I left my car outside in the open air.] `I'm afraid it might rain on my car.' [I need to put it away.]
+}
+\z
+
+ Consider also example \REF{ex:Fed39a} with the situation of dying, where the Apprehensional construction was said to be felicitous in a case where dying is preventable (by not going to a dangerous place).
+
+This restriction, again, makes the Apprehensional construction in \ili{Gban} different from, for instance, the \ili{Russian} construction with \textit{kak by {\dots} ne} or the \ili{English} \textit{lest}-construction:
+
+\ea \label{ex:Fed50} \textnormal{\ili{Russian} (personal knowledge)} \\
+\gll \textit{On} \textit{pereživaet,} \textit{\textbf{kak}} \textit{\textbf{by}} \textit{\textbf{ne}} \textit{pošël} \textit{dožd'.} \\
+he worry.\textsc{ipfv.npst.3sg} \textbf{how} \textsc{\textbf{sbjv}} \textsc{\textbf{neg}} go.\textsc{pfv.pst.m.sg} rain \\
+\glt `He's worried that\slash lest it might rain.'
+\z
+
+
+\ea \label{ex:Fed51} \textnormal{American English} \\
+\textit{I would scan the heavens anxiously on the morning of the great event, fearful \textbf{lest} it might rain, in which case the picnic would be called off.} \\
+\textup{(P.\ G.\ Bernard (comp.). \textit{Years Gone By} (1967), p.\ 73)}
+\z
+
+
+ The Apprehensional construction seems to be also used in complementation of some predicates other than `fear'. Let us consider example \REF{ex:Fed54} with the predicate \textit{lè }(\textit{w})\textit{ɔ̰́} `be good'.
+
+
+\ea \label{ex:Fed54}
+\gll \textit{Ȁ} \textit{nɛ̰̀} \textit{ɛ̏} \textit{\textbf{lȅ {\OO}}} \textit{à} \textit{mɔ̰,} \textit{ɛ̏-li} \textit{yɔ̰̈} \textit{\textbf{nı̰́}} \textit{mṵ} \textit{doo} \textit{gà} \textit{mṵ} \textit{fofo} \textit{gɔ} \textit{vɛ̰ɛ̰,} \textit{ku} \textit{lɛ̏} \textit{gbḭ} \textit{vi} \textit{do} \textit{mɔ̰} \textit{mṵ} \textit{fofo} \textit{bo} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{vò} \textit{yɛ̰̀.} \\
+he/she/it which \textsc{3sg} \textsc{ipfv\backslash}be\_good you\_\textsc{pl} for \textsc{3sg-foc} there that person only die[\textsc{sbjv}] person all stomach? after so then tribe whole one for person all head \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} finish[\textsc{inf}] do\_all[\textsc{inf}] \\
+\glt `[I]t is better for you that one man die for the people than that the whole nation perish.' (John 11:50) \\
+(More precisely: `What \textbf{is good} for you is \textbf{that} one man would die for all people and [that] so all people of a whole nation \textbf{would not} perish.')\footnote{In this example, there are two conjoined subordinate clauses, sharing a single complementizer \textit{nı̰́}, both relating to \textit{lè (w)ɔ̰́} `be good' (in a cleft construction). Cf.\ the \ili{French} translation (from \textit{La Bible en français courant} \citep{BFC}) of this passage, which is closer to \ili{Gban}: \textit{Ne saisissez-vous pas qu'\textbf{il est de votre intérêt qu'}un seul homme meure pour le peuple \textbf{et} \textbf{qu'}ainsi la nation entière \textbf{ne soit pas} détruite?}}
+\z
+
+
+ Since such main predicates (there are also two similar, albeit less reliable, examples in my data with the predicate \textit{kɛ̀} `say\slash want') do not express undesirability nor fear, such examples seem to exhibit a different phenomenon. It appears that the Apprehensional construction has expanded its use to some extent onto the more general function of marking negative\footnote{For the ability of the Apprehensional construction to express negation of the dependent proposition, see \sectref{sec:fedotov:apprpolarity}.} irrealis complement clauses, in this case with a predicate of desire\slash positive evaluation (the normal option for this function in \ili{Gban} being the Negative Subjunctive). Unfortunately, the data are too scarce here yet to make any solid claims.
+
+
+\subsection{Negative purpose}
+\label{subsec:negativepurpose}
+
+Finally, the Apprehensional construction is used in \ili{Gban} as the \textit{principal} means of expressing negative purpose in subordinate clauses.\footnote{It is systematically used to translate stimuli with negated purpose clauses. The Negative Subjunctive has sometimes been tolerated in such contexts, too, but was considered less felicitous.} By default, it is accompanied in such clauses by an explicit subordination marker: the clause-final reason\slash purpose marker \textit{lɛ̌} `because, in order to'\footnote{This marker's central use is to mark dependent reason clauses (usually together with the clause-initial subordinator \textit{nɛ̰̀} `which; when; because'):
+\ea \label{ex:Fedfootnote22}
+\gll \textit{Wȍ-é} \textit{ɔ̏} \textit{mɔ̰́} \textit{sɔwi} \textit{wı̰̋} \textit{yi̋=o} \textup{[}\textit{\textbf{nɛ̰̀}} \textit{zɔ̰kɛɛ=nṵ} ∅\textit{-lí-é} \textit{nı̰́} \textit{ɔ} \textit{yɛ} \textit{\textbf{lɛ̌}}\textup{]}\textit{.} \\
+\textsc{3pl-ipfv.preh} they for net \textsc{ipfv}\backslash throw water=in \textbf{when} fisher=\textsc{pl} \textsc{3pl-foc-ipfv.preh} \textsc{ipfv}\backslash be\_that they with \textbf{because} \\
+\glt `They were casting a net into the sea, \textbf{because} they were fishermen.' (Matt.\ 4:18)
+\z} as in \REF{ex:Fed55} and, in addition, sometimes also the clause-initial subordinator \textit{nı̰́} `that', see \REF{ex:Fed56a} and \REF{ex:Fed57a}, or the clause-initial subordinator \textit{nɛ̰̀} `which; when; because', see \REF{ex:Fed58}. However, negative purpose clauses without an explicit subordinator are also possible if they follow the main clause, see \REF{ex:Fed56b},\footnote{Such unmarked dependent clauses are often hard to distinguish from main clauses expressing pure apprehension, warning, or threat. Because of this, in this section I will mostly consider examples with subordinators, which are unambiguous.} but not if they precede it, see \REF{ex:Fed57b}.
+
+\ea \label{ex:Fed55}
+\gll \textit{Mȁ̰-{\à}} \textit{n{\ù}} \textit{yà} \textit{wȍtló} \textit{yɛ̋,} \textup{[}\textit{n-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{n{\ù}} \textit{\textbf{lɛ̌}}\textup{]}\textit{.}\\
+\textsc{1sg-ind.neg} \textsc{ipfv\backslash}come go\_away[\textsc{inf}] car with \textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} come[\textsc{inf}] \textbf{because} \\
+\glt `I won't go in a car \textbf{in order} for you \textbf{not to} come.'
+\z
+
+
+
+\ea \label{ex:Fed56}
+\ea[]{ \label{ex:Fed56a}
+\gll \textit{Ɛ́} \textit{la̋lȁ} \textit{nɔ̰̀} \textit{ı̰̀} \textit{nɛ̰̀} \textup{[}\textit{\textbf{nı̰́}} \textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{bȅa̋} \textup{(}\textit{kȅkpa̋}\textup{)} \textit{wò} \textup{(}\textsuperscript{\textsc{ok}}\textbf{\textit{lɛ̌}}\textup{)}\textup{]}\textit{.} \\
+\textsc{3sg\backslash pst} money give[\textsc{pfv.hod}] I at \textbf{that} \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} work another put[\textsc{inf}] \textbf{because} \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed56b}
+\gll \textit{Ɛ́} \textit{la̋lȁ} \textit{nɔ̰̀} \textit{ı̰̀} \textit{nɛ̰̀} \textup{[}\textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{bȅa̋} \textit{kȅkpa̋} \textit{wò}\textup{]}\textit{.} \\
+\textsc{3sg\backslash pst} money give[\textsc{pfv.hod}] I at \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} work another put[\textsc{inf}] \\
+\glt `He gave me money, \textbf{so that} I would\textbf{n't} work (anymore).'
+}
+\z
+\z
+
+
+\ea \label{ex:Fed57}
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed57a}
+\gll \textup{[}(\textit{\textbf{Nı̰́}}) \textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{bȅa̋} \textit{kȅkpa̋} \textit{wò} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textit{ɛ́} \textit{la̋lȁ} \textit{nɔ̰̀} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+\textbf{that} \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} work another put[\textsc{inf}] \textbf{because} \textsc{3sg\backslash pst} money give[\textsc{pfv.hod}] I at \\
+\glt `\textbf{In order that} I would\textbf{n't} work anymore, that's why he gave me money.'
+}
+\ex[*]{ \label{ex:Fed57b}
+\gll \textup{[}\textit{M-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{bȅa̋} \textit{kȅkpa̋} \textit{wò}\textup{]}\textit{,} \textit{ɛ́} \textit{la̋lȁ} \textit{nɔ̰̀} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+\textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} work another put[\textsc{inf}] \textsc{3sg\backslash pst} money give[\textsc{pfv.hod}] I at \\
+\glt Intended meaning: `In order that I would\textbf{n't} work anymore, that's why he gave me money.'
+}
+\z
+\z
+
+
+\ea \label{ex:Fed58}
+\gll \textup{[}\textit{Ke̋} \textit{\textbf{nɛ̰̀}} \textit{w-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ù} \textit{lɛ̏} \textit{zè} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textup{[}\textit{w-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yě} \textit{ka̋} \textit{ú} \textit{nɛ̰̀}\textup{]}\textit{,} \textit{ȁ} \textit{lì} \textit{lɛ̌} \textit{wű} \textit{ù} \textit{blɛ̋} \textit{ù} \textit{gbí} \textit{kṵ̏,} \textit{w} \textit{a̋} \textit{bȅ.} \\
+but \textbf{when} \textsc{3pl-\textbf{appr}} \textsc{\textbf{appr}} we fate say[\textsc{inf}] \textbf{because} \textsc{3pl-\textbf{appr}} \textsc{\textbf{appr}} laughter put[\textsc{inf}] we at he/she/it \textsc{foc\_obj} because \textsc{1pl\backslash pst} we self we breast catch\backslash\textsc{pfv.hest} \textsc{1pl\backslash pst} he/she/it eat\backslash\textsc{pfv.hest} \\
+\glt `But \textbf{so that} they would\textbf{n't} criticize us and [\textbf{so that}] they would\textbf{n't} mock us, that's why we forced ourselves and ate it.' (Narrative text)
+\z
+
+
+It is important that in these uses the Apprehensional construction can be shown to indeed express negative purpose and not just `or else {\dots}\slash (because) otherwise {\dots}'. In other words, they can be shown to convey a direct negation of the proposition expressed by the dependent clause. This issue will be discussed and argued for separately in \sectref{sec:fedotov:apprpolarity}.
+
+In addition, as can be seen from the examples, the (non-negated) situation expressed in such uses is not necessarily feared -- it is just undesirable.
+
+The syntactically dependent status of such clauses can be demonstrated a) by the possible usage of an explicit subordinator \REF{ex:Fed56a}, b) by the observed absence of deictic shift (the pronominal elements are chosen according to the primary speaker's perspective, see example \REF{ex:Fed56}), and c) by the possibility of their internal (central) position in the main clause. In example \REF{ex:Fed59}, the negative purpose clause is inside an indirect speech clause, itself embedded in an interrogative utterance with the clause-final question particle \textit{lìì}; the negative purpose clause thus occupies a central linear position in the main clause.
+
+\ea \label{ex:Fed59}
+\gll \textit{Y} \textit{ä} \textit{zè} \textup{[}\textit{nı̰́} \textit{ɛ̏-kè} \textit{n{\ù}} \textit{ȁ} \textit{zè} \textit{ı̰̀} \textit{nɛ̰̀,} \textup{[}\textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{n{\ù}} \textit{\textbf{lɛ̌}}\textup{]]} \textit{\textbf{lìì?}} \\
+\textsc{3sg\backslash pst} he/she/it say[\textsc{pfv.hod}] that \textsc{3sg-ind.neg} \textsc{ipfv\backslash}come he/she/it say[\textsc{inf}] I at \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} come[\textsc{inf}] \textbf{because} \textsc{\textbf{q}} \\
+\glt `Did he say that he wouldn't inform me \textbf{so that} I would\textbf{n't} come?'
+\z
+
+ In \REF{ex:Fed60}, the negative purpose clause is placed after a topic constituent related to the main clause.
+
+\ea \label{ex:Fed60}
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed60a}
+\gll \textup{(}\textit{Sɔ̰̏,}\textup{)} \textit{Sɔ̀kȕ} \textit{bɛ̏,} \textup{[}\textit{\textbf{nı̰́}} \textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{wò} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textit{ɛ́} \textit{yě} \textit{ka̋} \textit{n{\ù}-kȁ} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+today Soku there \textbf{that} \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} cry[\textsc{inf}] \textbf{because} \textsc{3sg\backslash pst} laughter put[\textsc{inf}] come-\textsc{caus[pfv.hod]} I at \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed60b}
+\gll \textit{Sɔ̀kȕ} \textit{bɛ̏,} \textup{[}\textit{\textbf{nɛ̰̀}} \textit{m-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{wò} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textit{ɛ́} \textit{yě} \textit{ka̋} \textit{n{\ù}-kȁ} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+Soku there \textbf{when} \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} cry[\textsc{inf}] \textbf{because} \textsc{3sg\backslash pst} laughter put[\textsc{inf}] come-\textsc{caus[pfv.hod]} I at \\
+\glt `(Today) Soku, \textbf{so that} I did\textbf{n't} cry, made me laugh.'
+}
+\z
+\z
+
+
+ The dependent status of these clauses is also reflected in their ability to be used in preposition to the main clause while containing a cataphoric pronoun:
+
+\ea \label{ex:Fed61}
+\gll \textup{[}\textit{\textbf{Nɛ̰̀}} \textit{/} \textsuperscript{\textsc{ok}} \textit{\textbf{Nı̰́}} \textit{bísȉ} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textbf{\textit{ȁ}} \textit{tő} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textbf{\textit{Sɔ̀kȕ}} \textit{ɛ́} \textit{vȍ} \textit{sȍ.} \\
+\textbf{when} {} {} \textbf{that} bus \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} he/she/it leave[\textsc{inf}] \textbf{because} Soku \textsc{3sg\backslash pst} early pass[\textsc{pfv.hod}] \\
+\glt `So that \textbf{he}\textsubscript{\textit{\textbf{i}}} didn't miss the bus, \textbf{Soku}\textsubscript{\textit{\textbf{i}}} left [home] early.'
+\z
+
+
+ As it is expected for negative-purpose (precautioning) uses in contrast to main-clause (apprehensive) uses, in \ili{Gban} the negative purpose clauses allow situations that are clearly undesirable only for the subject referent of the main clause, but not for the speaker, as in (\ref{ex:Fed56})--(\ref{ex:Fed57}), \REF{ex:Fed59}, and also \REF{ex:Fed62} with a generic subject.
+
+\ea \label{ex:Fed62}
+\gll \textit{{\E}} \textit{yȅȅ} \textit{/} \textit{W} \textit{ȁ} \textit{kȍ} \textit{bòò} \textup{[}\textit{\textbf{nı̰́}} \textit{mṵ̋} \textit{mı̰̀} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{yɛ̀kɛ̋} \textit{vɔ̰̏ṵ̏vɔ̰̏ṵ̏} \textit{\textbf{lɛ̌}}\textup{]}. \\
+\textsc{3sg} \textsc{ipfv\backslash}be {} \textsc{3pl} he/she/it \textsc{ipfv\backslash}cover top \textbf{that} person body \textsc{3sg-\textbf{appr}} \textbf{\textsc{appr}} do[\textsc{inf}] wet \textbf{because} \\
+\glt \{---Umbrella, what is it for?\} `--- It is (/ One covers oneself with it) \textbf{for not} having one's body wet.'
+\z
+
+
+The semantically affirmative counterpart to this use of the Apprehensional construction is a dedicated Purpose construction with the  predicative marker \textit{wò} `\textsc{purp}' and an unmarked  form of the main verb, which combines with the same set of subordinators and may have different linear positions. See examples \REF{ex:Fed63}, \REF{ex:Fed64}, and \REF{ex:Fed65}. This construction is used only in affirmative purpose clauses and cannot be combined with a negative marker.
+
+\ea \label{ex:Fed63}
+\gll \textit{{\E}} \textit{kṵ̋} \textit{wő} \textit{tȅnṵ̋ɛ̰̋} \textit{sésé} \textit{là} \textup{[}\textit{\textbf{nı̰́}} \textit{ɔ̏} \textit{\textbf{wò}} \textit{lɛ̌} \textit{dɔ̀}\textup{]}\textit{.} \\
+\textsc{3sg} catch[\textsc{inf}] \textsc{ipfv\backslash}put child:\textsc{pl} small on \textbf{that} \textsc{3pl} \textsc{\textbf{purp}} matter know[\textsc{sbjv?}]\footnotemark \\
+\glt `He keeps an eye on the kids \textbf{so that} they behave.'
+\footnotetext{The unmarked form in the Purpose construction is probably the Subjunctive form; however, its status is still unclear.}
+\z
+
+
+\ea \label{ex:Fed64}
+\gll \textup{[}\textit{\textbf{Nɛ̰̀}} \textit{ı̰̀} \textit{\textbf{w}} \textit{à} \textit{vòtè} \textit{\textbf{lɛ̌}}\textup{]}\textit{,} \textit{ɛ́} \textit{kɛ̏} \textit{nı̰́} \textit{ɛ̏} \textit{wȍ} \textit{la̋lȁ} \textit{nɔ̰̀} \textit{ı̰̀} \textit{nɛ̰̀.} \\
+\textbf{when} \textsc{1sg} \textsc{\textbf{purp}} he/she/it vote[\textsc{sbjv?}] \textbf{because} \textsc{3sg\backslash pst} say\backslash\textsc{pfv.hest} that \textsc{3sg} \textsc{pstr} money \textsc{ipfv\backslash}give I at \\
+\glt `He offered me money \textbf{so that} I would vote for him.'
+\z
+
+
+ The negative-purpose use is arguably the most frequent use of the Apprehensional construction in \ili{Gban}. At least, in the text of the New Testament, the absolute majority of examples with the Apprehensional construction -- around 80\% of all (149) tokens -- are clear examples of negative-purpose uses.\footnote{This might, however, still be an artifact of the general underrepresentation of interactional contexts (to which belong all other uses of the Apprehensional in \ili{Gban}, apart from negative-purpose uses) in most linguistic corpora; see \citet[259--260]{vuillermet2018}.}
+
+Consider the following example from the New Testament, where the Apprehensional construction is paired with the standard affirmative Purpose construction:
+
+
+\ea \label{ex:Fed65}
+\gll \textit{Ke} \textit{ɛ́} \textit{yɛ̏kɛ́} \textit{yɔ̰̈} \textit{nɔ̰́} \textup{[}\textit{\textbf{nı̰́}} \textit{w-\textbf{a̋}} \textit{\textbf{n{\ù}}} \textit{kɛ̀} \textit{ù} \textit{gbi} \textit{dɔ́} \textit{u} \textit{blɛ} \textit{u} \textit{li} \textit{nɛ̰}\textup{]}\textit{,} \textit{\textbf{ke}} \textup{[}\textit{ù} \textit{\textbf{wò}} \textit{a} \textit{dɔ̀} \textit{Kwlɛ̰} \textit{li} \textit{nɛ̰}\textup{]}\textit{.} \\
+but \textsc{3sg\backslash pst} do\backslash\textsc{pfv.preh} there that \textbf{that} \textsc{1pl-\textbf{appr}} \textsc{\textbf{appr}} say[\textsc{inf}] \textsc{1pl} breast \textsc{ipfv\backslash}put we self we \textsc{foc\_obj} at but \textsc{1pl} \textsc{\textbf{purp}} he/she/it put[\textsc{sbjv?}] God \textsc{foc\_obj} at \\
+\glt \{Indeed, we felt we had received the sentence of death.\} `But this happened that we might not rely on ourselves but on God,' \{who raises the dead.\} (2 Cor. 1:9) \\
+(More precisely: `{\dots} But it happened this way \textbf{so that} we \textbf{would not} want[\textbf{\textsc{appr}}] to rely on ourselves, \textbf{but} that we \textbf{would} rely[\textbf{\textsc{purp}}] on God~{\dots}')
+\z
+
+ Moreover, in my elicitation data, \ili{French} negative-purpose clauses with \textit{pour ne pas (que)} have often been the default translation candidates even for isolated clauses with the Apprehensional construction, in the absence of context. For example, the sentence \textit{Ù nı̰̋ bɛ̏ yǎ n{\ù} gw{\à}} in \REF{ex:Fed11} was accepted first with the translation `For our son not to get lost' (Fr.\ `\textbf{Pour ne pas que} notre fils se perde'), and only then with the translation `[I fear that] our son might get lost'. Consider also the translation `For you not to infect me' (Fr.\ `\textbf{Pour ne pas} me contaminer') proposed for \REF{ex:Fed14}.
+
+For negative-purpose uses, the issue of combinability with preventable or unpreventable situations is irrelevant: negative purpose semantics by definition requires the situation to be currently preventable (at the reference time).
+
+However, there is a related class of contexts where the issue becomes relevant: the (undesirable) `in-case' contexts (\cite[297--298]{lichtenberk1995}; \cite[279--280]{vuillermet2018}). They consist in adverbial dependent clauses with possible undesirable consequence semantics. Such clauses express situations that may be themselves currently unpreventable, but might cause some currently preventable undesirable effects. In some languages, apprehensional markers can have such `in-case' uses as well, for example, in \ili{To'aba'ita} \parencite[301]{lichtenberk1995} and in \ili{English} (\textit{Take an umbrella with you \textbf{lest} it (should) rain}). \ili{Gban}, however, does not allow using the Apprehensional construction in these contexts:
+
+\ea[\#]{ \label{ex:Fed66}
+\gll \textit{Ɛ́} \textit{tɔ̏} \textit{dȉgblȉȉ} \textit{wò,} \textit{nı̰̋nı̰̋} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{bɔ̀.} \\
+\textsc{3sg\backslash pst} cloth heavy put\textsc{[pfv.hod]} chill \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} arrive[\textsc{inf}] \\
+\glt Intended meaning: `He put on warm clothes in case the weather gets cold' (lit.\ `{\dots} the chill arrives').
+}
+\z
+
+To make it felicitous, my consultant altered the sentence, changing the unpreventable situation into a preventable one, thus making it a negative purpose clause and no longer an `in-case' clause:
+
+
+\ea \label{ex:Fed66prime}
+\gll \textit{Ɛ́} \textit{tɔ̏} \textit{dȉgblȉȉ} \textit{wò,} \textit{nı̰̋nı̰̋} \textit{y-\textbf{ǎ}} \textit{\textbf{n{\ù}}} \textit{ȁ} \textit{zɛ̀.} \\
+\textsc{3sg\backslash pst} cloth heavy put\textsc{[pfv.hod]} chill \textsc{3sg-\textbf{appr}} \textsc{\textbf{appr}} he/she/it kill[\textsc{inf}] \\
+\glt $\sim$`He put on warm clothes \textbf{so that} he would\textbf{n't} freeze' (lit.\ `{\dots} the chill wouldn't beat him').
+\z
+
+\noindent Instead, \ili{Gban} resorts to the use of other, more general constructions to express `in case', none of which is dedicated to undesirable situations.
+
+
+\section{Diachrony}
+\label{sec:fedotov:diachrony}
+
+There are no data on earlier varieties of \ili{Gban}, and I am also not aware of any similar-looking constructions existing in related languages. The only dedicated apprehensional construction in a closely-related language that I know of is found in \ili{Loma} (\ili{Toma}) (Southwestern \ili{Mande}, ISO 639-3 code: tod, Glottocode: toma1245) and is based on the (unrelated) marker \textit{míná}, which is also used in \ili{Loma} in the prohibitive construction \parencite[378, 379]{mishchenko2017}.
+
+However, the present-day formal makeup of the \ili{Gban} Apprehensional construction gives us hints about what it grammaticalized from.
+
+The invariable auxiliary verb \textit{n{\ù}} used in the Apprehensional construction is most likely connected with the lexical verb of motion \textit{n{\ù}} `come', but most probably indirectly, through the Prospective construction, that must have previously grammaticalized from this lexical verb. The Prospective construction features a variable (inflecting) auxiliary verb \textit{n{\ù}} plus an infinitive form of the main verb and expresses prospective\slash intentional\slash avertive\slash future semantics. See \REF{ex:Fed67} and \REF{ex:Fed71prime}.
+
+
+\ea \label{ex:Fed67}
+\gll \textit{Gwȁ} \textit{‶} \textit{\textbf{n{\ȕ}}} \textit{\textbf{vȉ}} \textit{di̋.} \\
+stone \textsc{3sg[npst]} \textsc{ipfv\backslash}\textbf{come} fall\textsc{[\textbf{inf}]} below \\
+\glt [Watch out!] `The stone \textbf{is going to} fall!'
+\z
+
+ The predicative marker \textit{-a̋/-ǎ} `\textsc{appr}' is apparently related to an older negative marker that can be reconstructed as \textit{\text{*}-a}. The evidence in favour of this hypothesis is the following. Firstly, the Apprehensional construction itself can be argued to express negation at least in some of its uses even synchronically (see \sectref{sec:fedotov:apprpolarity}). Secondly, the predicative marker used in it is similar to several other \ili{Gban} markers connected to negation. One is the Enimitive construction, containing an identical predicative marker (see \sectref{sec:fedotov:form}), which, too, is likely to be diachronically connected to a negative morpheme: although synchronically the construction does not convey negation in any of its uses, its grammaticalization path is most probably linked to rhetorical constructions with (formal) negation (compare \ili{English} \textit{Is\textbf{n't} she lovely} $\approx$ \textit{She's lovely}). Next, as was described in \sectref{sec:fedotov:paradigmaticstatus}, the Negative Subjunctive predicative marker is a very similar looking morpheme \textit{-a̋/-ǎ} (with a slightly different morphophonology). Finally, the Negative Indicative predicative marker \textit{-kè} `\textsc{ind.neg}' has an additional variant (seemingly used in rapid speech) that looks like \textit{-à}, see \REF{ex:Fed68} and \REF{ex:Fed71prime}.
+
+
+\ea \label{ex:Fed68}
+\gll \textit{Mȁ̰-\textbf{{\à}}} \textit{n{\ù}} \textit{yà} \textit{wȍtló} \textit{yɛ̋,} \textup{[}\ldots\textup{]} \\
+\textsc{1sg-\textbf{ind.neg}} \textsc{ipfv\backslash}come go\_away[\textsc{inf}] car with \\
+\glt `I won't go in a car {\dots'} (the ``full'' version would be \textit{Ḭ̀-\textbf{kè} n{\ù} {\dots}})
+\z
+
+
+ Combining these source elements, the prospective-like one and the negative one, does not immediately and easily give us the apprehensional semantics that the construction now has. But it could acquire this semantics via its usage in a dependent clause (`fear' predicate complement or negative purpose, see below).
+
+There are two (most plausible) paths that can be proposed for the emergence of the construction and of its different attested uses\slash readings. Both are based on the hypothesis that the original contexts where the construction began its grammaticalization were negative purpose clauses.
+
+The negative morpheme \textit{\text{*}-a} would be initially used in negative purpose clauses as a ``normal'' negation (to express negation of the dependent proposition), and a prospective\slash future marker \textit{n{\ù}} would accompany it simply to express posteriority: `I'll leave early, so that I \textbf{won't} miss the bus'. Here the idea of (un)desirability would at first be introduced externally, by the context and by the reason\slash purpose subordinators \textit{nı̰́}\slash\textit{lɛ̌} `so that' (combined with the negation in the dependent clause), but later it could become associated with the \textit{\text{*}-a} and \textit{n{\ù}} elements, thus giving rise to the new non-compositional construction expressing undesirability.
+
+According to the first scenario, after that, it could undergo insubordination (notice that even the dependent negative-purpose uses may lack overt markers of subordination, see \REF{ex:Fed56b}) and spread to main-clause warning\slash threat uses (`Hurry up not to miss your bus' $\rightarrow$ `Hurry up, you might miss your bus') and pure\hyp apprehension uses. Finally, the latter uses could naturally start occurring in dependent clauses under `fear' predicates. So the path would be as in \REF{path1}:
+
+\ea\label{path1} \textnormal{(Negative prospective $\rightarrow$) negative purpose $\rightarrow$ warning\slash threat $\rightarrow$  \\
+pure apprehension $\rightarrow$ `fear' predicate complement}
+\z
+
+ Next, a similar, but slightly different second scenario can be proposed. It would start off similarly to the first one, but involve, at a later stage, a direct transition from negative-purpose uses to `fear' predicate complement uses, similar to what \citet[319]{lichtenberk1995} (see also \cite[186--187]{Schmidtke-Bode2009}) proposes as a general path for apprehensional markers (although it is not self-evident how precisely such a transition should proceed). In this case, the main part of the path would look like \REF{path2}.
+
+\ea\label{path2} \textnormal{(Negative prospective $\rightarrow$) negative purpose $\rightarrow$ \\
+`fear' predicate complement (\dots)}
+\z
+
+ (As to the remaining warning\slash threat and pure-apprehension uses, there are several equal possibilities in the second scenario, all involving insubordination. They could: a) be both derived second after first from the negative-purpose use (as in the first scenario), b) be both derived second after first from the `fear' predicate complement use, or c) be separately derived from the negative-purpose use and from the `fear' predicate complement use, respectively.)
+
+There are several arguments in favour of the two scenarios proposed in (\ref{path1}) and (\ref{path2}), i.e.\ in favour of paths that start from negative-purpose uses rather than from `fear' predicate complements (which would be the main alternative). To begin with, the Apprehensional construction seems to be compatible only with situations that are at least in principle preventable, in all its uses. This preventability requirement is perfectly natural for warning, threat, and negative-purpose uses, but it is not expected for pure-apprehension and `fear' predicate complement uses (see the discussion in \sectref{subsec:expression} and \sectref{subsec:fearpredicate}). So, this requirement is best explained as a remnant of the precedent, diachronically original use. And this points to negative-purpose and\slash or warning\slash threat uses as being the earliest ones. There is also a similar persistence in \mbox{future-}\slash posterior-orientedness of the construction, even in pure-apprehension and `fear' predicate complement uses (see \sectref{subsec:expression} and \sectref{subsec:fearpredicate}), which, too, points to negative-purpose and/or warning\slash threat uses as the earliest ones, because they always refer to future\slash posterior situations (compare \cite[320]{lichtenberk1995}). And synchronically, the negative-purpose uses seem to be the most frequent, which might also be explained by their status as diachronically original.
+
+There is also a separate possible argument in favour of a direct connection between negative-purpose and `fear' predicate complement uses (the second scenario, similar to \citegen{lichtenberk1995} one). It is that sometimes `fear' predicate complement examples were translated in my data with an additional reason\slash purpose marker \textit{lɛ̌}, the same one that is typical for negative-purpose uses (see \REF{ex:Fed40} and \REF{ex:Fed41} in \sectref{subsec:fearpredicate}).
+
+
+\section{The Apprehensional construction and polarity}
+\label{sec:fedotov:apprpolarity}
+
+Let us now discuss the separate issue of the relation between the Apprehensional construction and polarity\slash negation. As has been argued for in \sectref{sec:fedotov:diachrony}, etymologically, the predicative marker \textit{-a̋/-ǎ} used in it can be rather confidently traced back to a negative morpheme. Typologically, there is also a well-established link between apprehensional semantics\slash undesirability and negation, manifested in many languages.\footnote{Negative forms of moods expressing semantics of desire (optative, subjunctive, and imperative) are one of the frequent historical sources for apprehensional constructions in the languages of the world \citep[49]{Dobrushina2006}. Often apprehensional semantics is even synchronically expressed by constructions that are grammatically negative. For example, by a specialized negator \textit{meː} in \ili{Classical Greek} \citep[311--313]{lichtenberk1995}; by the negative optative in \ili{Mishar Tatar}  (see example \REF{ex:Fed23}) and \ili{Balkar}; by the negative imperative in \ili{Shor}, \ili{Altai}, and \ili{Khakas}; by the negative subjunctive with an additional marker in \ili{Russian} (see examples \REF{ex:Fed21} and \REF{ex:Fed50}) and \ili{Urdu} \citep[32--33, 36--39]{Dobrushina2006}. In addition, `fear' predicate complements are one of the typologically-relevant contexts for the so-called expletive negation \citep{jinkoenig2020} (see below).} So the question arises, what is the synchronic relation of the Apprehensional construction to negation in \ili{Gban}?
+
+If we start by looking at \ili{English} translations (however unreliable this first approach may be), we will see that they do not contain the negative marker \textit{not}\footnote{The following holds equally for the original \ili{French} translations and the occurrence of \textit{ne {\dots} pas} in them.} for most uses\slash readings of the Apprehensional construction. Compare for pure apprehension: `I might become sorrowful', for threat: `I might\slash will kill you!', for `fear' predicate complement: `She's afraid that François might die'. As for warnings, their translations frequently contain \textit{not}, as in `Watch out, do\textbf{n't} fall!', but can always be paraphrased without negation: `Watch out, you might fall!'.
+
+But if we turn to dependent negative-purpose uses (described in \sectref{subsec:negativepurpose}), \textit{not} always appears in their translations, which allows us to hypothesize that (in such uses) the Apprehensional construction in \ili{Gban} still truly conveys semantic negation. Let us repeat example \REF{ex:Fed55} here in \REF{ex:Fed69} as an illustration.
+
+
+\ea \label{ex:Fed69}
+\gll \textit{Mȁ̰-{\à}} \textit{n{\ù}} \textit{yà} \textit{wȍtló} \textit{yɛ̋,} \textup{[}\textit{n-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{n{\ù}} \textit{lɛ̌}\textup{]}\textit{.}\\
+\textsc{1sg-ind.neg} \textsc{ipfv\backslash}come go\_away[\textsc{inf}] car with \textsc{2sg-\textbf{appr}} \textsc{\textbf{appr}} come[\textsc{inf}] because \\
+\glt `I won't go in a car \textbf{in order} for you \textbf{not to} come.'
+\z
+
+ These translations alone are not enough to make such a claim, of course. For many negative-purpose examples, paraphrases of the translations are possible that do not feature \textit{not} in the dependent clause while maintaining the same general sense. For example, for \REF{ex:Fed69}: `I won't go in a car, \textbf{because} (\textbf{otherwise}) you \textbf{might} come' or `I won't go in a car, \textbf{or else} you \textbf{might} come'.
+
+However, one can form in \ili{Gban} such negative-purpose sentences with the Apprehensional construction that would be impossible to translate without negation, which would show that in such uses it must indeed convey semantic negation. We are talking about sentences with indefinite pronominal expressions such as \REF{ex:Fed70}.
+
+\ea[\textsuperscript{\textsc{ok}}]{\label{ex:Fed70}
+\gll \textit{M} \textit{a̰̋} \textit{yɛ̀kɛ̋} \textup{[}\textit{nı̰́} \textit{\textbf{mṵ̋}} \textit{\textbf{dò}} \textit{y-ǎ} \textit{n{\ù}} \textit{yà}\textup{]}\textit{.} \\
+\textsc{1sg\backslash pst} he/she/it do[\textsc{pfv.hod}] that \textbf{person} \textbf{one} \textsc{3sg-appr} \textsc{appr} go\_away[\textsc{inf}] \\
+\glt [I decided to go to town with the children. But there are five of them, and in the taxi there were only places for me and four children. So I suggested that the children compete in a game; the one who loses stays at home.] `I did it, so that \textbf{someone} [out of the five] would\textbf{n't} go.'
+}
+\z
+
+
+\noindent As can be seen from the context, the existential quantifier introduced by the indefinite expression is interpreted here as having scope over a negative operator, at the same time being under the scope of the hypothetical desire\slash intention predicate -- which we can assume to be part of the purpose semantics: `(intended (someone (\textsc{not} (go))))'.\footnote{The semantics of purpose can be analyzed as including a component of desire\slash intention (together with a reason component and a modalized causal component): `\textit{X} \textit{P}-ed in order to \textit{Q}' $\approx$ `\textit{X} \textit{P}-ed because \textit{X} \textbf{wanted} \textit{Q} to happen and because \textit{X} believed that \textit{P} may cause \textit{Q}'.
+
+Cf.\ the formulation by \citet[44]{goddard1991} (after \citealt{wierzbicka1989}): ``the meaning of these constructions [= purposive constructions -- M.F.] involves the notion of \textit{because}, in combination with the complex notion of \textit{someone wanting something to happen}  {\dots}''. And a following analysis by \citet[409]{wierzbicka1992}: ``\textit{I went out to get some meat $=$ I went out because I thought: I want: I get some meat}.''
+
+Consider also the definitions of purpose and especially of negative purpose by \citet[86]{kortmann1996}: ``Purpose (PURPOS): `in order to \textit{p}, \textit{q}'~-- \textit{p} is an intended result or consequence of \textit{q} that is yet to be achieved''; ``Negative Purpose (N\_PURP): `lest \textit{p}, \textit{q}', `\textit{q}, in order that not \textit{p}' -- not-\textit{p} is an intended result or consequence of \textit{q} that is yet to be achieved''. Note the low position of negation with respect to desire\slash intention in the latter definition.}
+
+
+With this scopal configuration, all paraphrases without \textit{not} in the dependent clause (that were possible before) result in wrong interpretations. \textit{I did it, because (otherwise) someone might have gone}, would ultimately denote a different state of affairs, corresponding roughly to `I did it so that \textbf{no one} would go'.
+
+Another argument in the same vein is the availability of sentences with the exclusive focus-sensitive particle \textit{dídòő} `only' that demonstrate a similar scopal configuration \REF{ex:Fed70plus}.
+
+
+
+\ea[\textsuperscript{\textsc{ok}}]{\label{ex:Fed70plus}
+\gll \textit{M} \textit{a̰̋} \textit{yɛ̀kɛ̋} \textup{[}\textit{nı̰́} \textit{Zá̰} \textit{\textbf{dídòő}} \textit{y-ǎ} \textit{n{\ù}} \textit{n{\ù}}\textup{]}\textit{.} \\
+\textsc{1sg\backslash pst} he/she/it do[\textsc{pfv.hod}] that Jean \textbf{only} \textsc{3sg-appr} \textsc{appr} come[\textsc{inf}] \\
+\glt `I did [all I could], so that \textbf{only} Jean would\textbf{n't} come [{\dots} but that others would].'
+}
+\z
+
+
+Such examples demonstrate that in negative-purpose uses the Apprehensional construction conveys a direct negation of the proposition expressed by the dependent clause.
+
+All other types of uses of the Apprehensional construction (i.e.\ non-negative-purpose uses), on the other hand, do not seem to convey such negation. Compare an intended pure-apprehension context in \REF{ex:Fed71}.
+
+
+\ea[\#]{ \label{ex:Fed71}
+\gll \textit{M-\textbf{a̰̋}} \textit{\textbf{n{\ù}}} \textit{ı̰̀} \textit{nı̰̋} \textit{bɛ̏} \textit{kȅkpa̋} \textit{yò wa̰̋.} \\
+\textsc{1sg-\textbf{appr}} \textbf{\textsc{appr}} I son there another see[\textsc{inf}] \\
+\glt  `(I'm afraid) I might see my son again.'
+}
+\z
+
+\noindent This example cannot denote a negated dependent proposition `[I'm afraid] I \textbf{might not see} my son again'. A commentary was given by the speaker: ``[It sounds like] `I don't want to see my son anymore'; this is strange, it's as if we wished his death''. The sentence thus provides at most just the bizarre reading `[I'm afraid] I \textbf{might see} my son again [which is undesirable]', which leads to it being considered anomalous.
+
+Periphrastic means\footnote{In \REF{ex:Fed71prime}, we see a combination of an explicit `fear' predicate and a complement clause with the (Negative) Indicative plus an instance of the peripheral Prospective construction with the variable (inflecting) auxiliary \textit{n{\ù}} `come' (see \sectref{sec:fedotov:diachrony}).} are used to express pure-apprehension semantics if the dependent proposition needs to be negated, compare \REF{ex:Fed71} and \REF{ex:Fed71prime}.
+
+\ea \label{ex:Fed71prime}
+\gll \textit{Ḭ̀} \textit{\textbf{gbɛ̰̀}} \textit{nɔ̰̀} \textup{[}\textit{\textbf{nı̰́}} \textit{mȁ̰\textbf{-{\à}}} \textit{\textbf{n{\ù}}} \textit{ı̰̀} \textit{nı̰̋} \textit{bɛ̏} \textit{kȅkpa̋} \textit{yò wa̰̋}\textup{]}\textit{.}\\
+\textsc{1sg} \textsc{\textbf{ipfv\backslash}}\textbf{be\_afraid} here \textbf{that} \textsc{1sg-\textbf{ind.neg}} \textbf{\textsc{ipfv\backslash}come} I child there another see[\textsc{inf}] \\
+\glt [A constantly nervous mother, after the departure of her son, is worrying and expresses her fears aloud, talking to herself:] `--- I'm afraid I \textbf{might not see} my son again.'
+\z
+
+ Compare also a `fear' predicate complement example such as \REF{ex:Fed72}, where an interpretation of the Apprehensional construction with a negated dependent proposition (i.e.,  `I'm afraid I might not work anymore') is again unavailable (and the same periphrastic means as in \REF{ex:Fed71prime} would be used to get this interpretation).
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed72}
+\gll \textit{Ḭ̀} \textit{gbɛ̰̀} \textup{[}\textit{nı̰́} \textit{m\textbf{-a̰̋}} \textit{\textbf{n{\ù}}} \textit{bȅa̋} \textit{kȅkpa̋} \textit{wò}\textup{]}\textit{.}\\
+\textsc{1sg} \textsc{ipfv\backslash}be\_afraid that \textsc{1sg-\textbf{appr}} \textsc{\textbf{appr}} work another put[\textsc{inf}] \\
+\glt `I'm afraid to work again [i.e.\ I don't want to work anymore].' 
+}
+\z
+
+ We can see that semantically these uses of the Apprehensional construction do not convey negation of the dependent proposition. However, the question remains whether the construction still has some (weaker) connection to negation even in these (non-negative-purpose) uses.
+
+First, if we accept the above analysis for negative-purpose uses, where it does express negation, then the whole construction can be seen as formally (grammatically) negative.\footnote{This is a possibility because, as was shown in \sectref{sec:fedotov:paradigmaticstatus}, mood and polarity categories are always expressed together in \ili{Gban} by a single paradigm of cumulative predicative markers. Therefore the predicative marker \textit{-a̋/-ǎ} `\textsc{appr}' could be analyzed as always expressing not only the Apprehensional Mood, but also the Negative Polarity, i.e.\ `\textsc{appr.neg}' (just like, e.g.\ \textit{-kě} `\textsc{cond.neg}' cumulatively expresses in \ili{Gban} the Conditional Mood and the Negative Polarity).} Then in non-negative-purpose uses it is formally negative, too. In other words, the construction in these uses may still represent an instance of the grammatical category of (Negative) Polarity, even though semantically ``deactivated''. Such a state of affairs corresponds to the phenomenon of the so-called expletive negation.\footnote{Expletive negation can be defined as ``a construction where a negator is grammatically licensed but does not contribute to the polarity of the proposition which contains it'' (cf.\ \ili{French} \textit{J'ai peur qu'il \textbf{ne} pleuve demain.} `I fear that it will rain tomorrow') \citep[1]{jinkoenig2020}.
+
+In fact, we find an unambiguous case of expletive negation in \ili{Gban} with a different construction, the Negative Subjunctive, which competes with the Apprehensional construction in `fear' predicate complements. It is (this time undoubtedly) grammatically negative and in these uses it is devoid of negative force. Compare \REF{ex:Fed37b} and \REF{ex:Fed39b}.} At its extreme, such an analysis may imply that there is a formal negation, but it is fully devoid of negative force and semantically vacuous~-- this would correspond to a traditional understanding of expletive negation, cf.\ \citet{espinal1992}.
+
+
+Second (and regardless of its connection to the grammatical category of Polarity), the Apprehensional construction in these uses may express some semantic component(s) indirectly related to negation. Such a state of affairs would be similar to the way \citet{abels2005} analyzes the expletive negation in \ili{Russian} apprehensional sentences with \textit{kak by {\dots} ne}: as mirroring a negative operator somewhere higher in the semantic structure than the proposition in which it occurs. In our case, this negative operator would be related to the notion of undesirability itself (given that undesirability can be seen as a contrary negation of desire). Another (typological) analysis of expletive negation by \citet{jinkoenig2020} states, in a similar vein, that expletive negation reflects an entailed (or implied) negated version of the dependent proposition that is activated alongside it. `Fear' predicates are analyzed as activating two contrasting propositions at the same time: \textit{p}, corresponding to the Speaker's attitude (what is feared), and \neg \textit{p}, corresponding to the Speaker's desires (what is wanted) \citep[22]{jinkoenig2020}. For example, in \textit{I fear that I might miss the train}, the dependent proposition \textit{p} is `I miss the train', while its negated version \neg \textit{p}, `I don't miss the train', is introduced via an entailed desire predicate.
+
+Support for there being at least some synchronic connection to negation even in non-negative-purpose uses of the Apprehensional construction comes from the fact that \ili{Gban} negative polarity items (NPIs) such as \textit{nɔ̰̌ dònı̰̋} `anything (at all)' or \textit{mṵ̋ dònı̰̋} `anyone (at all)'\footnote{These items are also used as emphatic irrealis non-specific indefinites in contexts such as `Find \textbf{at least someone}!' (but not as free-choice indefinites).} can occur in its scope both in its negative-purpose uses \REF{ex:Fed73} (with negation of the dependent proposition) and its other uses (without such negation). My data provide such examples for pure-apprehension \REF{ex:Fed74} and `fear' predicate complement uses \REF{ex:Fed75}, \REF{ex:Fed76}.
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed73}
+\gll \textit{{\E}} \textit{kṵ̋} \textit{wő} \textit{tȅnṵ̋ɛ̰̋} \textit{sésé} \textit{là} \textup{[}\textit{nı̰́} \textit{w-ǎ} \textit{n{\ù}} \textit{sȉȅ} \textit{\textbf{n{\Ǒ}}} \textit{\textbf{dònı̰̋}} \textit{yɛ̋}\textup{]}\textit{.} \\
+\textsc{3sg} catch[\textsc{inf}] \textsc{ipfv\backslash}put child:\textsc{pl} small on that \textsc{3pl-appr} \textsc{appr} spoil[\textsc{inf}] \textbf{thing} \textbf{any} with \\
+\glt `He keeps an eye on the kids \textbf{so that} they do\textbf{n't} spoil \textbf{anything}.' \\
+(a negative-purpose use)
+}
+\z
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed74}
+\gll \textit{Tȅnṵ̋ɛ̰̋} \textit{sésé,} \textit{w-ǎ} \textit{n{\ù}} \textit{sȉȅ} \textit{\textbf{n{\Ǒ}}} \textit{\textbf{dònı̰̋}} \textit{yɛ̋!} \\
+child:\textsc{pl} small \textsc{3pl-appr} \textsc{appr} spoil[\textsc{inf}] \textbf{thing} \textbf{any} with \\
+\glt $\sim$ `[I'm afraid that] the kids \textbf{might} spoil something (lit.\ `\textbf{anything}').' \\
+(a pure-apprehension use)
+}
+\z
+
+
+
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed75}
+\gll \textit{Ḭ̀} \textbf{\textit{gbɛ̰̀}} \textup{[}\textit{nı̰́} \textit{w-ǎ} \textit{n{\ù}} \textit{sȉȅ} \textit{\textbf{n{\Ǒ}}} \textit{\textbf{dònı̰̋}} \textit{yɛ̋}\textup{]}\textit{!} \\
+\textsc{1sg} \textsc{ipfv\backslash}be\_afraid that \textsc{3pl-appr} \textsc{appr} spoil[\textsc{inf}] \textbf{thing} \textbf{any} with \\
+\glt `I'm \textbf{afraid} that they might spoil something (lit.\ `\textbf{anything}').' \\
+(a `fear' predicate complement use)
+}
+\z
+
+
+ In fact, in these latter (non-negative-purpose) uses, these NPIs compete with indefinite expressions such as \textit{nɔ̰̌ dò} `something' or \textit{mṵ̋ dò} `someone', compare \REF{ex:Fed76a} and \REF{ex:Fed76b}.
+
+
+\ea \label{ex:Fed76}
+\ea[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed76a}
+\gll \textit{Ḭ̀} \textbf{\textit{gbɛ̰̀}} \textup{[}\textit{nı̰́} \textit{mṵ̋} \textit{dò} \textit{y-ǎ} \textit{n{\ù}} \textit{ı̰̀} \textit{mɛ̰̏}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv\backslash}be\_afraid that person one \textsc{3sg-appr} \textsc{appr} I hit[\textsc{inf}] \\
+\glt `I'm \textbf{afraid} that someone might hit me.' \\
+(a `fear' predicate complement use) \\
+}
+\ex[\textsuperscript{\textsc{ok}}]{ \label{ex:Fed76b}
+\gll \textit{Ḭ̀} \textbf{\textit{gbɛ̰̀}} \textup{[}\textit{nı̰́} \textit{\textbf{mṵ̋}} \textit{\textbf{dònı̰̋}} \textit{y-ǎ} \textit{n{\ù}} \textit{ı̰̀} \textit{mɛ̰̏}\textup{]}\textit{.} \\
+\textsc{1sg} \textsc{ipfv\backslash}be\_afraid that \textbf{person} \textbf{any} \textsc{3sg-appr} \textsc{appr} I hit[\textsc{inf}] \\
+\glt `I'm \textbf{afraid} that someone (lit.\ `\textbf{anyone}') might hit me.' \\
+(a `fear' predicate complement use)
+}
+\z
+\z
+
+
+
+
+\section{Conclusions}
+\label{sec:fedotov:conclusions}
+
+This paper described the Apprehensional construction in \ili{Gban}, including its formal properties, paradigmatic status, different main-clause and dependent uses, its relation to negation, and possible diachronic sources.
+
+The Apprehensional can be regarded as a special mood in \ili{Gban} and the Apprehensional construction as one of \ili{Gban}'s core grammatical constructions. It is compatible with all three persons, both in dependent and in main-clause uses. It is also compatible not only with agentive ([+control], e.g.\ `kill'), but also with some non-agentive ([–control], e.g.\ `get lost') situations.
+
+In main clauses, the following readings\slash functions of the Apprehensional construction have been identified: pure apprehension, warning, and threat. In the former function, it expresses undesirability for the speaker, in the latter two undesirability for the addressee.
+
+In dependent clauses, two different uses have been attested. First, the construction can be used (together with certain subordination markers) in complement clauses of `fear' predicates. Second, it is used in negative purpose clauses (and probably also in some types of negative irrealis complement clauses).
+
+In the negative-purpose uses, the dependent clause is frequently marked by explicit subordinators, although it may remain unmarked if it follows the main clause. The latter makes some examples of negative-purpose uses hard to distinguish from main-clause uses, compare `Hurry up not to miss your bus' (negative purpose) and `Hurry up, you might miss your bus' (warning). The negative-purpose use seems to be the most frequent use or at least one of the most frequent uses (around 80\% of all occurrences in the New Testament) of the Apprehensional construction in \ili{Gban}.
+
+In all of its uses, the Apprehensional construction seems to have a peculiar general restriction: even in pure-apprehension uses and `fear' predicate complement uses, it appears to be compatible only with situations that are at least in principle preventable (i.e.\ that in principle allow another, controllable, situation that would cause the situation in question not to take place). The lack of `in-case' uses, which would allow situations that are in principle unpreventable, also can be attributed to this restriction.
+
+Regarding the diachronic sources of the Apprehensional construction, it can be conjectured to derive from a combination of an older negative morpheme and a marker expressing prospective\slash future semantics. The most plausible paths for its grammaticalization are ones starting with negative-purpose uses, such as: ``(negative prospective $\rightarrow$) negative purpose $\rightarrow$ warning\slash threat $\rightarrow$ pure apprehension $\rightarrow$ `fear' predicate complement''. Or, alternatively, a similar path that would feature a direct transition ``negative purpose $\rightarrow$ `fear' predicate complement''.
+
+Finally, concerning the (synchronic) relation of the Apprehensional construction to negation, it can be shown to convey negation of the dependent proposition in negative-purpose uses and it also most probably retains some weaker formal and/or semantic connection to negation in other uses (as expletive negation). In all of its uses, the construction is compatible with negative polarity items such as \textit{nɔ̰̌ dònı̰̋} `anything (at all)'.
+
+
+
+
+
+\section*{Abbreviations}
+\begin{multicols}{2}
+\begin{tabbing}
+\textsc{loc1/loc2} \= 1st person\kill
+1/2/3 \> 1st/2nd/3rd person \\
+1\textsc{pl\_incl} \> 1st person plural \\
+{} \> inclusive \\
+\textsc{aff} \> affirmative \\
+\textsc{appr} \> apprehensional \\
+\textsc{caus} \> causative \\
+\textsc{cond} \> conditional \\
+\textsc{emph} \> emphasis \\
+\textsc{enim} \> enimitive \\
+\textsc{foc} \> focus \\
+\textsc{foc\_obj} \> object focus \\
+\textsc{gen} \> genitive \\
+\textsc{hest} \> hesternal (past) \\
+\textsc{hod} \> hodiernal (past) \\
+\textsc{imp} \> imperative \\
+\textsc{imp\_pol} \> polite imperative \\
+\textsc{incl} \> inclusive\\
+\textsc{ind} \> indicative \\
+\textsc{inf} \> infinitive \\
+\textsc{ipfv} \> imperfective \\
+\textsc{loc1/loc2} \> locative applicative markers \\
+\textsc{n-} \> non- \\
+\textsc{neg} \> negation \\
+\textsc{neutr} \> neutral informational status \\
+\textsc{nipfvpst} \> non-imperfective-past \\
+\textsc{nmlz} \> nominalization \\
+\textsc{ncond} \> non-conditional \\
+\textsc{opt} \> optative (\ili{Mishar Tatar}) \\
+\textsc{pfv} \> perfective \\
+\textsc{pl} \> plural \\
+\textsc{preh} \> pre-hesternal (past) \\
+\textsc{prsv} \> presentative \\
+\textsc{pst} \> past \\
+\textsc{purp} \> purpose \\
+\textsc{q} \> interrogative particle \\
+\textsc{sbjv} \> subjunctive \\
+\textsc{seq} \> sequential (\ili{To'aba'ita}) \\
+\textsc{sg} \> singular 
+\end{tabbing}
+\end{multicols}
+
+\section*{Acknowledgements}
+
+The study was supported by the Russian Science Foundation grant \#18-78-10058 ``Grammatical periphery in the languages of the world: a typological study of caritives''. I am grateful to my fellow field team members, to the participants of the discussion at the SLE workshop on apprehensionals (Tallinn, 31 August--1 September 2018), and to Marine Vuillermet, Martina Faller, and two anonymous reviewers for their useful comments and criticism.
+
+\section*{Dedication}
+
+I am endlessly grateful and would like to dedicate this paper to my late friend Taki Oya Robert (Tȁki̋ Wȅyȁ Wlȍbɛ́), a speaker of the Bovo dialect, who worked with me as a consultant throughout these ten years and was the main source of data for all my studies on Gban, including this one. May his soul rest in peace.
+
+%\section*{Contributions}
+%John Doe contributed to conceptualization, methodology, and validation. 
+%Jane Doe contributed to writing of the original draft, review, and editing.
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

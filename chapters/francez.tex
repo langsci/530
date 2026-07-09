@@ -1,0 +1,672 @@
+\documentclass[output=paper,colorlinks,citecolor=brown]{langscibook} 
+\ChapterDOI{10.5281/zenodo.19708133}
+\author{Itamar Francez\affiliation{University of Chicago}}
+\title{Apprehension in Hebrew}  
+\abstract{This paper describes five constructions that give rise to apprehensional meaning in Hebrew. These include a modal complementizer and a modal adjective \textit{alul} that encode apprehension conventionally, a temporal additive that gives rise to apprehensive readings pragmatically in particular contexts and a complex complementizer formed with negation. Apprehension in Hebrew is situated within the broader context of apprehensive marking across languages, preliminary remarks are made about diachronic changes, and the outline of an analysis is proposed.}
+
+%\input{localpackages.tex}
+%\input{localcommands.tex}
+
+
+\IfFileExists{../localcommands.tex}{%hack to check whether this is being compiled as part of a collection or standalone
+ \input{../localpackages}
+  \input{../localcommands}  \togglepaper[23]
+ }{}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+\label{francez:intro}
+\largerpage
+This paper provides a description, and sketches an analysis, of five constructions that give rise to apprehensional meaning in \ili{Hebrew} at various diachronic stages, with the aim of contributing both to the understanding of apprehension as an interpretational category and to the description and analysis of \ili{Hebrew} grammar. 
+
+The first construction investigated is the Biblical \ili{Hebrew} apprehensive marker \textit{pen} `lest'. This marker occurs at the left periphery of a clause and, intuitively speaking, conveys that the eventuality described by the clause it marks is possible and undesirable from the perspective of the speaker, as well as, potentially, others (the listener, or individuals mentioned in the clause). This marker was lost in the later stage of the language known as Mishnaic \ili{Hebrew} (roughly, 70BC to 400CE, see e.g.\ \citealt{barasher99}), brought back to usage during the revival period, but fell out of use again in the modern language, where it survives today mostly as a bookish expression used in purposefully high-register writing. 
+
+Contemporary spoken and written \ili{Hebrew} has  several other ways of expressing apprehension that I describe here. The first is the apprehensive possibility modal \textit{alul} `liable' inherited from Mishnaic \ili{Hebrew}. The other three are constructions in which an apprehensive interpretation arises inferentially in particular contexts, by the use of expressions that do not conventionally encode either possibility or undesirability. These are the additive/temporal particle \textit{od} `still/yet/more/another', the temporal adverbial \textit{axarkax} `afterwards', and the matrix and non-matrix use of clauses introduced by \textit{še-lo} `that not'.
+
+\largerpage
+The apprehensive marker \textit{pen} resembles \textit{lest}-type markers found across languages and discussed in the literature (\citealt{lichtenberk95, angelo-berndt16, puskas17} \textit{inter alia}), including several studies in this volume. It appears in two of the three contexts distinguished by Lichtenberk (\citeyear{lichtenberk95}): apprehensive (marking a matrix clause, as in \textit{lest we forget {\ldots}}) and precautioning (marking the second clause in a paratactic structure, as in \textit{I will remind you lest you forget}). It does not, however, seem to appear in  Lichtenberk's `fear' context, complementing verbs like \textit{fear}. While \textit{pen}-marked clauses occur with such verbs, there is no clear evidence that they complement them. The apprehensional use of the additive/temporal \textit{od} can arise in matrix and embedded clauses as well as in the complement clauses of verbs of fear. Both \textit{pen} and the apprehensional use of the complementizer + negation sequence \textit{še-lo} raise the problem, discussed in the literature and in several papers in this volume \citep{chapters/introduction, chapters/wiemer}, of lexemes occurring both in paratactic (and sometimes also embedded) structures and in matrix contexts.\footnote{In the case of \textit{še-lo} this is particularly clear, because, like \textit{lest}, \textit{še} is clearly a subordinator and its occurrence in matrix clauses is both relatively new and highly restricted (cf.\  \textit{lest we forget}, the only insubordinate occurrence of \textit{lest} commonly attested). See \citet{schwarzwald-shlomo} and \citet{francez-JJL} for discussion.} In the case of \textit{še-lo}, as in the \ili{Slavic} cases discussed by Wiemer (see also \citealt{baydina}), the problem is complicated further by the presence of negation which, as shown below, is arguably not clausal negation occurring in a subordinate clause.
+
+The rest of this paper is structured as follows. After describing the distribution of \textit{pen} in \sectref{sec:biblicalhebrew}, \sectref{sec:analysis} argues that the apprehensive marker \textit{pen} is semantically a possibility modal associated with a conventional implicature of bouletic dispreference for the prejacent proposition. Precautioning contexts, I argue, do not involve distinct interpretations of the apprehensive marker. Rather, \textit{precautioning context} should be viewed as a name for a distributional environment, namely for the occurrence of an apprehensively marked clause in construction with another clause. The `negative purpose' or `in-case' inferences that arise in precautioning contexts, i.e.\ the inference that the eventuality described in the main clause can prevent the one described in the prejacent or some consequence of it, are argued to arise from the textual interpretative effects of parataxis. The analysis I propose for `in-case' and avertive inferences closely resembles that proposed in \citet{anderbois21}. The section ends with a brief discussion of the diachronic trajectory of \textit{pen} in post-Biblical \ili{Hebrew}. \sectref{sec:alul} briefly describes the apprehensive modal adjective \textit{alul}, whose interpretation is essentially identical to that of \textit{pen}. \sectref{sec:appradditivetemporal} describes and analyzes apprehension with the additive particle \textit{od } `too/another/still/yet' and with the temporal adverb \textit{axarkax} `afterwards'. Apprehension in these cases is shown to be a pragmatic inference that arises only in specific contexts. For \textit{od}, I argue that it arises from a special future-oriented, temporal-additive interpretation. In other contexts, this same interpretation leads to an inference that the clause introduced by \textit{od} describes a bouletically \textit{preferred} possibility, an inference I call \textit{promissive}, and which is the opposite of apprehension.
+
+Finally, for the use of complementizer \textit{še} + negation, I discuss some suggestive evidence for the possibility that this complex marker is, or is gradually developing into, a grammaticalized new apprehensive marker. Throughout the paper, data from contemporary \ili{Hebrew} come from naturally occurring examples from spoken and written genres whenever possible, complemented by my own judgments as well as those of consulted first language users.
+
+\section{Biblical Hebrew \textit{pen}}
+\largerpage
+\label{sec:biblicalhebrew}
+The marker \textit{pen}, exemplified in (\ref{lot0}), is one of a class of clause-initial lexemes found in Biblical \ili{Hebrew}. 
+\ea
+\label{lot0} 
+\gll {\ldots} kax et ištexa ve-et šte bnotexa ha-mica'ot \textbf{pen} tisape ba-avon ha-ir. \\
+{\ldots}  take.{\sc imp} {\sc acc} wife.{\sc cs}.2{\sc m.sg} and-{\sc acc} two.{\sc f.cs} daughter.{\sc pl.cs}.{\sc 2m.sg} the-present {\sc appr} perish.{\sc mod.2m.sg} in.the-iniquity.{\sc cs} the-city \\
+
+\glt  `{\ldots} take your wife and your two daughters who remain with you, lest you be wiped out in the punishment of the city.' (Genesis 19:15)
+\z
+
+ Because clauses marked with \textit{pen} are usually in construction with other clauses, \textit{pen} seems at first to be a subordinator, syntactically similar to \ili{English} \textit{that}. However, as shown below, \textit{pen} clauses also serve as matrix, independent clauses which might be viewed as instantiating ``insubordination'' in the sense of Evans (\citeyear{evans2007}). Doron (\citeyear{doron19}), however, classifies \textit{pen} together with a host of other similar clause-initial items as complementizers.\footnote{In contemporary generative usage, the term \textit{complementizer} does not entail subordination. Rather, \textit{complementizer} is a label for a distributional category. For example, \textit{wh-}words in \ili{English}, such as \textit{which} or \textit{who}, are standardly taken to be complementizers. Belonging to this category does entail various properties, such as occupying (or being generated in) a certain position in the clause relative to other elements.} The evidence that \textit{pen} is a complementizer comes from its complementary distribution with a  class of elements which function to introduce subordinate clauses. As far as I am aware, however, there are no clear syntactic tests that can determine whether \textit{pen}-clauses involve subordination or coordination, and as Doron notes, both hypotheses can be found in the literature. I assume in this paper that \textit{pen} is not a subordinator, but a left-periphery element occurring in  matrix clauses, which in many cases occur as second clauses in a coordinate structure.  
+
+Clauses introduced by \textit{pen} are predominantly irrealis, featuring verbs in the \textit{yiqtol} template (i.e.\ the \textit{yi}-CCoC template). The exact nature of this template is a matter of much controversy. In Modern \ili{Hebrew}, this is a future tense form used for future time reference, but also has various other irrealis uses that intuitively involve modality. I therefore follow Doron here in glossing this verbal form as {\sc mod} for `modal', without committing to what exactly its semantics should be. In a few cases, \textit{pen} marks a clause with  present or past temporal reference. 
+
+\subsection{Coordination}
+\label{subsec:coordination}
+
+Clauses marked with \textit{pen} most often occur in construction with another clause, making \textit{pen} a kind of coordinating or perhaps subordinating conjunction. I know of no evidence that \textit{pen} clauses are subordinate clauses, and will assume throughout that they are coordinate matrix clauses in all cases. The \textit{pen} marked clause is, in the vast majority of cases, preceded by a directive clause. A typical example is given in (\ref{hypo}).\footnote{All translations of Biblical examples in this paper are taken from Robert Alter's recent translation of the \ili{Hebrew} Bible (\citealt{alter18}). For simplicity and ease of reading, \ili{Hebrew} examples in this paper are transliterated as if they were Modern \ili{Hebrew}. This entails a great simplification and misrepresentation of phonological and morphological information about the Biblical and Mishnaic language as well as the early modern revivalist language. Since representing this information involves complex and often theoretically laden choices which are entirely immaterial to the goals of this paper, I omit it here and indicate only as much information as is needed to understand the examples and relevant aspects of their structure. The reader should bear in mind, however, that as far as pre-Modern \ili{Hebrew} is concerned, the transliterated examples do not accurately render phonology, morphology, and some of the morphosyntactic structure of verbs. In transliteration and glossing, I use a hyphen ( - ) to separate non-inflectional morphology, and in glossing I use a full stop ( . )  to indicate inflectional information.}
+
+\ea
+\label{hypo} 
+\gll U-mi-pri ha-ec ašer be-tox ha-gan amar elohim lo toxlu mimenu ve-lo tig'u bo \textbf{pen} temutun. \\
+and-from-fruit.{\sc cs} the-tree that in-inside the-garden said God {\sc neg} eat.{\sc mod.2.m.pl} from.{\sc 3m.sg} and-{\sc neg} touch.\sc{mod}.2{\sc m.pl} in.{\sc 3m.sg} {\sc appr} die.{\sc mod.3mp} \\
+\glt `But from the fruit of the tree in the midst of the garden God has said, ``You shall not eat from it and you shall not touch it, lest you die''.' (Genesis 3:3)
+\z 
+
+As discussed by \citet{azar81}, in this as in many other occurrences in the \ili{Hebrew} Bible, the \textit{pen}-clause is preceded by a clause with directive force. While in (\ref{hypo}) the preceding clause is not imperative, but rather is also in the \textit{yiqqtol} template, its force is nevertheless directive. An example in which the preceding clause is in the imperative is (\ref{lot0}) above. The sentence preceding a \textit{pen}-marked clause need not have directive force, and can be a simple declarative, as in (\ref{lott}).\footnote{The form \textit{va-matti} in (\ref{lott}) is an instance of the \textit{ve-qatal} verbal form, which is, very roughly, an irrealis form occurring in narrative sequence. See \citet{hatav-book} for a discussion of the complicated system of indicating time and modality in Biblical \ili{Hebrew} within a generative framework.}
+
+\ea
+\label{lott} 
+\gll Ba-anoxi lo 'uxal lehimalet ha-hara \textbf{pen} tidbakani ha-ra'a va-matti.\\
+and-I {\sc neg} can.{\sc mod.1sg} escape.{\sc inf} the-mountain.{\sc all} {\sc appr} catch.{\sc mod.3f.sg.1sg} the-evil.{\sc f} and-die.{\sc 1sg}  \\
+\glt `But I cannot flee to the high country, lest evil overtake me and I die.' (Genesis 19:19)
+\z
+
+In some cases, the \textit{pen}-marked clause could, potentially, be analyzed as the antecedent of a conditional (and is indeed thus analyzed by \citealt{azar81}), though this is not the only plausible analysis. An example is (\ref{beat}).
+\ea
+\label{beat} 
+\gll Arba'im yakenu lo yosif \textbf{pen} yosif lehakoto al ele maka raba ve-nikla axixa le-eynexa.\\
+ forty hit.{\sc mod}.{\sc 3m.sg}:{\sc 3m.sg} {\sc neg} add.{\sc mod.3m.sg} {\sc appr} add.{\sc mod.3m.sg} hit.{\sc inf}.{\sc 3m.sg} on these blow great and-dishonour.{\sc 3m.sg} brother.{\sc cs}.{\sc 2m.sg} to-eyes.{\sc cs}.{\sc 2m.sg} \\
+
+\glt `Forty blows he may strike him, he shall not go further, lest he go on to strike him beyond these a great many blows, and your brother seem of no account in your eyes.' (Deuteronomy 25:3)
+\z
+
+\noindent While Robert Alter's translation does not render these verses as  conditionals, other translations do. For example, the JPS Bible translates this passage as follows:  \textit{If he should exceed, and beat him above these with many stripes, then thy brother should be dishonoured before thine eyes}. Another possibility is that the entire complex clause following \textit{pen} is in its syntactic scope. I cannot determine here with any certainty whether, in this and similar cases (such as (\ref{hypo}) above), a conditional analysis should be adopted. If such an analysis is correct, however, the result, while broadly compatible with the informal idea that \textit{pen} marks its prejacent as expressing a dispreferred possibility, has potential consequences for the analysis of conditionals.\footnote{For example, conditional antecedents are not generally assumed to have the assertive content of a modal, though they are plausibly assumed to carry a modal presupposition (see e.g.\ \citealt{leahy}). Furthermore, sentences like (\ref{beat}) carry an inference of conditional perfection, and the question arises whether this inference is cancellable or not. For example, (\ref{beat}) implies that if the blows do not exceed a certain threshold, the resulting dishonouring of the victim is avoided. Given the nature of the corpus, it is difficult to determine whether this implication is cancellable or not. If it is not, then a conditional analysis of the sentence would have to account for why it is not, as conditional perfection is not generally uncancellable.} 
+
+While \textit{pen} mostly introduces clauses with a future or modal interpretation, in a few cases it marks a clause with a present or past temporal interpretation. This is shown in (\ref{yesh}), where the form \textit{yeš} has only present temporal reference, and in (\ref{past}) where the verbal forms have only a past temporal reference.
+\ea
+\label{yesh} 
+\gll \textbf{Pen} yeš baxem iš o iša o mišpaxa o švet ašer levavo pone ha-yom me-im YHWH elohenu  {\ldots} lo yove YHWH salo'ax lo. \\
+{\sc appr} exist in.{\sc 3m.pl} man or woman or family or clan that heart.{\sc cs}.{\sc 3m.sg} turns the-day from-with YHWH God.\sc{cs}.{\sc 1pl} {\ldots} {\sc neg} agree YHWH forgive.{\sc inf} to.{\sc 3m.sg}  \\
+\glt `Should there be among you a man or a woman or a clan or a tribe whose heart turns away today from the {\sc Lord} our God to go worship the Gods of those nations {\ldots} The {\sc Lord} shall not want to forgive him.' (Deuteronomy 29:17)
+\z
+
+\ea
+\label{past} 
+\gll Yelxu na v-yvakšu et adoneyxa  \textbf{pen} nesa'o ru'ax YHWH va-yašlixehu be-axad he-harim o be-axat ha-geva'ot. \\
+go.{\sc mod.3pl} {\sc dir} and-search.{\sc 3pl} {\sc acc} master.{\sc cs}.{\sc 2sg} {\sc appr} carried.{\sc 3m.sg}.{\sc 3m.sg} spirit.{\sc cs} YHWH and-throw.{\sc 3m.sg.3m.sg} in-one.{\sc cs} the-mountain.{\sc pl} or in-one.{\sc f.cs} the-valley.{\sc pl} \\
+\glt `Let them go, pray, and seek your master, lest the spirit of the LORD has borne him off and flung him down on some hill or into some valley.'  (2 Kings 2:16)
+\z
+
+ The interpretation of (\ref{yesh}), as Alter's translation indicates, is another case in which a \textit{pen} clause is interpreted similarly to the antecedent of a conditional. However, it could equally be seen as a matrix occurrence of \textit{pen}, simply asserting the possibility of something undesirable. Sentence (\ref{past}) is an instance of what Lichtenberk called the `in-case' interpretation, where the \textit{pen}-marked clause describes an issue which is already metaphysically settled at the time of utterance, but remains epistemically open. In this case, searching for the master (the prophet Elijah in the context) cannot possibly affect the already determined facts about whether the Lord has flung him on a hill or into a valley, but can avert some undesirable consequence of this possibility.  These examples are discussed in more detail in \sectref{sec:analysis}.
+
+\subsection{Verbs of fear and precaution}
+\label{subsec:verbsfp}
+Examples (\ref{comp}) and (\ref{comp2}) demonstrate occurrences of \textit{pen} in construction with verbs of precaution or fear, respectively. 
+\ea
+\label{comp}
+\gll Hišamer lexa \textbf{pen} tašiv et  bni šama. \\
+beware to.{\sc  2m.sg} {\sc appr} return.{\sc mod.2m.sg} {\sc acc} son.{\sc cs.1sg} there.{\sc all} \\
+\glt `Watch yourself, lest you bring my son back there.' (Genesis 24:6)
+\z
+
+\ea
+\label{comp2}
+\gll Ki yare anoxi oto \textbf{pen} yavo ve-hikani em al banim. \\
+ for fear.{\sc 1m.sg} I {\sc acc.3m.sg} {\sc appr} come.{\sc mod.3m.sg} and-strike.{\sc 3m.sg.1sg} mother on son.{\sc pl} \\
+\glt  `For I fear him, lest he come and strike me, mother with sons.' (Genesis 32:12)
+\z
+
+Cases like (\ref{comp}) can be viewed as involving a \textit{pen}-marked  complement clause. In the context, the \textit{pen}-marked clause in (\ref{comp}) arguably describes the content of what is to be avoided, rather than merely the justification for the directive `watch yourself'. The directive issued by the speaker (Abraham in the context) is an answer to a question: `should I bring your son back?' The issued directive is to be careful not to bring the son back. In other words, the interpretation of this verse could equally well be paraphrased as `be careful not to bring my son back from there' (though the \textit{pen}-marked clause contains no negation). While the verb \textit{hišamer} `beware' does not require a complement, and can occur intransitively, optional complements are by no means an oddity. Examples like (\ref{comp}) can, however, also be viewed as involving a directive and a \textit{pen}-marked clause in parataxis, instantiating what \citet{lichtenberk95} calls the precautionary function of apprehensive markers (see \sectref{subsec:precautionary} below). Semantically speaking, an analysis in which the apprehensive clause is a semantic argument seems to me more straightforward, but I leave the question undecided here.
+ 
+In (\ref{comp2}) as well, one might argue that the \textit{pen}-marked clause is a complement clause indicating exactly what the speaker, Jacob, fears about his brother Esau. This line of analysis is reflected in the \ili{English} Standard Version Bible translation of the verse: \textit{ Please deliver me from the hand of my brother, from the hand of Esau, for I fear him, that he may come and attack me, the mothers with the children}.
+
+However, as \citet{azar81} argues, there is not a single clear instance of a \textit{pen} marked clause occurring as the direct complement of a verb of fear in the Bible. This makes an analysis in which the \textit{pen} clause in (\ref{comp2}) is an adjunct clause providing the motivation for the matrix assertion (`I fear him') seem more plausible. 
+
+\subsection{Stand-alone matrix occurrences}
+\label{subsec:matrix}
+In a few cases, \textit{pen} can also occur on a matrix clause that is not in construction with a preceding clause, in which case the sentence asserts that something undesirable is possible. Examples are given in (\ref{cond})\footnote{In the Biblical context, this sentence describes God's reaction to Adam and Eve having eaten from the tree of knowledge, acquiring the divine trait of moral judgement. The undesirable possibility here is that they would also acquire the divine trait of immortality, thus achieving a God-like status.} and (\ref{yasit}).
+\ea
+\label{cond}
+\gll Ve-ata \textbf{pen} yišlax yado ve-lakax gam me-'ec ha-xayim ve-axal va-xay le-olam. \\
+and-now {\sc appr} send.{\sc mod.3m.sg} hand.{\sc cs.3m.sg} and-take.{\sc 3m.sg}  also from-tree.{\sc cs} the-life and-eat.{\sc 3m.sg} and-live.{\sc 3m.sg} to-eternity \\
+\glt `He may reach out and take as well from the tree of life and live forever.' (Genesis 3:22)
+\z
+
+\ea
+\label{yasit}
+\gll \textbf{Pen} yasit etxem hizkiyahu leemor YHWH yacilenu {\ldots}\\
+{\sc appr} incite.{\sc mod.3m.sg} {\sc acc.3m.pl} Hezekiah say.{\sc inf} YHWH save.{\sc mod.3m.sg.1pl} \\
+
+\glt `Lest Hezekiah mislead you, saying the LORD will save us {\ldots}' (Isaiah 36:18)
+\z
+
+
+
+\section{\textit{pen} as a modal complementizer and the semantics and pragmatics of apprehension}
+\label{sec:analysis}
+The data presented above show that all occurrences of \textit{pen} in the Biblical corpus always involve both of the characteristic inferences of apprehension: possibility and bouletic dispreference. This, coupled with the fact that \textit{pen} can occur in a matrix clause and hence is not straightforwardly a subordinating (or coordinating) conjunction, makes it natural to analyze it as a modal complementizer.\footnote{See Footnote 2 above.} Semantically, I assign \textit{pen} the meaning of a possibility modal that furthermore carries a conventional implicature that the prejacent proposition is bouletically dispreferred. Since \citet{karttunen-peters}, conventional implicatures are  standardly understood to be automatic updates of the common ground between interlocutors. \textit{Pen}, therefore, takes a proposition, asserts its possibility, and, automatically adds to the common ground that it is  undesirable, i.e.\ false in all the worlds in which the speaker's desires are met.\footnote{The assumption that it is the speaker's desires, rather than the addressee's, for example, is difficult to establish within the relatively small corpus of the Biblical text. I have not seen any clear cases where the context clearly distinguishes the speaker's bouletic preferences from the addressee's and where the \textit{pen}-clause clearly alludes to the latter rather than the former.} While the limited corpus of the \ili{Hebrew} Bible does not afford the possibility of testing that undesirability is backgrounded, rather than at issue, content, this seems a reasonable assumption given the nature of similar markers in other languages. For example, the dispreference inference associated with \ili{English} \textit{lest} is clearly not at issue.\footnote{This is evidenced, for example, by the fact that the dispreference inference cannot be targeted by explicit denial moves. In the dialogue in (i), B's denial can either target the proposition that he was quiet, or the causal relation asserted to hold between that proposition and the dispreference for waking up the children, but it cannot be used to only deny that dispreference. (i) A: He was quiet lest he wake up the children. B: No, that's not true.} The semantics proposed for \textit{pen} is given in (\ref{pensem}). That the  undesirability content is not presupposed is clear from the contexts in which \textit{pen}-marked clauses appear, in which it is not generally already established in the common ground that the eventuality described by the clause is undesirable. For example, in the context for (\ref{comp}) above, the information that bringing the son back is undesirable is not only not common ground, but entirely new to the addressee. 
+
+\ea
+\label{pensem} \textnormal{\textbf{The semantics of \textit{pen}}:} \\
+\textnormal{A clause with the complementizer \textit{pen} expressing a proposition $p$:}
+\begin{xlist}\itemsep=-1mm
+\ex\label{pensema} \textnormal{asserts the possibility of $p$}
+\ex\label{pensemb} \textnormal{conventionally implicates that there is a contextually salient $q$ that is causally dependent on $p$ and bouletically dispreferred.}
+\end{xlist}
+\z
+
+\noindent Clause (\ref{pensemb}) does not directly state that the event described in the prejacent of \textit{pen} is what is dispreferred, but rather that some causal consequence of this event is dispreferred. This feature of the analysis, which  seems strange at first, is  what allows it to capture the difference between the three ``functions'' identified by \citet{lichtenberk95}, as explained in the rest of this section. 
+
+\subsection{The apprehensional-epistemic function}
+\label{subsec:appr-epis}
+What Lichtenberk calls the apprehensional-epistemic function is the case in which an apprehensive marker occurs in a matrix context, as exemplified in the \ili{To'aba'ita} example (\ref{toba}). 
+\ea
+\label{toba}  \langinfo{To'aba'ita}{\ili{Austronesian}}{\citealt[294]{lichtenberk95}} \\
+\gll \textbf{Ada} 'oko mata'i.\\
+lest you.{\sc sg.seq} be.sick \phantom{rg}\\
+
+\glt `You may be sick.'
+\z
+
+That Biblical \ili{Hebrew} \textit{pen} can occur in matrix contexts with the same kind of meaning was shown in examples (\ref{cond}) and (\ref{yasit}) in \sectref{subsec:matrix} above. As the translations of those examples indicate, these sentences assert the possibility of an eventuality taken to be undesirable by the speaker. In terms of the semantics proposed in (\ref{pensem}), these are cases in which the proposition $q$ conventionally implicated to be undesirable is identical to the proposition $p$ expressed by the prejacent of \textit{pen}. 
+Since every proposition is causally dependent on, and a consequence of, itself, a special case of (\ref{pensemb}) is the case in which $p=q$, and it is this case which comprises the so-called apprehensional-epistemic function.\footnote{This is a point where the proposed analysis diverges from the one developed in \cite{anderbois21}, where the apprehensive item analyzed, the \ili{A'ingae} morpheme \textit{=sa'ne}, does not have stand-alone matrix occurrences, and is therefore analyzed as always relating two propositions that are compositionally supplied.}
+
+\subsection{The precautionary function}
+\label{subsec:precautionary}
+What Lichtenberk calls the precautionary function of apprehensive markers are those cases in which an apprehensive clause occurs in hypotaxis and/or parataxis with another clause. These cases, exemplified for \textit{pen} in \sectref{subsec:coordination} above, give rise to inferences beyond undesirability, which Lichtenberk calls the avertive and `in-case' inferences. The avertive inference is the inference, seen in examples like  (\ref{lot0}), repeated in (\ref{lot0-r}), that the eventuality described by the non-apprehensive clause would avert the undesirable possibility described by the \textit{pen}-marked clause.
+\ea
+\label{lot0-r} 
+\gll {\ldots} kax et ištexa ve-et šte bnotexa ha-mica'ot \textbf{pen} tisape ba-avon ha-ir. \\
+{\ldots}  take.{\sc imp} {\sc acc} wife.{\sc cs}.2{\sc m.sg} and-{\sc acc} two.{\sc f.cs} daughter.{\sc pl.cs}.{\sc 2m.sg} the-present {\sc appr} perish.{\sc mod.2m.sg} in.the-iniquity.{\sc cs} the-city \\
+
+\glt  `{\ldots} take your wife and your two daughters who remain with you, lest you be wiped out in the punishment of the city.' (Genesis 19:15)
+\z
+
+
+The `in-case' inference is the inference, seen in examples like (\ref{past}), that the eventuality described by the non-apprehensive clause cannot avert the possibility described by the \textit{pen}-marked clause (in this case, because the question of the realization of this possibility is already settled), but can prevent some undesirable consequence of it. In example (\ref{past}), repeated here as (\ref{past-r}), it is already settled, at utterance time, whether the possibility that God has carried the addressee's master somewhere has been actualized. It nevertheless remains epistemically undetermined for the interlocutors. The relevant inference is that searching for him might avert some undesirable consequence of this possibility (e.g.\ that the master will perish if left unattended.)
+\ea
+\label{past-r} 
+\gll Yelxu na v-yvakšu et adoneyxa  \textbf{pen} nesa'o ru'ax YHWH va-yašlixehu be-axad he-harim o be-axat ha-geva'ot. \\
+go.{\sc mod.3pl} {\sc dir} and-search.{\sc 3pl} {\sc acc} master.{\sc cs}.{\sc 2sg} {\sc appr} carried.{\sc 3m.sg}.{\sc 3m.sg} spirit.{\sc cs} YHWH and-throw.{\sc 3m.sg.3m.sg} in-one.{\sc cs} the-mountain.{\sc pl} or in-one.{\sc f.cs} the-valley.{\sc pl} \\
+\glt `Let them go, pray, and seek your master, lest the spirit of the LORD has borne him off and flung him down on some hill or into some valley.'  (2 Kings 2:16)
+\z
+
+In terms of the semantics of \textit{pen} proposed in (\ref{pensem}) above, the `in-case' inference is just a special case of the avertive inference. In both cases, what is to be averted is the contextually salient proposition \textit{q} that is conventionally implicated to be bouletically dispreferred and causally dependent on the  proposition. In the case of avertive inferences, this $q$ is just the prejacent itself (as was the case in matrix cases discussed in the previous subsection), and in the case of `in-case' inferences, the two are distinct, with $q$ being a potential consequence of the prejacent proposition. 
+
+Given that avertive and `in-case' inferences are not present when \textit{pen} occurs in a matrix context, they cannot be part of the conventional meaning of \textit{pen}, raising the  question why they arise when \textit{pen} clauses occur in construction with another clause. My suggestion  is that these are inferences due to discourse coherence principles, which may be ultimately rooted in Gricean reasoning. 
+
+If avertive/`in-case' inferences are not linked to the conventional meaning of \textit{pen}, then they are expected to arise quite independently of the presence of this marker, which they indeed do, as shown in (\ref{family}).\footnote{Of course, the reverse does not hold~-- the fact that an inference arises independently of the presence of a marker does not preclude that it is also encoded conventionally by that marker. For example, causal inferences encoded by expressions like \textit{because} often arise in the absence of this marker, as in a discourse like \textit{I left. It was too noisy.}}
+
+\ea
+\label{family} Take your family and leave. You might perish with the destruction of Sodom. 
+\z 
+
+As stated, the idea that avertive inferences are linked to textual/discourse coherence principles is not much more than an intuition. Turning it into an analysis requires a worked out theory of such coherence principles, which I cannot offer, but on which there is an extensive literature (see for example \citealt{hobbs,lascarides93, lascarides03, asher-lascarides}). However, I suggest here a rough outline of how standard Gricean pragmatic reasoning might account for how these inferences arise.
+
+Generally speaking, I propose that the avertive inferences associated with parataxis are parasitic on an \textit{explanation} discourse relation conventionally associated with  parataxis.\footnote{\textit{Explanation} is one of the discourse cohesion relations explored more elaborately and formally by \citet{asher-lascarides}.} The apprehensive clause, which is the second element in the parataxis, stands in an explanatory relation to the first one, and the explanation has to do with an avertive relation between events.
+
+How this happens seems to be fairly straightforward when the first sentence in the paratactic relation is a directive prescribing an action. In this case, the undesirable possibility named by the \textit{pen}-marked clause explains the motivation for issuing the directive. Specifically, what motivates the directive is precisely that taking the prescribed action can avert the undesired possibility. The reasoning involved is illustrated in (\ref{avertive-reasoning}) ($\leadsto$ indicates a conclusion that follows from the listed premises, a conclusion that the hearer is likely to draw and that the speaker expects her to draw). 
+\ea
+\textnormal{\textbf{Deriving avertive inferences}}\label{avertive-reasoning}
+\begin{itemize}%\itemsep=-1mm
+\item[--] \textnormal{A directive clause $S_1$ expresses a preference for the addressee to do $A$, rather than $\neg A$.}
+\item[--] \textnormal{An apprehensively marked clause $S_2$ asserts that an undesirable eventuality $B$, which is a consequence of the eventuality described by the clause and possibly that eventuality itself, is a possibility.}
+\item[--] \textnormal{The paratactic relation $S_1, S_2$ indicates that the undesirable possibility $B$ is an \textit{explanation} for the preference for $A$ over $\neg A$ expressed by $S$. }
+\item[$\leadsto$] \textnormal{Speaker recommends doing $A$ because she believes not doing $A$ leads to $B$, whereas doing $A$ averts $B$. }
+\end{itemize}
+\z
+ 
+In other cases, however, such as (\ref{lot1}), the first clause, a declarative, does not describe an eventuality that can be inferred to avert anything. 
+\ea
+\label{lot1} 
+\gll Va-anoxi lo 'uxal lehimalet ha-hara \textbf{pen} tidbakani ha-ra'a va-matti.\\
+and-I {\sc neg} can.{\sc mod.1sg} escape.{\sc inf} the-mountain.{\sc all} {\sc appr} catch.{\sc mod.3f.sg.1sg} the-evil and-die.{\sc 1sg}  \\
+\glt `But I cannot flee to the high country, lest evil overtake me and I die.' (Genesis 19:19)
+\z
+
+In (\ref{lot1}), this first clause is modal, and asserts that Lot cannot flee to the high country. Not being able to flee obviously does not avert the undesired possibility, named in the \textit{pen}-marked second clause, that Lot will die prematurely. The paratactic relation, however, relates this undesired possibility to the assertion of Lot's inability to flee to the high country as an explanation. Presumably, the reason that fleeing to the high country is not an option is precisely the possibility of being overtaken by evil and dying there. If this, however, is the explanation for the assertion, then the hearer can safely conclude that not fleeing to the high country will avert this undesired possibility. 
+
+The avertive inference in (\ref{lot1}) arises differently than the one in (\ref{family}) above, which involves neither an apprehensive marker nor syntactic parataxis. In (\ref{family}), the fact that the second sentence describes an undesirable eventuality is entirely a fact of world knowledge and a specific context, rather than conventional marking. Replacing that sentence with one describing a stereotypically desirable eventuality, as in (\ref{good}), destroys the avertive inference (though the causal inference based on explanation remains). 
+\ea
+\label{good}
+Take your family and leave. You might find a better place to live. 
+\z
+
+
+So-called `in-case' inferences are just avertive inferences in which world knowledge rules out a causal relation between the eventuality described by the main clause and the one described by the prejacent of the apprehensive marker, leading the hearer to infer that it is some other consequence of the prejacent that is to be averted.\footnote{In the Biblical corpus, `in-case' inferences arise only when the \textit{pen}-marked clause is in the present or past tense. This makes it tempting to try and derive `in-case' inferences from the fact that the undesirable possibilities involved are metaphysically settled, and present only epistemic possibilities. However, the general availability of `in-case' inferences with future-oriented clauses, as in \textit{take an umbrella lest it rain}, argues against this line of analysis. I thank Eva Schultze-Berndt for pointing this issue out to me.} The pragmatic reasoning in this case works in the same way as in avertive inferences. The hearer takes the conventionally implied undesirable consequence of the eventuality described by the prejacent to be the explanation for the speaker's assertion (or her recommendation to do $A$ rather than $\neg A$), but in this case this consequence is not the prejacent-eventuality itself. 
+
+In summary, this section proposed that the \ili{Hebrew} apprehensive marker \textit{pen} is a complementizer or a left-periphery particle with the semantics of a possibility modal, and a conventional implicature that some contextually inferable consequence of the prejacent is disprefered by the speaker. This makes the occurrence of \textit{pen}-clauses in stand-alone matrix contexts entirely unremarkable. Since \textit{pen}-marked clauses give rise to so-called avertive and `in-case' inferences only when they appear in construction with another clause, and since such inferences arise also when no apprehensive marker is present, it is natural to view them as linked to textual structure. This remains, however, an indication of a potential direction rather than an analysis. Specifically, the idea is that these inferences arise pragmatically from reasoning about an explanatory relation between the two clauses, with the prejacent interpreted as providing an explanation for the assertion of the non-apprehensive clause, and world knowledge determining whether what is to be averted is the eventuality described by the \textit{pen} clause or some other causal consequence of it. 
+
+Finally, the status of avertive and `in-case' inferences emerges here as a point of cross-linguistic variation. In languages which have an apprehensive marker that is always subordinating (or coordinating, if there are languages with purely coordinating apprehensive markers), these inferences are conventional and are always present when the marker is present. An example of such a language seems to be \ili{A'ingae} as analyzed by \citet{anderbois21}. In languages like \ili{Hebrew}, the apprehensive marker occurs in stand-alone matrix contexts and is essentially a possibility modal. In such languages, the relevant inferences must be derived through the interplay of the conventional meaning of the marker and something else, which, if my proposal is in the right direction, is the coherence effects of parataxis.  
+ 
+
+\subsection{The trajectory of \textit{pen} in post-Biblical Hebrew}
+\label{subsec:trajectory}
+This section provides a brief and preliminary discussion of \textit{pen} in post-Biblical varieties of \ili{Hebrew}. Biblical \ili{Hebrew} ceased to be a spoken language around the 2\textsuperscript{nd} century CE. In the subsequent variety of Mishnaic \ili{Hebrew}, \textit{pen} was entirely replaced by the more general particle \textit{šema} `whether/if/maybe', used also in matrix and embedded questions, which marks possibility and can, but does not have to, convey undesirability (see \citealt{segal01}).
+\ea
+\gll Hevey zahir bi-dvarexa \textbf{šema} mi-toxam yilmedu lešaker. \\
+be careful in-words.{\sc cs.2m.sg} maybe from-inside.{\sc cs.3m.pl} learn.{\sc mod.3m.pl} lie.{\sc inf} \\
+\glt `Be careful with your words lest from them they will learn to lie.' (Avot 1:9)  
+\z
+
+After the 2\textsuperscript{nd} century, \ili{Hebrew} no longer had native speakers, and subsequent varieties of \ili{Hebrew} were written varieties, and the language did not have a spoken variety with a stable community of native speakers until the early 20\textsuperscript{th} century. In Renaissance-era and early Modern \ili{Hebrew} texts, \textit{pen} is sometimes used as a modal/mood marker, co-occurring with a complementizer.
+\ea
+\gll Hodi'enu ma šimxa lada'at mi nexabed \textbf{ki} \textbf{pen} lo nakirxa az. \\
+ tell.{\sc 2m.sg.3pl} what name.{\sc 3m.sg} know.{\sc inf}  who honor.{\sc 1pl.mod} for {\sc appr} {\sc neg} know.{\sc 1pl.3m.sg} then\\
+\glt `Tell us your name so that we know who we are honoring for we might not recognize you then.' (Rabbi David Alteschueler, Mecudat David,  1750s)
+\z
+
+During the \textit{haskala}, the Jewish Enlightenment movement, \ili{Hebrew} revivalists, like Abraham Mapu (1808--1867), began using Biblical \ili{Hebrew} in writing modern, secular, novelistic prose. In Mapu's writing, \textit{pen} is used largely as described above for Biblical \ili{Hebrew}. For later revivalists, \textit{pen} starts losing its conventional implicature of undesirability, and is used in positive as well as in the neutral contexts in which Mishnaic \textit{šema} is used.\footnote{All examples in this section are taken from the cited texts as they appear in the \href{https://benyehuda.org/}{Ben-Yehuda Project}, accessed using the repository created and kindly shared by Aynat Rubinstein for the Jerusalem Corpus for Emergent Modern \ili{Hebrew} (see \citealt{rubinstein19}). I thank Noam Tedelis for his invaluable help with the corpus work. The translations are my own.} This is exemplified in (\ref{berd})--(\ref{bialik}). In (\ref{berd}), the maid, who is lusting over the speaker, desires the possibility that he come close to her. In (\ref{lepers}), the lepers desire the possibility that they be healed. In (\ref{bialik}), which is a line from a poem, the narrating voice describes parents who are going out to the street to see if anyone has seen or heard their son, who is late coming home. In this case, the possibilities are just that, possibilities, neither desired nor undesired (hence the translation with \textit{maybe}).
+\ea
+\label{berd}
+\gll  Le-tum-i lo yadati az, ki nefeš ha-ama ogevet alay bišvil cniut-i, ve-hi šoha be-xadr-i yoter mi-day \textbf{pen} ve-'ulay 'etkarev 'ele-ha. \\
+to-innocence.{\sc cs-1sg} {\sc neg} know.{\sc pst.1.sg} then, that mind.{\sc cs}  the-maid lust.{\sc 3f.sg} on.{\sc 1sg} for modesty.{\sc cs-1sg} and-she stay.{\sc 3f.sg} in-room.{\sc cs-1sg} more than-enough {\sc appr}  and-maybe approach.{\sc 1sg} to-{\sc 3f.sg} \\
+\glt  `In my innocence, I did not then understand that the maid is lusting over me for my modesty, and is lingering in my room, to see whether I might come close to her.' (Berdichevsky, \textit{ˤorva parax}, 1900)
+\z
+
+\ea
+\label{lepers} 
+\gll Va-yišmeu ha-mecora-im va-yismexu al ha-davar va-yomru iš el axiv: nelxa gam anaxnu el ha-arec ha-hi, \textbf{pen} niga'el gam 'anaxnu.\\
+and-heard.{\sc 3pl} the-leper-{\sc pl} and-rejoiced.{\sc 3pl} on the-thing and-said.{\sc 3pl} man to brother.{\sc cs:3m.sg} go.{\sc imp.pl} also we to the-land the-that, {\sc appr} be.saved.{\sc 1pl} also we\\
+\glt  `And the lepers heard this and were glad, and said to each other: let us also go to that country, we might also be saved.' (Berdichevsky, \textit{ve-anu ba cidkata}, 1908)
+\z
+
+\ea
+\label{bialik}
+\gll  \textbf{Pen} {šama} šome'a /  \textbf{pen} ra'u ha-roim / lo ra'ata ayin / ozen lo šam'a \\
+ {\sc appr} heard hearer \phantom{/} {\sc appr} saw.{\sc pl} the-seeing \phantom{/} {\sc neg} saw eye \phantom{/} ear {\sc neg} heard. \\
+\glt  `Maybe someone has heard something / Maybe someone has seen something  / No eye has seen anything / No ear  has heard anything.'  (Bialik, \textit{ha-na'ar ba-ya'ar}, 1933)
+\z
+ 
+In contemporary spoken \ili{Hebrew}, \textit{pen} has, together with all the other Biblical and Mishnaic left-periphery items, been abandoned in favor of a single complementizer/subordinator \textit{še}. In writing, \textit{pen} is still used, but mostly in high register prose style. Modern \ili{Hebrew}  does, however, have a more productive dedicated apprehensive marker, namely the modal \textit{alul} `can', discussed in the next section.
+
+\section{The modal \textit{alul}}
+\label{sec:alul}
+Contemporary \ili{Hebrew} inherited from Mishnaic \ili{Hebrew} the two adjectives \textit{asuy} and \textit{alul}, the literal meaning of which is roughly `made/done', but both of which have a modal sense of being prone or inclined by nature towards something. Examples of this modal sense, which is the one of interest here, are given in (\ref{asuy}) and (\ref{alul}). I gloss both adjectives as `can' throughout. 
+\ea
+\label{asuy}
+\gll ktav še-hu \textbf{asuy} lehištanot  \\
+writing that-it can change.{\sc inf} \\
+\glt `a script that is prone to change' (Palestinian Talmud, 71, b-c)
+\z
+
+\ea
+\label{alul}
+\gll \textbf{alul} lekabel tum'a  \\
+ can receive.{\sc inf} impurity  \\
+\glt `prone to become impure' (Tosefta, Oholot 15)
+\z
+
+ In the Mishnaic sources, \textit{asuy} is used to describe propensity towards undesirable as well as desirable or neutral things, whereas \textit{alul} appears only once, in the example cited, which involves a propensity towards something undesirable. 
+
+In the early revivalist period, both \textit{asuy} and \textit{alul} are used with a more general possibility sense `can', not clearly specific to inherent propensity, and with no bouletic implications, as in (\ref{brener}), where \textit{alul} takes an infinitive describing a presumably bouletically preferred positive possibility.  
+\ea
+\label{brener}
+\gll kol ma še-eyno \textbf{alul} lehavi lo revaxim \\
+all what that-not can bring.{\sc inf} to.{\sc 3m.sg} profit.{\sc pl} \\
+\glt `everything that can't bring him profits' (Yosef Brener, \textit{šxol ve-kišalon}, 1922)
+\z
+
+In the usage of many contemporary speakers, myself included,  \textit{alul} and \textit{asuy} belong to a higher register and are not used as commonly in speech as the more colloquial modal adjective \textit{yaxol} `can'. When used, however, \textit{alul} is associated with a negative bouletic implication.\footnote{The public perception is that this difference between \textit{alul} and \textit{asuy}, with the former carrying a negative bouletic implication and the latter neutral, is a historically ``correct'' one that has been lost, see e.g.\  the discussion in the online forum of the Academy of the \ili{Hebrew} Language at \url{https://hebrew-academy.org.il/2018/12/17/עשוי-ועלול/}} For such speakers, the (constructed) sentence in (\ref{alul1}) must be read as construing the addressee's success as undesirable, e.g.\ in a context in which the speaker and addressee are adversaries, or one in which the speaker is being ironic, implying that the addressee is scared of the consequences of success (cf.\  \textit{of course you don't want to try to run for office, you might succeed and then you'll have to put your money where your mouth is}).  
+\ea
+\label{alul1}
+\gll Ata \textbf{alul} lehacliax. \\
+you can succeed.{\sc inf} \\
+\glt `You might (God forbid) succeed.'
+\z
+
+This use of \textit{alul} as a possiblity modal adjective can be analyzed in exactly the same way as proposed above for \textit{pen}, the difference between the lexemes being combinatoric. While \textit{pen} introduces a finite clause, \textit{alul} is a ``raising'' adjective which takes a nominal subject and an infinitival complement, similarly to \ili{English} modal adjectives like \textit{likely}, \textit{liable}, etc. In terms of interpretation, \textit{alul} takes as its prejacent the proposition formed by applying the meaning of the infinitive to that of the subject, and the semantic analysis is the same as proposed above for \textit{pen}. 
+
+
+
+
+
+\section{The apprehensive use of additive \textit{od} and temporal \textit{axarkax}}
+\label{sec:appradditivetemporal}
+This section describes the apprehensive use of two temporal expressions that is common in contemporary spoken \ili{Hebrew}. The first is the additive particle \textit{od}, the second is the temporal adverb \textit{axarkax} `afterwards/later'.
+
+Generally, \textit{od} has the meanings expected of an additive particle (see \citealt{greenberg12}). When modifying a clause, it is interpreted as an aspectual `continuative' adverbial equivalent to \ili{English} \textit{still} and \ili{German} \textit{noch}.\footnote{On aspectual adverbials, see \citet{lobner89} and subsequent literature.} When modifying a nominal, \textit{od} is interpreted as `more'/`another'.  This is shown in (\ref{sirim}).\footnote{\ili{Hebrew} \textit{od} does not have the interpretation `also/too', for which \textit{gam} `also' is used.} 
+
+\ea
+\label{sirim}
+\begin{xlist}
+\ex
+\gll \v{S}arti \textbf{od} širim. \\
+sang.1sg {\sc add} song.{\sc pl} \\
+\glt  `I sang more/other songs.'
+\ex
+\gll Hu \textbf{od} po. \\
+he {\sc add} here \\
+\glt `He's still here.'
+\end{xlist}
+\z 
+
+When \textit{od} modifies a clause in the future tense, however, it has an interpretation different from the aspectual adverbial one, and on this interpretation, which I henceforth call \textit{boding}, it can give rise to apprehensive inferences, as in the naturally occurring examples in (\ref{od-ad}).
+\ea
+\label{od-ad}
+\begin{xlist}
+\ex 
+\gll  Al tedabri ito, hu \textbf{od} yaxšov še-at meunyenet. \\
+{\sc neg.imp} speak.{\sc fut.2f.sg} with.{\sc 3m.sg} he {\sc add}  think.{\sc fut.3m.sg} that-{\sc 2f.sg} interested \\
+\glt  `Don't talk to him, he'll end up thinking you're interested.'
+\ex 
+\gll  Amarti lo liyot be-šeket, hu \textbf{od} haya meir et ha-banot. \\
+told.{\sc 1sg} him be.{\sc inf} in-quiet he {\sc add} was.{\sc 3m.sg} wake.{\sc m.sg} {\sc acc} the-girl.{\sc pl} \\
+\glt  `I told him to be quiet, he would have woken up the girls.'
+\end{xlist}
+\z
+
+The boding reading of \textit{od} is not new, though its use in contexts of apprehension seems to be. In the \ili{Hebrew} Bible, the boding reading of \textit{od} occurs a few times in prophecy, always in the genre called ``prophecies of consolation'', where the prophet prophecises a redemptive remote future contrasting with a wretched present and immediate future, as in (\ref{betula}) from Jeremiah.
+\ea
+\label{betula}
+\gll \textbf{Od} evnex ve-nivnet betulat yisrael.\\
+ {\sc add} build.{\sc mod.1sg.2f.sg} and-be.built.{\sc 2f.sg} maiden.{\sc cs} Israel \\
+\glt  `Yet will I rebuild you and you will be built, O Virgin Israel.' (Jeremiah 31:3)
+\z
+
+In the early revival literature, boding \textit{od} starts to appear also in contexts where it leads to apprehensive inferences, as in the following examples from author Avraham Mapu. 
+\ea
+\gll Da lexa ki lo arev ani lexa, ve-\textbf{od} tišlax yad be-nafšexa. \\
+know.{\sc imp} to.you that {\sc neg} assuring I to.you and-{\sc add} send.{\sc mod.3m.sg} hand in-soul.{\sc cs.2m.sg} \\
+\glt `Know that (then) I cannot assure you and you might yet kill yourself.' \\(Mapu, \textit{ayit cavua}, 1857)
+\z
+
+\ea
+\gll Kaspi ve-zehavi yaase acabim, ve-\textbf{od} yefarek nizmex ve-xelyatex ve-herimam le-vošet. \\
+money.{\sc cs.1sg} and-gold.{\sc cs.1sg} make.{\sc mod.3m.sg} idols, and-{\sc add} take.off jewelry.{\sc cs.2f.sg} and-ring.{\sc cs.2f.sg} and-offer.{\sc mod.3m.sg.3pl} for-idols\\
+\glt `He uses my money and my gold to make false idols and will yet remove your jewelry and rings and offer them for idols.' (Mapu, \textit{ašmat šomron}, 1865)
+\z
+
+The boding reading of \textit{od} is easily distinguishable from the aspectual one. On the temporal  `still' reading, \textit{od} is always paraphrasable with the temporal adverbial \textit{adayin} `still/yet', a paraphrase not available in (\ref{od-ad}). As mentioned in the introduction, however, when \textit{od} modifies a future verb phrase, it can also give rise to promissive inferences, which are the opposite of apprehension in that the actuation of an anticipated possibility is desired. This is exemplified in (\ref{alter}), a line of poetry, and (\ref{practice}), which is naturally occurring. In both of these examples, \textit{od} clearly is not interpreted as `still'. 
+\ea
+\label{alter}
+\gll \textbf{Od} omar lax et kol ha-milim ha-tovot še-yešnan, še-yešnan adayin. \\
+{\sc add} say.{\sc mod.1sg} to.you {\sc acc} all.of the-words the-good that-exist.{\sc 3f.pl} that-exist.{\sc 3f.pl} still \\
+\glt  `I will say to you yet all the beautiful words that there are, that there are still remaining.' (Natan Alterman, \textit{od ašuv el sipex}, 1938)
+\z
+
+\ea
+\label{practice}
+\gll Al tafsik lehitamen! Ba-sof \textbf{od} tenaceax oti. \\
+{\sc neg.imp} stop.{\sc 2m.sg} practice.{\sc inf} in.the-end {\sc add} beat.{\sc fut.2m.sg} me\\
+
+\glt `Don't stop practicing! In the end you will yet\footnote{There is an interesting parallel to be drawn between additives with boding readings like \textit{od} and the positive polarity use of \textit{yet} exemplified in this translation. Positive polarity \textit{yet} also bears some interesting connection to additives, as seen in locutions like \textit{yet again} and \textit{yet another}. Positive polarity \textit{yet} seems to me to be amenable to the same analysis proposed below for \textit{od}, but an exploration of this item and of this hypothesis must be left for a future occasion.} beat me.'
+\z
+
+The boding reading of  \textit{od} is also distinguishable from its aspectual   `still' reading in its interaction with negation. The temporal adverbial \textit{od}, when occurring with negation, predictably means \textit{not yet}, as in (\ref{not-yet}). When  \textit{od} occurs with negation on its boding reading, as in the naturally occurring example (\ref{sin}), it cannot be interpreted as \textit{not yet}. Instead, it communicates that the negative eventuality described by the modified verb phrase is possible and (un)desirable. In example (\ref{sin}), which occurs in the context of a story about failures to deal with sexual harassment in organized sports, the writer is being sarcastic. 
+\ea
+\label{not-yet}
+\gll Be-eser  hu \textbf{od} lo yagia. \\
+in-ten he {\sc add} {\sc neg} arrive.{\sc fut}\\
+\glt `At ten he will not yet arrive.'
+\z
+
+\ea
+\label{sin}
+\gll Im ze yimašex kaxa, ba-sof \textbf{od} \textbf{lo} tiye lahem brera ela lemanot iša la-tafkid.\\
+if this continue.{\sc fut.3m.sg} thus in.the-end {\sc add} {\sc neg} be.{\sc fut.3f.sg} to.{\sc 3m.pl} choice except appoint.{\sc inf} woman to.the-position \\
+\glt `If it goes on like this, in the end they will have no choice but to appoint a woman to the position'.\footnote{ \url{https://www.haaretz.co.il/gallery/mejunderet/.premium-1.2089786}}
+\z
+
+\noindent Finally, the two uses also differ in prosody. While (\ref{not-yet}) can have pitch accent on \textit{od}, this is not possible in (\ref{sin}).
+
+ The fact that \textit{od} on its boding interpretation need not lead to apprehensive inferences shows that apprehension is not part of the conventionally encoded meaning of \textit{od}. Similarly, while (\ref{od-ad}) demonstrates that the boding reading of \textit{od} can give rise to precautioning readings of the kind discussed above for \textit{pen},  (\ref{practice}) clearly shows that it need not do so. 
+
+These observations raise the question of what the actual interpretation of \textit{od} is in this context, and why it gives rise to apprehensive and promissive inferences when it does. In  what follows I propose a preliminary, informal analysis of \textit{od} as a temporal additive, which takes as its prejacent a future-oriented proposition, and the interpretation of which, like that of other additives, is sensitive to alternatives. Intuitively speaking, my analysis of such temporal additives is that sentences that feature them assert that something that is not currently a historical necessity will become, if things continue as they are, a historical necessity in the future. 
+
+Before stating the required semantics, it is useful to situate \textit{od} in a broader context of temporal expressions that give rise to apprehension inferences. The harnessing of future-oriented expressions to express apprehension is a known phenomenon across unrelated languages.
+Angelo and Schultze-Berndt (\citeyear{angelo-berndt16, angelo-berndt18}) describe apprehensive uses of the \ili{German} adverbial \textit{nachher} `afterwards', as well as apprehensive uses of the adverbial \textit{bambai} in \ili{Kriol}, which expresses a relation of subsequentiality (see also \citealt{phillips18, phillips2021} for an extensive analysis). The apprehensive use of \textit{nachher} is exemplified in (\ref{nachher}).
+
+\ea
+\label{nachher} \langinfo{German}{Indo-European}{\citealt[ex.\ 12]{angelo-berndt18}} \\
+\textnormal{Context: Offer of a last-minute start place at a motor race (on a racing forum)} \\
+\gll Ne, lass mal! \textbf{Nachher} haue ich da noch jemanden raus! \\
+no let {\sc part} {\sc appr}/later hit.{\sc 1sg.prs} {\sc 1sg} there {\sc add} someone out \\
+
+\glt `No, (let's) leave	it.	I might	end	up kicking someone out!'\footnote{\url{https://www.well-rc.de/include.php?path=forumsthread&threadid=1300&entries=0}}
+\z
+
+In fact, the \ili{Hebrew} equivalent of the \ili{German} \textit{nachher}, the temporal adverbial \textit{axarkax} `afterwards/later', has the same apprehensive use, as exemplified in (\ref{axarkax}). In all three examples, the content of the clause headed by \textit{axarkax} is not inherently undesirable, but is necessarily understood as such in the context of \textit{axarkax}.
+\ea
+\label{axarkax}
+\begin{xlist}
+\ex
+\gll ``Al tidxi et ze'', odeda et acma, ``\textbf{axarkax} tiškexi ve-ha-sipur yaxzor al acmo''.\\
+{\sc neg.imp} postpone.{\sc fut.2f.sg} {\sc acc} it coax.{\sc 3f.sg} {\sc acc} self.{\sc cs.f} afterwards forget.{\sc fut.2f.sg} and-the-story return.{\sc fut.3m.sg} on self.{\sc cs.3m.sg} \\
+\glt `{}``Don't leave it for later'' she coaxed herself, ``In the end you'll forget and the same story will happen all over again''.'\footnote{\url{https://www.ynet.co.il/articles/0,7340,L-5573412,00.html}}
+\ex 
+\gll Im kvar lixtov šir, az adif lifney ha-milxama, \textbf{axarkax} lo iye mi še-yišma\\
+if already write.{\sc inf} song then preferable before the-war afterwards not be.{\sc fut.3m.sg} who that-hear.{\sc fut.3m.sg}\\
+\glt `If one is going to write a song, then better before the war, otherwise there might be nobody to hear it.' (Tom Shin'an, \textit{šir lifney ha-milxama}, song lyrics).
+\ex
+\gll Ani bekoshi mar'a lahem bubot xadashot. \textbf{Axarkax} hem yircu et kulam. \\
+I hardly show.{\sc 3f.sg} them doll.{\sc pl} new.{\sc pl} afterwards they want.{\sc fut.3pl} {\sc acc} all.{\sc cs.3m.pl} \\
+
+\glt `I hardly ever show them new dolls, otherwise they might want all of them'.\footnote{Facebook comment} 
+\end{xlist}
+\z
+
+Angelo and Schultze-Berndt demonstrate that \ili{German} \textit{nachher}, on its apprehensive use, can also introduce undesirable possibilities that are metaphysically already settled at the time of utterance, but epistemically open for the speaker, and can also give rise to Lichtenberk's `in-case' readings discussed above. My own intuition is that this is not the case with \ili{Hebrew} \textit{axarkax}, but determining this would require a more thorough empirical investigation of this expression than I can offer here. What is important in the current context is that, as put forth by Angelo and Schultze-Berndt, the future-orientation of temporal adverbs entails a modal component in their interpretation, which seems to be linked to their propensity to give rise to apprehensive inferences.  
+
+The case of \textit{od} is interesting against this general picture, because, as discussed above, \textit{od} is an additive that doubles as a temporal aspectual adverbial. A similar additive used both as an aspectual adverbial and with a boding interpretation is the \ili{German} additive particle \textit{noch}. \ili{German} \textit{noch} functions as an aspectual  particle meaning `still' as well as an additive meaning `another', and it also has a boding reading in which it states the prospective occurrence of a future event. \citet{lobner89} provides the example in (\ref{loebnoch}).\footnote{L\"{o}bner briefly discussed the difficulties of accounting for it under an analysis in which the prejacent of \textit{noch} contains a hidden prospective operator. As far as I can tell, the boding reading of \textit{noch} is not discussed in  Beck's (\citeyear{beck20}) overview.}
+
+\ea
+\label{loebnoch} \langinfo{German}{Indo-European}{\citealt[199]{lobner89}} \\
+\gll Sie kommt noch. \\
+she comes \textsc{add} \\
+\glt `She will yet/eventually come.'
+\z
+
+This boding use of \textit{noch} (which often accompanies \textit{nachher}, see example (\ref{nachher}) above) also gives rise to apprehensive interpretations, as in the naturally occurring example in (\ref{stern}). 
+\ea
+\label{stern}
+\gll Jakob, geh Dir eine trockene Hose anziehen, Du wirst noch krank. \\
+Jakob go.{\sc imp} you.{\sc dat} a.{\sc f} dry.{\sc f} pants wear.{\sc inf} you be.{\sc fut.2sg} \textsc{add} sick \\
+\glt `Jakob, go put on some dry pants, you might get sick.'\footnote{\url{https://kinder-getrappel.de/geschichten/wuttroll/hans-der-wuttroll-jakobs-wut-mit-pipi-in-der-hose/}}
+\z
+
+ As with \ili{Hebrew} \textit{od}, \textit{noch} on its boding interpretation only gives rise to apprehensive inferences in particular contexts, and can also be used in context in which the future possibility expressed by the prejacent is a positive one.\footnote{According to \citet{angelo-berndt16}, the future-oriented use of \textit{nachher} discussed above cannot easily be used in positive contexts. Its apprehensive component therefore seems to be more conventionalized.} 
+
+\ea
+\label{winen}
+\gll Ich werde noch gewinnen. \\
+I \textsc{fut.1sg} \textsc{add} win.{\sc inf} \\
+\glt `I will win yet/eventually.'
+\z
+
+
+The issue for an analysis of the boding reading of additives like \textit{od} and \textit{noch} is determining their lexical meaning  in a way that captures their additive nature and allows an explanation for their propensity to give rise to apprehensive inferences in some contexts and to promissive inferences in others. 
+
+Combining Angelo and Schultze-Berndt's observation that apprehensive inferences can be linked to future-orientation with an alternative-sensitive additive semantics, I propose the analysis in (\ref{analysis-yet}), the basic insight of which is due to Ashwini Deo (in conversation, August 28, 2018). 
+\ea
+\label{analysis-yet} \textnormal{The semantics of boding additives:}
+\begin{itemize}\itemsep=-1mm
+\item \textnormal{{\sc presupposes}: the prejacent is not instantiated anywhere within the interval $I$ that runs from a contextual left boundary $lb$ up until and including now.}  
+\item \textnormal{{\sc asserts}: there is an alternative interval $j$ starting at $lb$ at which the prejacent is instantiated.} 
+\end{itemize} 
+\z
+
+That the alternative interval $j$ asserted to instantiate the prejacent is a future one, not one that ends at utterance time, is ensured by the presupposition. If it were a subinterval of $I$, then, necessarily, $I$ would also verify the prejacent, contrary to what is presupposed. 
+
+On this analysis, a sentence with the boding \textit{od}/\textit{noch} ends up asserting that something that is now not a metaphysical certainty (hence might never happen), will nevertheless be a metaphysical necessity in the future. For example, while the interval that runs up to now does not secure that \textit{we win} will become true in all possible futures, a longer interval that extends into the future DOES ensure that. In a context in which our winning is taken to be desirable for the interlocutors, the assertion leads to a promissive inference (it communicates that something desirable is possible). In a context in which it is undesirable, the assertion is also a warning.\footnote{Angelo and Schultze-Berndt (2018), however, make the very interesting observation that \ili{German} \textit{nachher} cannot be used to perform the speech act of a threat. My intuition is that this is equally true for \ili{Hebrew} \textit{od}. The eventualities depicted by the prejacent of \textit{od} tend to not be under the control of the speaker, and have more to do with inertial development.} 
+
+
+\section{\textit{še-lo}:  + negation}
+\label{sec:se-lo}
+In this section, I very briefly describe another strategy of apprehension involving the interaction of the subordinator \textit{še } with negation. \citet{rubinsteinetal} show that this strategy is attested already in Mishanaic and Rabbinical \ili{Hebrew} and survived through the various written stages of the language. It is very common, and informal, in Modern \ili{Hebrew}.
+
+Normally, sentential complements of verbs of apprehension describe the eventuality the speaker is worried might occur. For example, in (\ref{worried}), the speaker is worried about recognition when no negation is present, and about non-recognition when it is present. 
+\ea
+I worried/feared  that they would (not) recognize me. \label{worried}
+\z
+
+However, in \ili{Hebrew}, as in many other languages, a negative sentential complement of a verb of fear can also behave as if it lacked negation altogether, as in the naturally occurring (\ref{tipsa}).
+\ea
+\label{tipsa}
+\gll Paxadeti še-\textbf{lo} yagidu še-ani tipša. \\
+feared.{\sc 1sg} that-{\sc neg} say.{\sc fut.3pl} that-I stupid.{\sc f} \\
+\glt `I was scared that they would say I'm stupid.'
+\z
+
+Sentences like (\ref{tipsa}) are ambiguous. On one reading, which is pragmatically odd, (\ref{tipsa}) means that the speaker was afraid that people would not say that she is stupid. On the other reading, the one actually conveyed by (\ref{tipsa}) in the context in which it occurred and reflected in the translation, this sentence conveys that she speaker was afraid people would say she \textit{was} stupid. On this reading, the complementizer and negation sequence \textit{še-lo} can be said to be much like an apprehensive marker in a language in which such markers introduce complements of verbs of fear. What the speaker fears in (\ref{tipsa}) is that people will say she is stupid, not that they would not say so. Similar cases in Romance have been argued to involve ``expletive negation'', but there is no consensus as to what expletive negation is, whether or not  the contexts in which negation seems to be expletive or superfluous form a natural class, and, of course, how such negation should be analyzed (see for example \citealt{vanderwurff99, abels05, eilam09, yoon11, makri13, puskas17, dobrushina21} among many others).
+
+I suggest here tentatively that in \ili{Hebrew}, \textit{še+lo} has been reanalyzed as a complex modal complementizer, interpreted much like \textit{pen}. The fact that negation is not morphologically fused with the complementizer and can appear inside the prejacent seems to be an immediate and strong argument against this suggestion. Nevertheless, I put forth here a few considerations that support it. I suggest further that \textit{še+lo} freely alternates with \textit{še} in the complement of `fear' verbs, since such verbs already lexically encode possibility and undesirability, obviating the need for marking apprehension.
+
+Some evidence that negation is not interpreted semantically in the embedded clause comes from the fact that 
+\textit{še-lo} can co-occur with another negation inside that clause, as in the naturally occurring (\ref{paxadeti}) (in which \textit{še-lo} could equally well be replaced with the complementizer \textit{še}).
+\ea
+\label{paxadeti}
+\gll Ani gam mamaš hayiti be-laxac lifney ha-mikve \textbf{še-lo} pitom lo argiš tov ve-lo uxal litbol. \\
+I also  really was.{\sc 1.sg} in-stress before the-{ritual.bath} that-{\sc neg} suddenly {\sc neg} feel.{\sc fut.1sg} well and-{\sc neg} can.{\sc fut.1sg} dip.{\sc inf} \\
+\glt `I was also really stressed out before the ritual bath that I might suddenly not feel well and won't be able to dip.'\footnote{\url{https://www.inn.co.il/Forum/Forum.aspx/t1190779}}
+\z
+
+Another piece of evidence is that, unlike sentential negation, \textit{še-lo} negation can, for many speakers, precede the subject. In the examples in (\ref{mishu}), the verb \textit{yadati} `I knew' contrasts with the verb \textit{paxadeti} `I feared' in that the former, being factive, selects for clausal complements introduced by the complementizer \textit{še} and does not allow \textit{še-lo} clauses. The negation in the complement clause of `know', like \ili{Hebrew} sentential negation generally, must therefore follow the subject, as shown in (\ref{mishub}). The verb `fear', in contrast, can occur with both \textit{še-lo} clauses, as in (\ref{mishuc}), and with \textit{še} clauses, as in (\ref{mishud}). In (\ref{mishuc}), the indefinite subject follows the complementizer + negation sequence.
+\ea
+\label{mishu}
+\begin{xlist}
+\ex\label{mishua}
+\gll Yadati še mišehu \textbf{lo} yavo. \\
+knew.{\sc 1sg} that someone {\sc neg} come.{\sc fut.3m.sg}  \\
+\glt `I knew that someone wouldn't come.'
+\ex\label{mishub}
+\gll *Yadati še-\textbf{lo} mišehu  yavo. \\
+knew.{\sc 1sg} that-{\sc neg} someone come.{\sc fut.3m.sg}  \\
+\glt Intended: `I knew that someone wouldn't come.'
+\ex\label{mishuc}
+\gll Paxadeti še-\textbf{lo} mišehu  yavo. \\
+feared.{\sc 1sg} that-{\sc neg} someone come.{\sc fut.3m.sg}  \\
+\glt `I was scared that someone would come.'
+\ex\label{mishud}
+\gll Paxadeti še mišehu \textbf{lo} yavo. \\
+feared.{\sc 1sg} that someone {\sc neg} come.{\sc fut.3m.sg}  \\
+\glt `I was scared that someone wouldn't come.'
+\end{xlist}
+\z
+
+These examples also demonstrate the semantic parallelism between \textit{še-lo} and apprehensive modal complementizers like \textit{pen} and \textit{lest}. As discussed above, \textit{pen} clauses occurring with verbs of precaution and fear describe the potential eventuality to be feared or avoided. The same is true of the \textit{še-lo} clause in (\ref{mishuc}), where what is feared is that someone will come, as well as of the naturally occurring (\ref{tizaher}) (in which negation does not precede the indefinite subject). In (\ref{tizaher}), what the addressee is asked to be careful about is the possibility that somebody will beat him up, not that someone will not beat him up.\footnote{In modern \ili{Hebrew}, as these examples show, an analysis of \textit{še-lo} clauses as complement clauses seems straightforward.}
+
+\ea
+\label{tizaher}
+\gll Tizaher še mišehu \#{\op}lo{\cp} yarbic lexa. \\
+careful.{\sc fut.2m.sg} that someone {\sc neg} hit.{\sc fut.3m.sg} to.you \\
+\glt `Watch out that someone \#(doesn't) beat you up.'
+\z
+
+Similarly, the naturally occurring example in  (\ref{zxuyot}), where negation again precedes the indefinite subject, shows that \textit{še-lo} clauses parallel \textit{pen} clauses in parataxis, giving rise to avertive inferences.
+\ea
+\label{zxuyot}
+\gll Sim zxuyot yocrim ba-šir, \textbf{še-lo} mišehu yavo ve-yagid še-hu katav et ha-šir ha-ze. \\
+put.{\sc imp} right.{\sc cs.pl} artist.{\sc pl} in.the-song that-{\sc neg} someone come.{\sc fut.3m.sg} and-say.{\sc fut.3m.sg} that-he wrote.{\sc 3m.sg} {\sc acc} the-song the-this  \\
+\glt `Put copyright on the song, lest someone come and say that he wrote this song.'\footnote{\url{https://www.fxp.co.il/showthread.php?t=12627978}}
+\z
+
+A third piece of evidence comes from the interpretation of the aspectual adverb  \textit{kvar} `already'. This expression cannot, or at least not easily, occur in the scope of regular sentential negation and receive the intended \textit{not yet} interpretation. To the degree that (\ref{kvar-b}) is acceptable, it can only be a metalinguistic response to an assertion that it is already too late. Instead, the negation of (\ref{kvar-a}) requires the adverbial \textit{adayin} `still/yet', similarly to negating \ili{English} sentences with `already'. 
+
+\ea
+\label{kvar}
+\begin{xlist}
+\ex \label{kvar-a}
+\gll Meuxar miday kvar. \\
+ late too already \\
+
+\glt `It's already too late.'
+\ex \label{kvar-b}
+\gll ?? Lo meuxar miday kvar. \\
+{\phantom{??}} {\sc neg} late too already \\
+
+\glt `It's not (the case that it is) too late already.'
+\ex
+\gll Lo meuxar miday adayin. \\
+ {\sc neg} late too yet \\
+\glt `It's not too late yet.'
+\end{xlist}
+\z
+
+In this respect, the negation in \textit{še-lo} sentences does not behave like sentential negation, in that \textit{kvar} is licensed in \textit{še-lo} sentences in the complement of `fear' verbs, and is interpreted as expected if that clause does not contain negation. While not all my consultants like (\ref{selo-kvar}), which is very colloquial, all have very clear intuitions about what it means.
+
+\ea
+\label{selo-kvar}
+\gll Paxadti \textbf{še-lo} meuxar miday kvar. \\
+feared.{\sc 1sg} that-{\sc neg} already late too \\
+\glt `I was scared that it might already be too late.'
+\z
+
+
+Finally, similar complementizers arguably exist in other languages. For example, the Hungarian \textit{nehogy} \citep{szabolcsi02, puskas17}, which is composed of modal negation \textit{ne} and complementizer \textit{hogy}, has been argued to be a modal complementizer. The example in (\ref{taxi}) is similar to the \ili{Hebrew} (\ref{zxuyot}).\footnote{The glossing here is Pusk\'{a}s'.} 
+\ea
+\label{taxi}  \langinfo{Hungarian}{\ili{Uralic}}{\citealt[ex. 15b]{puskas17}} \\
+\gll  Taxi-val ment, \textbf{ne-hogy}  le-k\'{e}sse a vonatot. \\
+taxi-{\sc instr} go.{\sc pst.3s} {\sc mod}.{\sc neg}-that {\sc part}-miss.{\sc subj} the train.{\sc acc}  \\
+
+\glt `She took a taxi, lest she miss the train.'
+\z
+
+As Pusk\'{a}s shows, \textit{nehogy} differs from occurrences of standard embedded negative clauses of the form \textit{hogy {\ldots} ne} in detectable ways, some of which are the same ones that distinguish \textit{še+lo} from \textit{še {\ldots} lo}. \textit{Nehogy}, unlike \textit{hogy {\ldots} ne}, does not allow prefixes that can follow the verb to do so (see Pusk\'{a}s' extensive discussion), and, just like \textit{še-lo}, it licenses positive but not negative polarity items.
+
+These arguments, taken together, make an at least \textit{prima facie} plausible case for viewing \textit{še-lo} as a complex complementizer with conventionally encoded apprehensive semantics, or as moving towards becoming one in Modern \ili{Hebrew}. Future research will have to decide whether this is ultimately a plausible route of analysis, and if so, what it implies for the typology of apprehensive markers. For example, stand-alone matrix sentences with \textit{še-lo}, unlike those with \textit{alul} and \textit{pen}, cannot have assertive force, asserting that the prejacent is possible and undesirable. Instead, they always have the force of a wish, as in (\ref{wish}).\footnote{This undoubtedly has to do with the fact that matrix \textit{še} clauses have a kind of directive or optative force; see \citet{schwarzwald-shlomo} and \citet{francez-JJL} for discussion.}
+
+\ea
+\label{wish}
+\gll \v{S}e-lo yigamer li ha-kesef! \\
+that-{\sc neg} end.{\sc fut.3m.sg} to.me the-money\\
+\glt `May I not run out of money!'
+\z
+
+Furthermore, it  does not seem that \textit{še-lo} can be used with sentences that give rise to `in-case' inferences. (\ref{geshem}) represents my own judgment. While it is perfectly grammatical and interpretable, it only has the pragmatically odd avertive interpretation, namely it gives rise to the inference that taking an umbrella might avert the rain.
+\ea
+\label{geshem}
+\gll \#Kax mitriya \textbf{še-lo} yered gešem. \\
+take.{\sc imp} umbrella that-{\sc neg} go.down.{\sc fut.3m.sg} rain \\
+\glt \#`Take an umbrella so that it doesn't rain.' (Intended: `Take an umbrella, in case it rains.') 
+\z
+
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This paper surveyed five key ways in which \ili{Hebrew} expressed and expresses apprehension at various stages of its highly non-linear history. I proposed that apprehensive complementizers like Biblical \ili{Hebrew} \textit{pen} are, semantically, possibility modals that carry a non-at issue bouletic dispreference content (which I labeled, for convenience, a conventional implicature). The kinds of inferences that Lichtenberk (\citeyear{lichtenberk95}) calls avertive and `in-case' were argued to have a different status across languages, being conventional in languages in which the apprehensive marker takes two arguments (i.e.\ does not have pure matrix occurrences), and to be derived, pragmatically or as a matter of discourse structure, in a language like \ili{Hebrew}, in which the the apprehensive marker is, semantically, a modal with one propositional argument. 
+
+The paper also proposes that there is a class of temporal additive markers that have what I called a \textit{boding} interpretation, \ili{Hebrew} additive \textit{od} and \ili{German} \textit{noch} being instances. Boding additives are future-oriented additives that carry the presupposition that their future-referring prejacent is not a historical necessity (i.e.\ true in all possible futures) at utterance time, and are used to assert that their prejacent will become a historical necessity at some future point (and hence, by entailment, will someday be true).
+
+Finally, the paper suggested that Modern \ili{Hebrew} has, or perhaps is coming to have, a morphologically complex apprehensive complementizer, fusing a subordinating complementizer with negation. This hypothesized complementizer functions in some ways like the obsolete Biblical complementizer \textit{pen}, and finds a close parallel in Hungarian and in the \ili{Slavic} languages, but overall, the plausibiliy of such a complementizer, and its putative relation to the broader landscape of apprehensive marking, remains to be studied in more detail. 
+
+
+\section*{Abbreviations}
+\begin{multicols}{3}
+\begin{tabbing}
+\textsc{instr} \= first\kill
+\textsc{1, 2, 3} \> first, second, third \\
+\> person \\
+\textsc{acc} \> accusative \\
+\textsc{add} \> additive \\
+\textsc{all} \> allative \\
+\textsc{appr} \> apprehensive \\
+\textsc{cs} \> construct state \\
+\textsc{dat} \> dative \\
+\textsc{dir} \> directive particle \\
+\textsc{f}   \> feminine \\
+\textsc{fut} \> future \\
+\textsc{imp} \> imperative \\
+\textsc{inf} \> infinitive \\
+\textsc{instr} \> instrumental \\
+\textsc{neg} \> negation \\
+\textsc{m} \> masculine\\
+\textsc{mod} \> modal \\
+\textsc{neg} \> negation \\
+\textsc{part} \> particle \\
+\textsc{pst} \> past \\
+\textsc{pl} \> plural \\
+\textsc{q} \> question particle \\
+\textsc{seq} \> sequential \\
+\textsc{sg} \> singular 
+\end{tabbing}
+\end{multicols}
+
+\section*{Acknowledgements}
+The material discussed in this paper was discussed extensively with my late teacher, mentor, colleague, and friend Edit Doron, who passed away far too soon, in March 2019. \foreignlanguage{hebrew}{לברכה}
+\foreignlanguage{hebrew}{זכרונה}.
+% % % \cjRL{zkrwnh lbrkh}
+Martina Faller, Eva Schultze-Berndt and Marine Vuillermet read several versions of this paper and provided invaluable feedback, in the form of corrections, questions, and suggestions that shaped its content and improved its form. I have benefited greatly, as always, from the insights of Ashwini Deo and Cleo Condoravdi, and also from discussions with, and/or comments from, Martina Faller, Eva Schultze-Berndt, Josh Phillips, John Beavers, Nissim Francez, Galit Hasan-Rokem, Zeineb Sellami, Bastian Persohn, two anonymous reviewers, and audiences at the SLE workshop on apprehensive markers in Tallinn,  the Texas Linguistics Society, and the workshop on Formal Approaches to Diachronic Semantics at the Ohio State University. Many thanks are due to Noam Tadelis for his help with corpora, and to Yael Fuerst and Ido Telem for their consultation on the Hebrew data. The deficiencies that are present despite all this help are my own. 
+
+\printbibliography[heading=subbibliography,notkeyword=this]
+
+\end{document}

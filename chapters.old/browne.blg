@@ -1,0 +1,15 @@
+[0] Config.pm:308> INFO - This is Biber 2.20
+[0] Config.pm:311> INFO - Logfile is 'browne.blg'
+[75] biber:340> INFO - === Tue Mar  3, 2026, 09:49:37
+[90] Biber.pm:420> INFO - Reading 'browne.bcf'
+[168] Biber.pm:994> INFO - Found 74 citekeys in bib section 0
+[214] Biber.pm:4463> INFO - Processing section 0
+[229] Biber.pm:4654> INFO - Looking for bibtex file '../localbibliography.bib' for section 0
+[249] bibtex.pm:1713> INFO - LaTeX decoding ...
+[809] bibtex.pm:1519> INFO - Found BibTeX data source '../localbibliography.bib'
+[1328] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1328] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1329] Biber.pm:4283> INFO - Sorting list 'nyt/global//global/global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[1329] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
+[1389] bbl.pm:676> INFO - Writing 'browne.bbl' with encoding 'UTF-8'
+[1418] bbl.pm:779> INFO - Output to browne.bbl

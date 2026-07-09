@@ -1,0 +1,221 @@
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\makeatother
+
+\newcommand{\togglepaper}[1][0]{
+   \bibliography{../localbibliography}
+   \papernote{\scriptsize\normalfont
+     \theauthor.
+     \titleTemp.
+    To appear in:
+    Martina Faller,  Marine Vuillermet \&  Eva Schultze-Berndt (eds.). Apprehensional Constructions in a cross-linguistic perspective. Berlin: Language Science Press. [preliminary page numbering]
+   }
+   \pagenumbering{roman}
+   \setcounter{chapter}{#1}
+   \addtocounter{chapter}{-1}
+}
+
+\newbool{bookcompile}
+\booltrue{bookcompile}
+\newcommand{\bookorchapter}[2]{\ifbool{bookcompile}{#1}{#2}}
+
+
+\newfontfamily\FedotovBoldEmptySetFont{LibertinusSerif-Italic.otf}[AutoFakeBold=2.5]
+\newcommand{\FedotovBoldEmpty}{{\FedotovBoldEmptySetFont\bfseries ∅}}
+
+%From Dabkowski&AnderBois
+
+
+\let\sc\scshape
+\let\rm\rmfamily
+%\let\it\itshape
+\let\tt\ttfamily
+\let\nr\normalfont
+
+\newcommand{\wsc}[1]{\textls[80]{\scshape#1}}
+
+\let\textai\textit
+% \let\textlc\spacedlowsmallcaps
+% \let\textac\spacedallcaps
+\let\textlc\textsc
+\let\textac\textsc
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% FLAG %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newcommand{\scott}  [1]{\textcolor{violet}{#1}}
+% \newcommand{\maks}   [1]{\textcolor{blue}{#1}}
+% % \newcommand{\data}   [1]{\textcolor{teal}{#1}}
+% \newcommand{\new}   [1]{#1}
+% \newcommand{\newnew}   [1]{\textcolor{teal}{#1}}
+% \newcommand{\rev}   [1]{\textcolor{magenta}{#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% TABLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\newcolumntype{Y}{>{\arraybackslash}p{25.3543464286pt}} % length of L
+
+% \newcolumntype{K}{>{\arraybackslash}p{24.25pt}}
+% \newcolumntype{V}{>{\arraybackslash}p{(\textwidth/9-24pt)/2}}
+%
+\let\ch\relax \newcommand{\ch}[2]{\multicolumn{#1}{c}{\sc#2}}
+\let\sx\relax \newcommand{\sx}[2]{\multicolumn{#1}{l}{\emph{-#2}}} % suffix
+\let\su\relax \newcommand{\su}{\sx{1}} % suffix unicolumnal
+\let\sd\relax \newcommand{\sd}{\sx{2}} % suffix dicolumnal
+\let\cx\relax \newcommand{\cx}[2]{\multicolumn{#1}{l}{\emph{=#2}}} % clitic
+\let\cu\relax \newcommand{\cu}{\cx{1}} % clitic unicolumnal
+\let\cd\relax \newcommand{\cd}{\cx{2}} % suffix dicolumnal
+\let\gx\relax \newcommand{\gx}[2]{\multicolumn{#1}{l}{\sc #2}} % gloss
+\let\gd\relax \newcommand{\gd}{\gx{2}} % gloss dicolumnal
+\let\gr\relax \newcommand{\gr}[1]{\multicolumn{2}{c}{\multirow{2}{*}{\textcolor{gray}{\sc#1}}}}
+\let\db\relax \newcommand{\db}[1]{\multicolumn{2}{c}{\multirow{2}{*}{\sc#1}}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% EXAMPLES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% AFFIX BOUNDARY %%%%%%
+% \DeclareRobustCommand{\longmn}{\textminus}
+% \DeclareRobustCommand{\mn}{-}
+
+%%% CLITIC BOUNDARY %%%%%%
+% \DeclareRobustCommand{\longeq}{=}
+% \makeatletter\DeclareRobustCommand{\eq}{%
+%     \settowidth{\@tempdima}{-}% width of a hyphen
+%     \resizebox{\@tempdima}{\height}{=}%
+% }\makeatother
+
+%%% FUZZY CLITIC %%%%%%
+% \DeclareRobustCommand{\longfc}{%
+%     $\overset{\text{\smash{}}}{\text{$\approx$}}$%
+% }
+% \makeatletter\DeclareRobustCommand{\fc}{%
+%     \settowidth{\@tempdima}{-}% width of a hyphen
+%     \resizebox{\@tempdima}{\height}{%
+%         $\overset{\text{\smash{}}}{\text{$\approx$}}$%
+%     }%
+% }\makeatother
+
+%%% REDUPLICATION %%%%%%%
+% \DeclareRobustCommand{\longtl}{$\sim$}
+% \makeatletter\DeclareRobustCommand{\tl}{%
+%     \settowidth{\@tempdima}{-}% width of a hyphen
+%     \resizebox{\@tempdima}{\height}{$\sim$}%
+% }\makeatother
+
+% \newcommand{\mn}          {\textminus}
+\newcommand{\src}    [1]  {\jambox[0pt]{\rm(#1)}}
+% \newcommand{\ai}     [2]  {\emph{#1} `\textsc{#2}#3'\xspace}
+\newcommand{\ai}     [2]  {\emph{#1} `\textsc{#2}'\xspace}
+\newcommand{\sane}   [1][]{\ai{=sa'ne}{appr}{#1}}
+\newcommand{\srcn}   [1][]{\ai{kûintsû}{srcn}{#1}}
+% \newcommand{\mbekane}[1][]{\ai{\eq mbe kañe}{neg.adv aux.inf}{#1}}
+
+% \let\sc\relax \newcommand{\sc}{\normalfont\scshape}
+% \let\rm\relax \newcommand{\rm}{\normalfont\rmfamily}
+% \let\it\relax \newcommand{\it}{\normalfont\itfamily}
+
+\newcommand{\lb}{{\rm[}}
+\newcommand{\rb}{{\rm]}}
+
+\newcommand{\bad}{\makebox[0pt][r]{*\,}}
+\newcommand{\infel}{\makebox[0pt][r]{\#\,}}
+
+
+% \newcommand{\lsqz}[1]{#1}
+% \newcommand{\lsqz}[1]{\makebox[0pt][l]{#1}}
+
+% \newcommand{\lsqu}[1]{\makebox[0pt][l]{#1}}
+% \newcommand{\rsqu}[1]{\makebox[0pt][r]{#1}}
+% \newcommand{\astr}{\makebox[0pt][r]{{\nr*}}}
+% \newcommand{\hash}{\makebox[0pt][r]{{\nr\#}}}
+% \newcommand{\qstn}{\makebox[0pt][r]{{\nr?}}}
+% \newcommand{\bad}{\makebox[0pt][r]{*}}
+% \newcommand{\unhappy}{\makebox[0pt][r]{\#}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% UNICODE CHARACTERS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newunicodechar{⟨}{⟨}
+\newunicodechar{⟩}{⟩}
+
+\newcommand{\infix}{⟨}
+\newcommand{\outfix}{⟩}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% IPA %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \newcommand{\ipa}{\textipa}
+
+\newcommand{\sub}{\textsubscript}
+% \let\super\relax \newcommand{\super}{\textsuperscript}
+
+\newcommand{\ts}{\texttslig}
+% \let\dz\relax \newcommand{\dz}{\textdzlig}
+\newcommand{\tS}{\textteshlig}
+\newcommand{\dZ}{\textdyoghlig}
+\newcommand{\cj}{\textctc}
+\newcommand{\sj}{\textctc}
+\newcommand{\zj}{\textctz}
+\newcommand{\tcj}{\texttctclig}
+\newcommand{\tsj}{\texttctclig}
+\newcommand{\dzj}{\textdctzlig}
+\newcommand{\gj}{\textbardotlessj}
+% \let\nj\relax \newcommand{\nj}{\textltailn}
+% \newcommand{\W}{\textturnmrleg}
+\newcommand{\wl}{\textturnmrleg}
+% \newcommand{\1}{\ipabar{\~\i}{.5ex}{1.1}{}{}}
+\newcommand{\dotlessibar}{\ipabar{\i}{.5ex}{1.1}{}{}}
+\newcommand{\darkl}{\textltilde}
+% \newcommand{\n}{\textsubarch}
+% \newcommand{\x}{\textovercross}
+\newcommand{\lowered}{\textlowering}
+\newcommand{\raised}{\textraising}
+\newcommand{\retracted}{\textsubbar}
+\newcommand{\unreleased}{\textcorner}
+% \newcommand{\syllabic}{\s}
+\newcommand{\implosivet}{\texthtt}
+\newcommand{\implosived}{\texthtd}
+\newcommand{\implosivep}{\texthtp}
+\newcommand{\implosiveb}{\texthtb}
+\newcommand{\implosivek}{\texthtk}
+\newcommand{\implosiveg}{\texthtg}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% OTHER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ie}{i.\,e.\xspace}
+\newcommand{\Ie}{I.\,e.\xspace}
+\newcommand{\eg}{e.\,g.\xspace}
+\newcommand{\Eg}{E.\,g.\xspace} 
+
+
+
+
+\newcommand{\francoissource}[1]{\hfill\textnormal{{\footnotesize #1} }}
+\newcommand{\E}{Ɛ\kern-1.5pt\raisebox{1pt}{̏}\kern1.5pt}
+\newcommand{\ù}{{ṵ}\kern-2pt{̀}\kern2pt}
+\newcommand{\ȕ}{{ṵ}\kern-2pt{̏}\kern2pt}
+
+\newcommand{\OO}{ɔ\kern-1pt\raisebox{-1pt}{̰}\kern1pt}
+\newcommand{\Ǒ}{{{ɔ̌\kern-1pt\raisebox{-.5pt}{̰}\kern1pt}}}
+
+
+\newcommand{\à}{{a̰}\kern-2pt{̀}\kern2pt}
+\newcommand{\ilit}[1]{#1\il{#1}}
